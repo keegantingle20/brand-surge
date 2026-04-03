@@ -1,0 +1,32 @@
+// Types for `tailwindcss` resolve from devDependencies after `npm install`.
+import type { Config } from "tailwindcss";
+import tailwindcssAnimate from "tailwindcss-animate";
+
+const config = {
+  darkMode: ["class"] as const,
+  content: [
+    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+  ],
+  theme: {
+    extend: {
+      colors: {
+        "brand-navy": "#013273",
+        "brand-blue": "#0e6ea1",
+        "brand-teal": "#1398b7",
+        "brand-cyan": "#25dee3",
+        "brand-white": "#fefefe",
+        /** Semantic border token (matches --color-border) */
+        "brand-border": "rgba(19, 152, 183, 0.15)",
+      },
+      fontFamily: {
+        heading: ["var(--font-heading)", "system-ui", "sans-serif"],
+        body: ["var(--font-body)", "system-ui", "sans-serif"],
+      },
+    },
+  },
+  plugins: [tailwindcssAnimate],
+} satisfies Config;
+
+export default config;
