@@ -27,7 +27,18 @@ export function CaseStudyPreview() {
           animate={inView ? { opacity: 1, y: 0 } : undefined}
           transition={{ duration: 0.5, ease: "easeOut", delay: 0.1 }}
         >
-          <FeaturedOwnAccountCard />
+          <FeaturedOwnAccountCard
+            pullQuote={
+              <blockquote className="mb-8 border-l border-brand-cyan/40 pl-4 text-sm italic text-[#94a3b8]">
+                <p>
+                  &quot;317 messages. 79 replies. 14 demo meetings. One week.
+                  This is what a dialed-in outbound system looks like — we built
+                  it for ourselves first so we could build it for you.&quot;
+                </p>
+                <p className="mt-2 not-italic">— Koby Batts, Co-Founder</p>
+              </blockquote>
+            }
+          />
         </motion.div>
       </div>
     </section>

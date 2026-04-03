@@ -19,12 +19,24 @@ const cards = [
   },
 ] as const;
 
+const iconPlaceholderStyle = {
+  background:
+    "linear-gradient(135deg, rgba(37,222,227,0.15), rgba(19,152,183,0.05))",
+} as const;
+
 export function ProblemSection() {
   const ref = useRef(null);
   const inView = useInView(ref, { once: true, margin: "-100px" });
 
   return (
-    <section ref={ref} className="bg-[#0a1628] py-24 lg:py-32">
+    <section
+      ref={ref}
+      className="py-24 lg:py-32"
+      style={{
+        background:
+          "linear-gradient(180deg, #010f1f 0%, #0a1628 30%, #0a1628 70%, #010f1f 100%)",
+      }}
+    >
       <div className="mx-auto max-w-6xl px-6">
         <SectionLabel>THE PROBLEM</SectionLabel>
         <h2 className="mt-3 max-w-3xl text-2xl font-bold leading-snug text-white md:text-4xl">
@@ -36,7 +48,7 @@ export function ProblemSection() {
           {cards.map((card, index) => (
             <motion.div
               key={card.title}
-              className="rounded-2xl border border-[rgba(19,152,183,0.25)] bg-[#010f1f] p-6 transition-colors hover:border-[rgba(37,222,227,0.25)] md:p-8"
+              className="gradient-border rounded-2xl p-6 md:p-8"
               initial={{ opacity: 0, y: 20 }}
               animate={inView ? { opacity: 1, y: 0 } : undefined}
               transition={{
@@ -44,9 +56,15 @@ export function ProblemSection() {
                 ease: "easeOut",
                 delay: index * 0.1,
               }}
+              whileHover={{
+                y: -4,
+                boxShadow: "0 20px 40px rgba(37, 222, 227, 0.08)",
+                transition: { duration: 0.2 },
+              }}
             >
               <div
-                className="mb-6 flex h-10 w-10 items-center justify-center rounded-lg bg-brand-cyan/10"
+                className="mb-6 flex h-10 w-10 items-center justify-center rounded-lg"
+                style={iconPlaceholderStyle}
                 aria-hidden
               />
               <h3 className="mb-3 text-lg font-semibold text-white">

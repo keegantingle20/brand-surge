@@ -19,18 +19,34 @@ export function Hero() {
   return (
     <section className="relative flex min-h-[90vh] flex-col items-center justify-center overflow-hidden bg-[#010f1f] text-center">
       <div
-        className="pointer-events-none absolute left-0 top-0 h-[600px] w-[600px] -translate-x-1/4 -translate-y-1/4 rounded-full bg-[radial-gradient(circle,rgba(1,50,115,0.3)_0%,transparent_70%)]"
+        className="pointer-events-none absolute left-0 top-0 h-px w-full"
+        style={{
+          background:
+            "linear-gradient(90deg, transparent, #25dee3, #1398b7, transparent)",
+        }}
         aria-hidden
       />
       <div
-        className="pointer-events-none absolute bottom-0 right-0 h-[400px] w-[400px] translate-x-1/4 translate-y-1/4 rounded-full bg-[radial-gradient(circle,rgba(14,110,161,0.2)_0%,transparent_70%)]"
+        className="pointer-events-none absolute left-[-100px] top-[-100px] h-[500px] w-[500px] rounded-full opacity-20 blur-[120px]"
+        style={{
+          background:
+            "radial-gradient(circle, #0e6ea1 0%, #013273 60%, transparent 100%)",
+        }}
+        aria-hidden
+      />
+      <div
+        className="pointer-events-none absolute bottom-[-50px] right-[-50px] h-[400px] w-[400px] rounded-full opacity-15 blur-[100px]"
+        style={{
+          background:
+            "radial-gradient(circle, #25dee3 0%, #1398b7 50%, transparent 100%)",
+        }}
         aria-hidden
       />
 
       <div className="relative mx-auto max-w-4xl px-6 pb-20 pt-32 sm:pb-12 md:pb-0 md:pt-40">
         <motion.div {...mount(0)}>
           <SectionLabel className="mb-4">
-            B2B OUTBOUND PIPELINE SYSTEMS
+            LOUISVILLE, KY — B2B OUTBOUND PIPELINE
           </SectionLabel>
         </motion.div>
 
@@ -39,7 +55,7 @@ export function Hero() {
           {...mount(0.15)}
         >
           Your pipeline shouldn&apos;t depend on{" "}
-          <span className="text-brand-cyan">referrals and luck</span>.
+          <span className="gradient-text">referrals and luck</span>.
         </motion.h1>
 
         <motion.p
@@ -77,19 +93,19 @@ export function Hero() {
           {...mount(0.6)}
         >
           <div className="sm:min-w-0 sm:flex-1">
-            <p className="text-3xl font-bold text-brand-cyan">4.4%</p>
+            <p className="text-3xl font-bold gradient-text">4.4%</p>
             <p className="mt-1 text-sm text-[#94a3b8]">
               Message-to-meeting conversion on our own campaigns
             </p>
           </div>
           <div className="sm:min-w-0 sm:flex-1">
-            <p className="text-3xl font-bold text-brand-cyan">22.9%</p>
+            <p className="text-3xl font-bold gradient-text">22.9%</p>
             <p className="mt-1 text-sm text-[#94a3b8]">
               Average reply rate sustained over 6 months
             </p>
           </div>
           <div className="sm:min-w-0 sm:flex-1">
-            <p className="text-3xl font-bold text-brand-cyan">4 Years</p>
+            <p className="text-3xl font-bold gradient-text">4 Years</p>
             <p className="mt-1 text-sm text-[#94a3b8]">
               Building revenue systems for B2B service companies
             </p>

@@ -13,6 +13,10 @@ const navLinks = [
   { href: "/about", label: "About" },
 ] as const;
 
+const navCtaGradientStyle = {
+  background: "linear-gradient(135deg, #25dee3 0%, #1398b7 100%)",
+} as const;
+
 export function Navbar() {
   const pathname = usePathname();
   const [scrolled, setScrolled] = useState(false);
@@ -43,11 +47,21 @@ export function Navbar() {
   const headerClass =
     "fixed top-0 z-50 w-full transition-all duration-300" +
     (scrolled
-      ? " border-b border-[rgba(19,152,183,0.15)] bg-[#010f1f]/95 backdrop-blur-md"
+      ? " border-b border-[rgba(19,152,183,0.15)] backdrop-blur-md"
       : " border-b border-transparent bg-transparent");
 
   return (
-    <header className={headerClass}>
+    <header
+      className={headerClass}
+      style={
+        scrolled
+          ? {
+              background:
+                "linear-gradient(180deg, rgba(1,15,31,0.98) 0%, rgba(1,15,31,0.92) 100%)",
+            }
+          : undefined
+      }
+    >
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-6 md:h-[4.5rem]">
         <Link
           href="/"
@@ -64,15 +78,27 @@ export function Navbar() {
             <Link
               key={href}
               href={href}
-              className="text-sm text-[#94a3b8] transition hover:text-brand-white"
+              className="group relative pb-1 text-sm text-[#94a3b8] transition hover:text-brand-white"
             >
               {label}
+              <span
+                className="absolute bottom-0 left-0 right-0 h-px origin-left scale-x-0 transition-transform duration-300 group-hover:scale-x-100"
+                style={{
+                  background: "linear-gradient(90deg, #25dee3, #1398b7)",
+                }}
+                aria-hidden
+              />
             </Link>
           ))}
         </nav>
 
         <div className="hidden md:block">
-          <Button href={CALENDLY_AUDIT_URL} variant="primary">
+          <Button
+            href={CALENDLY_AUDIT_URL}
+            variant="primary"
+            className="hover:opacity-95"
+            style={navCtaGradientStyle}
+          >
             Book a pipeline audit
           </Button>
         </div>
@@ -141,7 +167,8 @@ export function Navbar() {
             <Button
               href={CALENDLY_AUDIT_URL}
               variant="primary"
-              className="mt-2 w-full justify-center"
+              className="mt-2 w-full justify-center hover:opacity-95"
+              style={navCtaGradientStyle}
               onClick={() => setMobileOpen(false)}
             >
               Book a pipeline audit

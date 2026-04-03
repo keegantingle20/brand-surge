@@ -2,8 +2,11 @@
 
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
-import { Button } from "@/components/ui/Button";
 import { CALENDLY_AUDIT_URL } from "@/lib/constants";
+
+const ctaButtonStyle = {
+  background: "linear-gradient(135deg, #25dee3 0%, #1398b7 100%)",
+} as const;
 
 export function FinalCTA() {
   const ref = useRef(null);
@@ -12,7 +15,18 @@ export function FinalCTA() {
   return (
     <section ref={ref} className="relative overflow-hidden bg-[#010f1f] py-32">
       <div
-        className="pointer-events-none absolute left-1/2 top-1/2 h-[400px] w-[600px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-brand-cyan/5 blur-3xl"
+        className="pointer-events-none absolute left-0 right-0 top-0 h-32"
+        style={{
+          background: "linear-gradient(180deg, #010f1f 0%, transparent 100%)",
+        }}
+        aria-hidden
+      />
+      <div
+        className="pointer-events-none absolute left-1/2 top-1/2 h-[500px] w-[800px] -translate-x-1/2 -translate-y-1/2 rounded-full blur-3xl"
+        style={{
+          background:
+            "radial-gradient(ellipse, rgba(37,222,227,0.12) 0%, rgba(19,152,183,0.06) 40%, transparent 70%)",
+        }}
         aria-hidden
       />
       <motion.div
@@ -24,22 +38,39 @@ export function FinalCTA() {
         <h2 className="mb-6 text-3xl font-bold leading-tight text-white md:text-4xl lg:text-5xl">
           If your pipeline is inconsistent, it&apos;s not a sales problem.
           <br />
-          <span className="text-brand-cyan">It&apos;s a systems problem.</span>
+          <span className="gradient-text">It&apos;s a systems problem.</span>
         </h2>
         <p className="mb-10 text-lg text-[#94a3b8]">
           Let&apos;s find out exactly where yours is breaking — and what it
           would take to fix it.
         </p>
-        <Button
+        <motion.a
           href={CALENDLY_AUDIT_URL}
-          variant="primary"
-          className="w-full px-8 py-4 text-base sm:w-auto"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex w-full items-center justify-center rounded-lg px-8 py-4 text-base font-semibold text-brand-navy transition-all duration-150 hover:opacity-95 active:scale-[0.97] sm:w-auto"
+          style={ctaButtonStyle}
+          animate={{
+            boxShadow: [
+              "0 0 0px rgba(37,222,227,0)",
+              "0 0 30px rgba(37,222,227,0.3)",
+              "0 0 0px rgba(37,222,227,0)",
+            ],
+          }}
+          transition={{
+            duration: 2.5,
+            repeat: Infinity,
+            ease: "easeInOut",
+          }}
         >
           Book your free pipeline audit
-        </Button>
+        </motion.a>
         <p className="mt-4 text-sm text-[#64748b]">
           15 minutes. No pitch. Just clarity on where your pipeline is breaking
           and what to do about it.
+        </p>
+        <p className="mt-2 text-xs text-[#64748b]">
+          Built in Louisville. Running outbound for B2B companies nationwide.
         </p>
       </motion.div>
     </section>

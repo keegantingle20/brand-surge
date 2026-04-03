@@ -2,6 +2,10 @@ import Link from "next/link";
 import { Button } from "@/components/ui/Button";
 import { CALENDLY_AUDIT_URL } from "@/lib/constants";
 
+const footerCtaGradientStyle = {
+  background: "linear-gradient(135deg, #25dee3 0%, #1398b7 100%)",
+} as const;
+
 function LinkedInIcon() {
   return (
     <svg
@@ -17,15 +21,29 @@ function LinkedInIcon() {
 
 export function Footer() {
   return (
-    <footer className="border-t border-[rgba(19,152,183,0.12)] bg-[#0a1628] py-16">
-      <div className="mx-auto max-w-6xl px-6">
+    <footer
+      className="py-16"
+      style={{
+        background: "linear-gradient(180deg, #0a1628 0%, #010f1f 100%)",
+      }}
+    >
+      <div
+        className="h-px w-full"
+        style={{
+          background:
+            "linear-gradient(90deg, transparent, #1398b7, #25dee3, #1398b7, transparent)",
+        }}
+        aria-hidden
+      />
+      <div className="mx-auto max-w-6xl px-6 pt-16">
         <div className="grid grid-cols-1 gap-8 md:grid-cols-4 md:gap-12">
           <div className="text-center md:text-left">
             <p className="font-heading text-lg font-bold text-white">
               Brand Surge
             </p>
             <p className="mx-auto mt-3 max-w-[200px] text-sm leading-relaxed text-[#94a3b8] md:mx-0">
-              Building predictable revenue systems for B2B service companies.
+              Started in Louisville. Built for B2B companies tired of waiting
+              for referrals.
             </p>
             <div className="mt-6 flex justify-center gap-3 text-brand-cyan md:justify-start">
               <a
@@ -130,8 +148,9 @@ export function Footer() {
             </p>
             <Button
               href={CALENDLY_AUDIT_URL}
-              variant="outline"
-              className="mx-auto w-full md:mx-0"
+              variant="primary"
+              className="mx-auto w-full hover:opacity-95 md:mx-0"
+              style={footerCtaGradientStyle}
             >
               Book a pipeline audit
             </Button>

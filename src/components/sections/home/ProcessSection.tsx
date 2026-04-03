@@ -27,6 +27,18 @@ const steps = [
   },
 ] as const;
 
+const stepCircleStyle = {
+  background:
+    "linear-gradient(#010f1f, #010f1f) padding-box, linear-gradient(135deg, #25dee3, #1398b7) border-box",
+  border: "2px solid transparent",
+} as const;
+
+const connectorLineStyle = {
+  background:
+    "linear-gradient(90deg, transparent, #25dee3, #1398b7, #0e6ea1, transparent)",
+  height: "1px",
+} as const;
+
 export function ProcessSection() {
   const ref = useRef(null);
   const inView = useInView(ref, { once: true, margin: "-80px" });
@@ -35,7 +47,11 @@ export function ProcessSection() {
     <section
       id="process"
       ref={ref}
-      className="bg-[#0a1628] py-24 lg:py-32"
+      className="py-24 lg:py-32"
+      style={{
+        background:
+          "linear-gradient(180deg, #010f1f 0%, #0a1628 50%, #010f1f 100%)",
+      }}
     >
       <div className="mx-auto max-w-6xl px-6">
         <SectionLabel>THE SURGE SYSTEM</SectionLabel>
@@ -57,9 +73,14 @@ export function ProcessSection() {
                 delay: index * 0.1,
               }}
             >
-              <div className="-ml-[calc(3.5rem+1px)] flex h-12 w-12 shrink-0 items-center justify-center rounded-full border-2 border-brand-cyan/40 bg-[#010f1f] font-mono text-sm font-bold text-brand-cyan">
+              <motion.div
+                className="-ml-[calc(3.5rem+1px)] flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-[#010f1f] font-mono text-sm font-bold text-brand-cyan"
+                style={stepCircleStyle}
+                whileHover={{ scale: 1.02 }}
+                transition={{ duration: 0.2 }}
+              >
                 {step.n}
-              </div>
+              </motion.div>
               <div className="min-w-0 flex-1">
                 <h3 className="mb-2 text-base font-semibold text-white">
                   {step.title}
@@ -76,7 +97,8 @@ export function ProcessSection() {
         <div className="relative mt-16 hidden md:block">
           <div className="relative flex justify-between">
             <div
-              className="pointer-events-none absolute left-0 right-0 top-6 border-t border-brand-cyan/20"
+              className="pointer-events-none absolute left-0 right-0 top-6"
+              style={connectorLineStyle}
               aria-hidden
             />
             {steps.map((step, index) => (
@@ -91,9 +113,14 @@ export function ProcessSection() {
                   delay: index * 0.1,
                 }}
               >
-                <div className="flex h-12 w-12 items-center justify-center rounded-full border-2 border-brand-cyan/40 bg-[#010f1f] font-mono text-sm font-bold text-brand-cyan">
+                <motion.div
+                  className="flex h-12 w-12 items-center justify-center rounded-full bg-[#010f1f] font-mono text-sm font-bold text-brand-cyan"
+                  style={stepCircleStyle}
+                  whileHover={{ scale: 1.02 }}
+                  transition={{ duration: 0.2 }}
+                >
                   {step.n}
-                </div>
+                </motion.div>
                 <h3 className="mt-4 mb-2 text-base font-semibold text-white">
                   {step.title}
                 </h3>

@@ -32,3 +32,88 @@
     font-family: var(--font-heading);
   }
 }
+
+.gradient-text {
+  background: linear-gradient(135deg, #25dee3 0%, #1398b7 50%, #0e6ea1 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.gradient-border {
+  position: relative;
+  background:
+    linear-gradient(#0a1628, #0a1628) padding-box,
+    linear-gradient(135deg, #25dee3, #1398b7, #013273) border-box;
+  border: 1px solid transparent;
+}
+
+/* Same gradient border with #010f1f fill for darker cards */
+.gradient-border-ink {
+  position: relative;
+  background:
+    linear-gradient(#010f1f, #010f1f) padding-box,
+    linear-gradient(135deg, #25dee3, #1398b7, #013273) border-box;
+  border: 1px solid transparent;
+}
+
+.gradient-glow {
+  box-shadow:
+    0 0 40px rgba(37, 222, 227, 0.08),
+    0 0 80px rgba(19, 152, 183, 0.04);
+}
+
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.grad-label-sweep {
+  background: linear-gradient(90deg, #25dee3, #1398b7, #25dee3);
+  background-size: 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: gradientShift 3s ease infinite;
+}
+
+@media (min-width: 768px) {
+  .differentiator-col-border {
+    border-left: 1px solid;
+    border-image-source: linear-gradient(
+      180deg,
+      transparent,
+      #1398b7,
+      transparent
+    );
+    border-image-slice: 1;
+    padding-left: 48px;
+  }
+}
+
+* {
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+*:focus-visible {
+  outline: 2px solid #25dee3;
+  outline-offset: 2px;
+}
+
+a {
+  transition:
+    color 0.15s ease,
+    opacity 0.15s ease;
+}
+
+::selection {
+  background: rgba(37, 222, 227, 0.2);
+  color: #fefefe;
+}
