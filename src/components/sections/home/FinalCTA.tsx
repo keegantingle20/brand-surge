@@ -21,7 +21,7 @@ export function FinalCTA() {
         animate={inView ? { opacity: 1, y: 0 } : undefined}
         transition={{ duration: 0.5, ease: "easeOut" }}
       >
-        <h2 className="mb-6 text-4xl font-bold leading-tight text-white md:text-5xl">
+        <h2 className="mb-6 text-3xl font-bold leading-tight text-white md:text-4xl lg:text-5xl">
           If your pipeline is inconsistent, it&apos;s not a sales problem.
           <br />
           <span className="text-brand-cyan">It&apos;s a systems problem.</span>
@@ -33,7 +33,7 @@ export function FinalCTA() {
         <Button
           href={CALENDLY_AUDIT_URL}
           variant="primary"
-          className="px-8 py-4 text-base"
+          className="w-full px-8 py-4 text-base sm:w-auto"
         >
           Book your free pipeline audit
         </Button>

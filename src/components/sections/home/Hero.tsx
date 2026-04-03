@@ -27,7 +27,7 @@ export function Hero() {
         aria-hidden
       />
 
-      <div className="relative mx-auto max-w-4xl px-6 pt-32 md:pt-40">
+      <div className="relative mx-auto max-w-4xl px-6 pb-20 pt-32 sm:pb-12 md:pb-0 md:pt-40">
         <motion.div {...mount(0)}>
           <SectionLabel className="mb-4">
             B2B OUTBOUND PIPELINE SYSTEMS
@@ -35,7 +35,7 @@ export function Hero() {
         </motion.div>
 
         <motion.h1
-          className="text-5xl font-bold leading-tight tracking-tight text-white md:text-6xl lg:text-7xl"
+          className="text-4xl font-bold leading-tight tracking-tight text-white md:text-5xl lg:text-6xl"
           {...mount(0.15)}
         >
           Your pipeline shouldn&apos;t depend on{" "}
@@ -55,31 +55,40 @@ export function Hero() {
           className="mt-10 flex flex-col justify-center gap-4 sm:flex-row"
           {...mount(0.45)}
         >
-          <Button href={CALENDLY_AUDIT_URL} variant="primary">
+          <Button
+            href={CALENDLY_AUDIT_URL}
+            variant="primary"
+            className="w-full sm:w-auto"
+          >
             Book a free pipeline audit
           </Button>
-          <Button variant="outline" type="button" onClick={scrollToProcess}>
+          <Button
+            variant="outline"
+            type="button"
+            className="w-full sm:w-auto"
+            onClick={scrollToProcess}
+          >
             See how it works
           </Button>
         </motion.div>
 
         <motion.div
-          className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-8 border-t border-[rgba(19,152,183,0.2)] pt-8 sm:grid-cols-3"
+          className="mx-auto mt-16 flex max-w-2xl flex-col gap-8 border-t border-[rgba(19,152,183,0.2)] pt-8 sm:flex-row sm:items-start sm:justify-between"
           {...mount(0.6)}
         >
-          <div>
+          <div className="sm:min-w-0 sm:flex-1">
             <p className="text-3xl font-bold text-brand-cyan">4.4%</p>
             <p className="mt-1 text-sm text-[#94a3b8]">
               Message-to-meeting conversion on our own campaigns
             </p>
           </div>
-          <div>
+          <div className="sm:min-w-0 sm:flex-1">
             <p className="text-3xl font-bold text-brand-cyan">22.9%</p>
             <p className="mt-1 text-sm text-[#94a3b8]">
               Average reply rate sustained over 6 months
             </p>
           </div>
-          <div>
+          <div className="sm:min-w-0 sm:flex-1">
             <p className="text-3xl font-bold text-brand-cyan">4 Years</p>
             <p className="mt-1 text-sm text-[#94a3b8]">
               Building revenue systems for B2B service companies

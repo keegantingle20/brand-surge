@@ -43,11 +43,12 @@ export function ProcessSection() {
           Four stages from cold list to consistent pipeline.
         </h2>
 
-        {/* Mobile */}
-        <div className="mt-16 flex flex-col gap-12 md:hidden">
+        {/* Mobile: vertical spine + row per step */}
+        <div className="mt-16 border-l-2 border-brand-cyan/20 pl-8 md:hidden">
           {steps.map((step, index) => (
             <motion.div
               key={step.n}
+              className="mb-12 flex flex-row items-start gap-4 last:mb-0"
               initial={{ opacity: 0, y: 20 }}
               animate={inView ? { opacity: 1, y: 0 } : undefined}
               transition={{
@@ -56,15 +57,17 @@ export function ProcessSection() {
                 delay: index * 0.1,
               }}
             >
-              <div className="flex h-12 w-12 items-center justify-center rounded-full border-2 border-brand-cyan/40 bg-[#010f1f] font-mono text-sm font-bold text-brand-cyan">
+              <div className="-ml-[calc(3.5rem+1px)] flex h-12 w-12 shrink-0 items-center justify-center rounded-full border-2 border-brand-cyan/40 bg-[#010f1f] font-mono text-sm font-bold text-brand-cyan">
                 {step.n}
               </div>
-              <h3 className="mt-4 mb-2 text-base font-semibold text-white">
-                {step.title}
-              </h3>
-              <p className="max-w-[280px] text-sm leading-relaxed text-[#94a3b8]">
-                {step.body}
-              </p>
+              <div className="min-w-0 flex-1">
+                <h3 className="mb-2 text-base font-semibold text-white">
+                  {step.title}
+                </h3>
+                <p className="max-w-none text-sm leading-relaxed text-[#94a3b8]">
+                  {step.body}
+                </p>
+              </div>
             </motion.div>
           ))}
         </div>

@@ -35,10 +35,11 @@ export function DifferentiatorSection() {
           repeatable.
         </h2>
 
-        <div className="mt-16 grid grid-cols-1 gap-12 md:grid-cols-3">
+        <div className="mt-16 grid grid-cols-1 gap-0 md:grid-cols-3 md:gap-12">
           {columns.map((col, index) => (
             <motion.div
               key={col.n}
+              className="border-b border-brand-border pb-12 last:border-b-0 last:pb-0 md:border-b-0 md:pb-0"
               initial={{ opacity: 0, y: 20 }}
               animate={inView ? { opacity: 1, y: 0 } : undefined}
               transition={{
@@ -47,7 +48,9 @@ export function DifferentiatorSection() {
                 delay: index * 0.1,
               }}
             >
-              <p className="mb-4 font-mono text-sm text-brand-cyan">{col.n}</p>
+              <p className="mb-4 font-mono text-base text-brand-cyan md:text-sm">
+                {col.n}
+              </p>
               <h3 className="mb-3 text-lg font-semibold text-white">
                 {col.title}
               </h3>

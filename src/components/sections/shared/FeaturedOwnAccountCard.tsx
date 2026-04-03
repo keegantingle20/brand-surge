@@ -42,7 +42,9 @@ export function FeaturedOwnAccountCard({ className }: { className?: string }) {
               key={s.l}
               className="rounded-xl border border-[rgba(19,152,183,0.12)] bg-[#010f1f] p-6"
             >
-              <p className="text-3xl font-bold text-brand-cyan">{s.n}</p>
+              <p className="text-2xl font-bold text-brand-cyan md:text-3xl">
+                {s.n}
+              </p>
               <p className="mt-1 text-xs text-[#94a3b8]">{s.l}</p>
             </div>
           ))}

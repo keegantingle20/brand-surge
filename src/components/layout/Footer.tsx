@@ -19,15 +19,15 @@ export function Footer() {
   return (
     <footer className="border-t border-[rgba(19,152,183,0.12)] bg-[#0a1628] py-16">
       <div className="mx-auto max-w-6xl px-6">
-        <div className="grid grid-cols-1 gap-12 md:grid-cols-4">
-          <div>
+        <div className="grid grid-cols-1 gap-8 md:grid-cols-4 md:gap-12">
+          <div className="text-center md:text-left">
             <p className="font-heading text-lg font-bold text-white">
               Brand Surge
             </p>
-            <p className="mt-3 max-w-[200px] text-sm leading-relaxed text-[#94a3b8]">
+            <p className="mx-auto mt-3 max-w-[200px] text-sm leading-relaxed text-[#94a3b8] md:mx-0">
               Building predictable revenue systems for B2B service companies.
             </p>
-            <div className="mt-6 flex gap-3 text-brand-cyan">
+            <div className="mt-6 flex justify-center gap-3 text-brand-cyan md:justify-start">
               <a
                 href="https://www.linkedin.com/in/koby-batts-50b068190"
                 target="_blank"
@@ -49,11 +49,11 @@ export function Footer() {
             </div>
           </div>
 
-          <div>
+          <div className="text-center md:text-left">
             <p className="text-xs font-semibold tracking-widest text-[#64748b]">
               COMPANY
             </p>
-            <ul className="mt-4 flex flex-col gap-3">
+            <ul className="mt-4 flex flex-col items-center gap-3 md:items-start">
               <li>
                 <Link
                   href="/about"
@@ -81,11 +81,11 @@ export function Footer() {
             </ul>
           </div>
 
-          <div>
+          <div className="text-center md:text-left">
             <p className="text-xs font-semibold tracking-widest text-[#64748b]">
               SERVICES
             </p>
-            <ul className="mt-4 flex flex-col gap-3">
+            <ul className="mt-4 flex flex-col items-center gap-3 md:items-start">
               <li>
                 <Link
                   href="/services"
@@ -121,14 +121,18 @@ export function Footer() {
             </ul>
           </div>
 
-          <div>
+          <div className="text-center md:text-left">
             <p className="text-xs font-semibold tracking-widest text-[#64748b]">
               GET STARTED
             </p>
             <p className="mb-4 mt-4 text-sm text-[#94a3b8]">
               Ready to build a consistent pipeline?
             </p>
-            <Button href={CALENDLY_AUDIT_URL} variant="outline" className="w-full">
+            <Button
+              href={CALENDLY_AUDIT_URL}
+              variant="outline"
+              className="mx-auto w-full md:mx-0"
+            >
               Book a pipeline audit
             </Button>
           </div>

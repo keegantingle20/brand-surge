@@ -37,7 +37,7 @@ function CheckIcon() {
 
 function FeatureList({ items }: { items: string[] }) {
   return (
-    <ul className="flex flex-col gap-3">
+    <ul className="flex flex-col gap-4 md:gap-3">
       {items.map((item) => (
         <li
           key={item}
@@ -89,7 +89,7 @@ export default function ServicesPage() {
 
       <div className="mx-auto mt-16 grid max-w-6xl grid-cols-1 gap-6 px-6 md:grid-cols-3">
         {/* Tier 1 — Pipeline Ignition */}
-        <div className="rounded-2xl border border-[rgba(19,152,183,0.15)] bg-[#0a1628] p-8">
+        <div className="rounded-2xl border border-[rgba(19,152,183,0.15)] bg-[#0a1628] p-6 md:p-8">
           <TierBadge>ENTRY</TierBadge>
           <h3 className="mb-2 text-xl font-bold text-white">
             Pipeline Ignition
@@ -107,7 +107,7 @@ export default function ServicesPage() {
         </div>
 
         {/* Tier 2 — Revenue Acceleration (featured) */}
-        <div className="relative rounded-2xl border-2 border-brand-cyan bg-[#0a1628] p-8">
+        <div className="relative rounded-2xl border-2 border-brand-cyan bg-[#0a1628] p-6 md:p-8">
           <span className="absolute right-6 top-0 -translate-y-1/2 translate-x-0 rounded-full bg-brand-cyan px-3 py-1 text-xs font-bold text-brand-navy">
             MOST POPULAR
           </span>
@@ -132,7 +132,7 @@ export default function ServicesPage() {
         </div>
 
         {/* Tier 3 — Revenue Partnership */}
-        <div className="rounded-2xl border border-[rgba(19,152,183,0.15)] bg-[#0a1628] p-8">
+        <div className="rounded-2xl border border-[rgba(19,152,183,0.15)] bg-[#0a1628] p-6 md:p-8">
           <TierBadge>FULL PARTNERSHIP</TierBadge>
           <h3 className="mb-2 text-xl font-bold text-white">
             Revenue Partnership

@@ -27,7 +27,7 @@ export function ProblemSection() {
     <section ref={ref} className="bg-[#0a1628] py-24 lg:py-32">
       <div className="mx-auto max-w-6xl px-6">
         <SectionLabel>THE PROBLEM</SectionLabel>
-        <h2 className="mt-3 max-w-3xl text-3xl font-bold leading-snug text-white md:text-4xl">
+        <h2 className="mt-3 max-w-3xl text-2xl font-bold leading-snug text-white md:text-4xl">
           The best B2B service companies don&apos;t lose to worse competitors.
           They lose because nobody knew they existed.
         </h2>
@@ -36,7 +36,7 @@ export function ProblemSection() {
           {cards.map((card, index) => (
             <motion.div
               key={card.title}
-              className="rounded-2xl border border-[rgba(19,152,183,0.25)] bg-[#010f1f] p-8 transition-colors hover:border-[rgba(37,222,227,0.25)]"
+              className="rounded-2xl border border-[rgba(19,152,183,0.25)] bg-[#010f1f] p-6 transition-colors hover:border-[rgba(37,222,227,0.25)] md:p-8"
               initial={{ opacity: 0, y: 20 }}
               animate={inView ? { opacity: 1, y: 0 } : undefined}
               transition={{

@@ -43,7 +43,7 @@ export function TeamSection() {
           {team.map((member, index) => (
             <motion.article
               key={member.name}
-              className="rounded-2xl border border-[rgba(19,152,183,0.15)] bg-[#010f1f] p-6 text-center transition hover:border-brand-cyan/25"
+              className="rounded-2xl border border-[rgba(19,152,183,0.15)] bg-[#010f1f] p-4 text-center transition hover:border-brand-cyan/25 md:p-6"
               initial={{ opacity: 0, y: 20 }}
               animate={inView ? { opacity: 1, y: 0 } : undefined}
               transition={{
