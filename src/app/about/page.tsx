@@ -27,13 +27,13 @@ const bios = [
     name: "James Miscione",
     role: "Growth Consultant",
     bio: "James specializes in LinkedIn campaign architecture and ICP refinement across B2B service verticals. He works directly with clients to optimize message sequencing and improve connection-to-conversation rates.",
-    linkedIn: null as string | null,
+    linkedIn: "https://www.linkedin.com/in/james-miscione-ab77a124b/",
   },
   {
     name: "Kellen McHugh",
     role: "Business Development Manager",
     bio: "Kellen leads new client acquisition at Brand Surge, building the pipeline that fuels the agency's own growth. He's responsible for partnership development and expanding Brand Surge's presence in new verticals.",
-    linkedIn: null as string | null,
+    linkedIn: "https://www.linkedin.com/in/kellen-mchugh-47b917199/",
   },
 ] as const;
 
