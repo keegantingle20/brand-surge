@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { BrandLogo } from "@/components/shared/BrandLogo";
 import { SectionLabel } from "@/components/ui/SectionLabel";
 
 const fadeUp = {
@@ -25,6 +26,17 @@ export function PageHero({
         aria-hidden
       />
       <div className="relative mx-auto max-w-4xl px-6 text-center">
+        <motion.div
+          className="mb-6 flex justify-center"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, ease: "easeOut" }}
+        >
+          <BrandLogo
+            variant="lockup"
+            className="h-8 max-w-[12rem] md:h-9 md:max-w-[14rem]"
+          />
+        </motion.div>
         <motion.div {...fadeUp}>
           <SectionLabel>{label}</SectionLabel>
         </motion.div>

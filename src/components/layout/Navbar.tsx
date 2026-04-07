@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
+import { BrandLogo } from "@/components/shared/BrandLogo";
 import { Button } from "@/components/ui/Button";
 import { CALENDLY_AUDIT_URL } from "@/lib/constants";
 
@@ -65,9 +66,14 @@ export function Navbar() {
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-6 md:h-[4.5rem]">
         <Link
           href="/"
-          className="font-heading text-lg font-bold text-brand-white md:text-xl"
+          className="flex shrink-0 items-center outline-offset-4"
+          aria-label="Brand Surge — Home"
         >
-          Brand Surge
+          <BrandLogo
+            variant="lockup"
+            priority
+            className="h-7 max-w-[min(100vw-8rem,11rem)] md:h-9 md:max-w-[13rem]"
+          />
         </Link>
 
         <nav
@@ -154,6 +160,9 @@ export function Navbar() {
             className="z-50 flex flex-col gap-4"
             aria-label="Mobile navigation"
           >
+            <div className="mb-2 flex justify-center border-b border-brand-border pb-4">
+              <BrandLogo variant="icon" className="h-10 w-10" />
+            </div>
             {navLinks.map(({ href, label }) => (
               <Link
                 key={href}

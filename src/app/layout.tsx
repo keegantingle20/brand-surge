@@ -42,6 +42,10 @@ export const metadata: Metadata = {
     index: true,
     follow: true,
   },
+  icons: {
+    icon: [{ url: "/images/brand-surge-icon.png", type: "image/png" }],
+    apple: "/images/brand-surge-icon.png",
+  },
 };
 
 export default function RootLayout({

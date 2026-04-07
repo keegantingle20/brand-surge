@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { BrandLogo } from "@/components/shared/BrandLogo";
 import { Button } from "@/components/ui/Button";
 import { SectionLabel } from "@/components/ui/SectionLabel";
 import { CALENDLY_AUDIT_URL } from "@/lib/constants";
@@ -44,7 +45,16 @@ export function Hero() {
       />
 
       <div className="relative mx-auto max-w-4xl px-6 pb-20 pt-32 sm:pb-12 md:pb-0 md:pt-40">
-        <motion.div {...mount(0)}>
+        <motion.div
+          className="mb-8 flex justify-center md:mb-10"
+          {...mount(0)}
+        >
+          <BrandLogo
+            variant="lockup"
+            className="h-9 max-w-[14rem] md:h-11 md:max-w-[17rem]"
+          />
+        </motion.div>
+        <motion.div {...mount(0.1)}>
           <SectionLabel className="mb-4">
             LOUISVILLE, KY — B2B OUTBOUND PIPELINE
           </SectionLabel>
@@ -52,7 +62,7 @@ export function Hero() {
 
         <motion.h1
           className="text-4xl font-bold leading-tight tracking-tight text-white md:text-5xl lg:text-6xl"
-          {...mount(0.15)}
+          {...mount(0.22)}
         >
           Your pipeline shouldn&apos;t depend on{" "}
           <span className="gradient-text">referrals and luck</span>.
@@ -60,7 +70,7 @@ export function Hero() {
 
         <motion.p
           className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-[#94a3b8] md:text-xl"
-          {...mount(0.3)}
+          {...mount(0.34)}
         >
           Brand Surge builds done-for-you LinkedIn outbound systems that put
           qualified B2B conversations on your calendar — consistently, without
@@ -69,7 +79,7 @@ export function Hero() {
 
         <motion.div
           className="mt-10 flex flex-col justify-center gap-4 sm:flex-row"
-          {...mount(0.45)}
+          {...mount(0.46)}
         >
           <Button
             href={CALENDLY_AUDIT_URL}
@@ -90,7 +100,7 @@ export function Hero() {
 
         <motion.div
           className="mx-auto mt-16 flex max-w-2xl flex-col gap-8 border-t border-[rgba(19,152,183,0.2)] pt-8 sm:flex-row sm:items-start sm:justify-between"
-          {...mount(0.6)}
+          {...mount(0.58)}
         >
           <div className="sm:min-w-0 sm:flex-1">
             <p className="text-3xl font-bold gradient-text">4.4%</p>

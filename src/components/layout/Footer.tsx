@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { BrandLogo } from "@/components/shared/BrandLogo";
 import { Button } from "@/components/ui/Button";
 import { CALENDLY_AUDIT_URL } from "@/lib/constants";
 
@@ -38,9 +39,16 @@ export function Footer() {
       <div className="mx-auto max-w-6xl px-6 pt-16">
         <div className="grid grid-cols-1 gap-8 md:grid-cols-4 md:gap-12">
           <div className="text-center md:text-left">
-            <p className="font-heading text-lg font-bold text-white">
-              Brand Surge
-            </p>
+            <Link
+              href="/"
+              className="mb-3 inline-flex justify-center md:justify-start"
+              aria-label="Brand Surge — Home"
+            >
+              <BrandLogo
+                variant="lockup"
+                className="h-7 max-w-[11rem] md:h-8 md:max-w-[12rem]"
+              />
+            </Link>
             <p className="mx-auto mt-3 max-w-[200px] text-sm leading-relaxed text-[#94a3b8] md:mx-0">
               Started in Louisville. Built for B2B companies tired of waiting
               for referrals.
