@@ -5,7 +5,7 @@ import { PageHero } from "@/components/shared/PageHero";
 import { SectionLabel } from "@/components/ui/SectionLabel";
 
 export const metadata: Metadata = {
-  title: "About — Brand Surge",
+  title: "About | Brand Surge",
   description:
     "Brand Surge was built by two University of Louisville students who started with a camera and built a B2B outbound agency. Here's the real story.",
 };
@@ -14,7 +14,7 @@ const bios = [
   {
     name: "Koby Batts",
     role: "Co-Founder & Partner",
-    bio: "Koby holds an MS in Economics from the University of Louisville, where he also served as College of Business Student Body President. He co-founded Brand Surge in 2022 while still an undergraduate — starting with real estate photography and building it into a B2B outbound agency. Koby leads ICP strategy, outbound system design, and client engagements.",
+    bio: "Koby holds an MS in Economics from the University of Louisville, where he also served as College of Business Student Body President. He co-founded Brand Surge in 2022 while still an undergraduate, starting with real estate photography and building it into a B2B outbound agency. Koby leads ICP strategy, outbound system design, and client engagements.",
     linkedIn: "https://www.linkedin.com/in/koby-batts-50b068190",
   },
   {
@@ -40,7 +40,7 @@ const bios = [
 const values = [
   {
     title: "We stay until it works",
-    body: "We don't hand off and disappear. We're in the campaign with you — monitoring, adjusting, and rewriting until performance is where it needs to be. Strategy without execution is just advice.",
+    body: "We don't hand off and disappear. We're in the campaign with you: monitoring, adjusting, and rewriting until performance is where it needs to be. Strategy without execution is just advice.",
   },
   {
     title: "Specificity over volume",
@@ -48,7 +48,7 @@ const values = [
   },
   {
     title: "Systems over hustle",
-    body: "Effort without structure doesn't scale. We build repeatable processes — not one-off campaigns — because sustainable pipeline requires a machine, not a sprint.",
+    body: "Effort without structure doesn't scale. We build repeatable processes, not one-off campaigns, because sustainable pipeline requires a machine, not a sprint.",
   },
 ] as const;
 
@@ -66,8 +66,8 @@ export default function AboutPage() {
           <SectionLabel className="mb-4">Where we started</SectionLabel>
           <p className="text-base leading-relaxed text-[#b4c5d8]">
             Brand Surge started in 2022 with a camera, a drone, and one goal:
-            do great work and keep getting better. Koby Batts and Keegan Tingle —
-            two University of Louisville students — built the first version of
+            do great work and keep getting better. Koby Batts and Keegan Tingle,
+            two University of Louisville students, built the first version of
             the company in real estate photography, showing up on-site,
             sweating every detail, and building trust the old-school way: by
             delivering. Keegan was running his fraternity at the time. Koby was
@@ -80,11 +80,11 @@ export default function AboutPage() {
           <SectionLabel className="mb-4">What we discovered</SectionLabel>
           <p className="text-base leading-relaxed text-[#b4c5d8]">
             Over time, they noticed something. Photos weren&apos;t the whole
-            game — marketing was. Clients didn&apos;t just want their listings
+            game. Marketing was. Clients didn&apos;t just want their listings
             to look good. They wanted demand. So Brand Surge expanded into
             digital marketing, learning strategy, messaging, funnels, and what
-            actually drives revenue. The more they worked across industries —
-            construction, professional services, local business — the clearer it
+            actually drives revenue. The more they worked across industries
+            (construction, professional services, local business), the clearer it
             became: the companies winning weren&apos;t relying on luck or
             referrals alone. They had systems.
           </p>
@@ -96,7 +96,7 @@ export default function AboutPage() {
             specializes in building outbound engines for B2B service companies
             who are exceptional at delivery but don&apos;t have a repeatable way
             to generate new pipeline. ICP-first. LinkedIn-native.
-            Automation-powered. Built to run consistently — not just when
+            Automation-powered. Built to run consistently, not just when
             referrals happen to come in. We built our own system first. Then we
             built it for clients. The same methodology runs both.
           </p>

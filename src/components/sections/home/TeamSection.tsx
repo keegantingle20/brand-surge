@@ -13,7 +13,7 @@ const team = [
   {
     name: "Keegan Tingle",
     role: "Co-Founder & Partner",
-    bio: "Co-founded Brand Surge at UofL in 2022 — starting with a drone and a camera, now building B2B pipeline systems. Innovation MBA, University of Louisville. Former Fraternity President. Leads growth and expansion.",
+    bio: "Co-founded Brand Surge at UofL in 2022, starting with a drone and a camera, now building B2B pipeline systems. Innovation MBA, University of Louisville. Former Fraternity President. Leads growth and expansion.",
   },
   {
     name: "James Miscione",

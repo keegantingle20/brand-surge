@@ -7,11 +7,11 @@ import { SectionLabel } from "@/components/ui/SectionLabel";
 const cards = [
   {
     title: "Referral dependency",
-    body: "You're good at what you do. Your clients love you. And yet your pipeline is one lost retainer away from a crisis — because you never built a system to generate demand on your own terms.",
+    body: "You're good at what you do. Your clients love you. And yet your pipeline is one lost retainer away from a crisis because you never built a system to generate demand on your own terms.",
   },
   {
     title: "Inconsistent outreach",
-    body: "You've tried LinkedIn. Maybe email. Cold calls. Nothing sticks. The problem isn't your effort — it's the absence of a repeatable system built around the right people and the right message.",
+    body: "You've tried LinkedIn. Maybe email. Cold calls. Nothing sticks. The problem isn't your effort. It's the absence of a repeatable system built around the right people and the right message.",
   },
   {
     title: "The founder-led ceiling",

@@ -20,15 +20,15 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://brand-surge.com"),
-  title: "Brand Surge — B2B LinkedIn Outbound & Pipeline Systems",
+  title: "Brand Surge | B2B LinkedIn Outbound & Pipeline Systems",
   description:
-    "Brand Surge builds done-for-you LinkedIn outbound systems for B2B service companies. Stop relying on referrals — book qualified sales conversations consistently.",
+    "Brand Surge builds done-for-you LinkedIn outbound systems for B2B service companies. Stop relying on referrals. Book qualified sales conversations consistently.",
   openGraph: {
     type: "website",
     locale: "en_US",
     url: "https://brand-surge.com",
     siteName: "Brand Surge",
-    title: "Brand Surge — B2B LinkedIn Outbound & Pipeline Systems",
+    title: "Brand Surge | B2B LinkedIn Outbound & Pipeline Systems",
     description:
       "Done-for-you LinkedIn outbound systems for B2B service companies. Consistent pipeline. Not luck.",
   },

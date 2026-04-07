@@ -4,7 +4,7 @@ import { PageHero } from "@/components/shared/PageHero";
 import { Button } from "@/components/ui/Button";
 
 export const metadata: Metadata = {
-  title: "Blog — Brand Surge",
+  title: "Blog | Brand Surge",
   description:
     "Insights on B2B outbound, pipeline systems, and revenue from Brand Surge.",
 };
@@ -14,7 +14,7 @@ export default function BlogPage() {
     <>
       <PageHero
         label="BLOG"
-        heading="Playbooks and pipeline breakdowns — coming soon."
+        heading="Playbooks and pipeline breakdowns, coming soon."
         subline={
           "We're preparing long-form content on outbound systems, ICP strategy, and what actually moves the needle for B2B service companies. Sanity-powered posts will land here next."
         }

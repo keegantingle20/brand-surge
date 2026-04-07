@@ -105,8 +105,8 @@ export function ContactForm() {
           You&apos;re all set. Let&apos;s talk pipeline.
         </h3>
         <p className="mb-6 text-sm text-[#b4c5d8]">
-          Click below to pick a time that works for you. The call is 15 minutes
-          — we&apos;ll come prepared based on your answers.
+          Click below to pick a time that works for you. The call is 15 minutes.
+          We&apos;ll come prepared based on your answers.
         </p>
         <Button href={CALENDLY_AUDIT_URL} variant="primary">
           Choose your time →

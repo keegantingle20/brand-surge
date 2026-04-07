@@ -46,7 +46,7 @@ export function Hero() {
       <div className="relative mx-auto max-w-4xl px-6 pb-20 pt-32 sm:pb-12 md:pb-0 md:pt-36">
         <motion.div {...mount(0)}>
           <SectionLabel className="mb-4">
-            LOUISVILLE, KY — B2B OUTBOUND PIPELINE
+            LOUISVILLE, KY · B2B OUTBOUND PIPELINE
           </SectionLabel>
         </motion.div>
 
@@ -63,7 +63,7 @@ export function Hero() {
           {...mount(0.24)}
         >
           Brand Surge builds done-for-you LinkedIn outbound systems that put
-          qualified B2B conversations on your calendar — consistently, without
+          qualified B2B conversations on your calendar consistently, without
           adding headcount.
         </motion.p>
 

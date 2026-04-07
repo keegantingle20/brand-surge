@@ -42,7 +42,7 @@ export function Footer() {
             <Link
               href="/"
               className="mb-3 inline-flex justify-center md:justify-start"
-              aria-label="Brand Surge — Home"
+              aria-label="Brand Surge home"
             >
               <BrandLogo
                 variant="lockup"

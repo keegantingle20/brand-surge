@@ -32,10 +32,12 @@ export function CaseStudyPreview() {
               <blockquote className="mb-8 border-l border-brand-cyan/40 pl-4 text-sm italic text-[#b4c5d8]">
                 <p>
                   &quot;317 messages. 79 replies. 14 demo meetings. One week.
-                  This is what a dialed-in outbound system looks like — we built
+                  This is what a dialed-in outbound system looks like. We built
                   it for ourselves first so we could build it for you.&quot;
                 </p>
-                <p className="mt-2 not-italic">— Koby Batts, Co-Founder</p>
+                <p className="mt-2 not-italic text-[#b4c5d8]">
+                  Koby Batts, Co-Founder
+                </p>
               </blockquote>
             }
           />

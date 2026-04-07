@@ -25,7 +25,7 @@ export function CTABanner() {
         </h2>
         <p className="mb-8 text-[#b4c5d8]">
           Book a free pipeline audit and find out exactly where your outbound
-          is breaking — and what it would take to fix it.
+          is breaking, and what it would take to fix it.
         </p>
         <Button href={CALENDLY_AUDIT_URL} variant="primary" className="px-8 py-4 text-base">
           Book your free pipeline audit

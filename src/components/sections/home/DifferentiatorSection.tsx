@@ -8,12 +8,12 @@ const columns = [
   {
     n: "01",
     title: "ICP-first, always",
-    body: "Before a single message goes out, we define exactly who you should be talking to — industry, title, company size, buying triggers. Most agencies skip this step. That's why most campaigns fail.",
+    body: "Before a single message goes out, we define exactly who you should be talking to: industry, title, company size, buying triggers. Most agencies skip this step. That's why most campaigns fail.",
   },
   {
     n: "02",
     title: "AI-powered LinkedIn infrastructure",
-    body: "We deploy LinkedIn automation built around your positioning — not a template. Personalized at scale, optimized weekly on real response data, and built to stay within LinkedIn's compliance guidelines.",
+    body: "We deploy LinkedIn automation built around your positioning, not a template. Personalized at scale, optimized weekly on real response data, and built to stay within LinkedIn's compliance guidelines.",
   },
   {
     n: "03",

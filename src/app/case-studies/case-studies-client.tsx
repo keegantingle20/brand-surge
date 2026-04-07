@@ -49,7 +49,7 @@ export function CaseStudiesClient() {
       >
         <p className="mx-auto max-w-xl text-sm text-[#7c8fa3]">
           Client case studies across professional services, SaaS, and
-          construction are being prepared. Check back soon — or book a call
+          construction are being prepared. Check back soon, or book a call
           to hear specific results for your industry.
         </p>
         <Button

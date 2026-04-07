@@ -41,7 +41,7 @@ export function FinalCTA() {
           <span className="gradient-text">It&apos;s a systems problem.</span>
         </h2>
         <p className="mb-10 text-lg text-[#b4c5d8]">
-          Let&apos;s find out exactly where yours is breaking — and what it
+          Let&apos;s find out exactly where yours is breaking, and what it
           would take to fix it.
         </p>
         <motion.a

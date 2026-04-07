@@ -13,7 +13,7 @@ const steps = [
   {
     n: "02",
     title: "Build",
-    body: "We construct your full outbound infrastructure — sequences, targeting lists, LinkedIn campaign architecture, and automation setup.",
+    body: "We construct your full outbound infrastructure: sequences, targeting lists, LinkedIn campaign architecture, and automation setup.",
   },
   {
     n: "03",
@@ -23,7 +23,7 @@ const steps = [
   {
     n: "04",
     title: "Expand",
-    body: "Once pipeline is predictable, we expand into full revenue consulting — conversion, retention, and systematizing every stage of your customer journey.",
+    body: "Once pipeline is predictable, we expand into full revenue consulting: conversion, retention, and systematizing every stage of your customer journey.",
   },
 ] as const;
 

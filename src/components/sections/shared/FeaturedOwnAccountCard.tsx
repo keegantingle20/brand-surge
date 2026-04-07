@@ -38,7 +38,7 @@ export function FeaturedOwnAccountCard({
       <div className="relative grid grid-cols-1 items-center gap-12 md:grid-cols-2">
         <div>
           <p className="mb-4 inline-block text-xs font-semibold uppercase tracking-widest grad-label-sweep">
-            BRAND SURGE — OWN LINKEDIN ACCOUNT
+            BRAND SURGE · OWN LINKEDIN ACCOUNT
           </p>
           <h3 className="mb-6 text-2xl font-bold leading-snug text-white md:text-3xl">
             <span className="gradient-text">4.4%</span> message-to-meeting
@@ -47,7 +47,7 @@ export function FeaturedOwnAccountCard({
           <p className="mb-8 text-sm leading-relaxed text-[#b4c5d8]">
             Before we build outbound systems for clients, we run them on
             ourselves. This is what Brand Surge&apos;s own LinkedIn outbound
-            produced — using the exact ICP-first methodology and campaign
+            produced, using the exact ICP-first methodology and campaign
             architecture we deploy for every engagement.
           </p>
           {pullQuote}

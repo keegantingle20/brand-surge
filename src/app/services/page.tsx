@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/Button";
 import { CALENDLY_AUDIT_URL } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: "Services — Brand Surge",
+  title: "Services | Brand Surge",
   description:
     "Done-for-you LinkedIn outbound systems for B2B service companies. Three engagement tiers from pipeline ignition to full GTM consulting.",
 };
@@ -84,11 +84,11 @@ export default function ServicesPage() {
       <PageHero
         label="SERVICES"
         heading="Done-for-you outbound systems. Built to scale."
-        subline="From your first structured outbound campaign to a full revenue architecture — we build the system that fits where you are and where you're going."
+        subline="From your first structured outbound campaign to a full revenue architecture, we build the system that fits where you are and where you are headed."
       />
 
       <div className="section-y-bordered mx-auto grid max-w-6xl grid-cols-1 gap-6 px-4 sm:px-6 md:grid-cols-3">
-        {/* Tier 1 — Pipeline Ignition */}
+        {/* Tier 1: Pipeline Ignition */}
         <div className="rounded-2xl border border-[rgba(19,152,183,0.15)] bg-[#0a1628] p-6 md:p-8">
           <TierBadge>ENTRY</TierBadge>
           <h3 className="mb-2 text-xl font-bold text-white">
@@ -106,7 +106,7 @@ export default function ServicesPage() {
           </Button>
         </div>
 
-        {/* Tier 2 — Revenue Acceleration (featured) */}
+        {/* Tier 2: Revenue Acceleration (featured) */}
         <div className="relative rounded-2xl border-2 border-brand-cyan bg-[#0a1628] p-6 md:p-8">
           <span className="mb-4 inline-block rounded-full bg-brand-cyan px-3 py-1 text-xs font-bold text-brand-navy md:absolute md:right-6 md:top-0 md:mb-0 md:-translate-y-1/2">
             MOST POPULAR
@@ -130,7 +130,7 @@ export default function ServicesPage() {
           </Button>
         </div>
 
-        {/* Tier 3 — Revenue Partnership */}
+        {/* Tier 3: Revenue Partnership */}
         <div className="rounded-2xl border border-[rgba(19,152,183,0.15)] bg-[#0a1628] p-6 md:p-8">
           <TierBadge>FULL PARTNERSHIP</TierBadge>
           <h3 className="mb-2 text-xl font-bold text-white">
@@ -138,7 +138,7 @@ export default function ServicesPage() {
           </h3>
           <p className="mb-6 text-sm text-[#b4c5d8]">
             For scale-ready companies that want to systematize every stage of
-            revenue — from first touch to repeat expansion.
+            revenue, from first touch to repeat expansion.
           </p>
           <div className="mb-6 border-t border-brand-border" />
           <FeatureList items={[...revenuePartnershipFeatures]} />
@@ -148,7 +148,7 @@ export default function ServicesPage() {
         </div>
       </div>
 
-      {/* Which tier is right for you? — scenario cards */}
+      {/* Which tier is right for you? Scenario cards */}
       <section className="section-y-bordered mx-auto max-w-6xl px-4 sm:px-6">
         <h2 className="mb-10 text-center text-2xl font-bold text-white">
           Not sure where to start?
