@@ -36,10 +36,17 @@ export function CaseStudiesClient() {
       </div>
 
       <div className="mx-auto mt-8 max-w-6xl px-6">
-        <FeaturedOwnAccountCard className="mt-0" />
+        <FeaturedOwnAccountCard
+          className="mt-0"
+          caseStudiesCta="anchor"
+          caseStudiesAnchorId="more-case-studies"
+        />
       </div>
 
-      <div className="py-16 text-center">
+      <div
+        id="more-case-studies"
+        className="scroll-mt-24 py-16 text-center"
+      >
         <p className="mx-auto max-w-xl text-sm text-[#64748b]">
           Client case studies across professional services, SaaS, and
           construction are being prepared. Check back soon — or book a call

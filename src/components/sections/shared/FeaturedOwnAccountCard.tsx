@@ -14,9 +14,14 @@ const cardGradientStyle = {
 export function FeaturedOwnAccountCard({
   className,
   pullQuote,
+  caseStudiesCta = "link",
+  caseStudiesAnchorId = "more-case-studies",
 }: {
   className?: string;
   pullQuote?: ReactNode;
+  /** On the case-studies page, use "anchor" or "none" to avoid self-linking to /case-studies */
+  caseStudiesCta?: "link" | "anchor" | "none";
+  caseStudiesAnchorId?: string;
 }) {
   return (
     <div
@@ -46,9 +51,25 @@ export function FeaturedOwnAccountCard({
             architecture we deploy for every engagement.
           </p>
           {pullQuote}
-          <Button href="/case-studies" variant="ghost" className="px-0">
-            See our full case studies →
-          </Button>
+          {caseStudiesCta === "link" ? (
+            <Button href="/case-studies" variant="ghost" className="px-0">
+              See our full case studies →
+            </Button>
+          ) : null}
+          {caseStudiesCta === "anchor" ? (
+            <Button
+              type="button"
+              variant="ghost"
+              className="px-0"
+              onClick={() =>
+                document
+                  .getElementById(caseStudiesAnchorId)
+                  ?.scrollIntoView({ behavior: "smooth", block: "start" })
+              }
+            >
+              See our full case studies →
+            </Button>
+          ) : null}
         </div>
         <div className="grid grid-cols-2 gap-4">
           {[

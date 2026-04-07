@@ -47,24 +47,25 @@ export function ProcessSection() {
     <section
       id="process"
       ref={ref}
-      className="py-24 lg:py-32"
+      className="overflow-x-hidden py-24 lg:py-32"
       style={{
         background:
           "linear-gradient(180deg, #010f1f 0%, #0a1628 50%, #010f1f 100%)",
       }}
     >
-      <div className="mx-auto max-w-6xl px-6">
+      <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <SectionLabel>THE SURGE SYSTEM</SectionLabel>
         <h2 className="mt-3 max-w-2xl text-3xl font-bold text-white md:text-4xl">
           Four stages from cold list to consistent pipeline.
         </h2>
 
-        {/* Mobile: vertical spine + row per step */}
-        <div className="mt-16 border-l-2 border-brand-cyan/20 pl-8 md:hidden">
+        {/* Mobile vs desktop: mutually exclusive breakpoints (md = 768px) */}
+        <div className="mt-16">
+          <div className="flex flex-col border-l-2 border-brand-cyan/20 pl-5 sm:pl-8 md:!hidden">
           {steps.map((step, index) => (
             <motion.div
               key={step.n}
-              className="mb-12 flex flex-row items-start gap-4 last:mb-0"
+              className="mb-12 flex flex-row items-start gap-3 last:mb-0 sm:gap-4"
               initial={{ opacity: 0, y: 20 }}
               animate={inView ? { opacity: 1, y: 0 } : undefined}
               transition={{
@@ -74,14 +75,14 @@ export function ProcessSection() {
               }}
             >
               <motion.div
-                className="-ml-[calc(3.5rem+1px)] flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-[#010f1f] font-mono text-sm font-bold text-brand-cyan"
+                className="-ml-[calc(2.75rem+1px)] flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-[#010f1f] font-mono text-xs font-bold text-brand-cyan sm:-ml-[calc(3.5rem+1px)] sm:h-12 sm:w-12 sm:text-sm"
                 style={stepCircleStyle}
                 whileHover={{ scale: 1.02 }}
                 transition={{ duration: 0.2 }}
               >
                 {step.n}
               </motion.div>
-              <div className="min-w-0 flex-1">
+              <div className="min-w-0 flex-1 pr-1">
                 <h3 className="mb-2 text-base font-semibold text-white">
                   {step.title}
                 </h3>
@@ -91,10 +92,9 @@ export function ProcessSection() {
               </div>
             </motion.div>
           ))}
-        </div>
+          </div>
 
-        {/* Desktop */}
-        <div className="relative mt-16 hidden md:block">
+          <div className="relative hidden md:!block">
           <div className="relative flex justify-between">
             <div
               className="pointer-events-none absolute left-0 right-0 top-6"
@@ -129,6 +129,7 @@ export function ProcessSection() {
                 </p>
               </motion.div>
             ))}
+          </div>
           </div>
         </div>
       </div>

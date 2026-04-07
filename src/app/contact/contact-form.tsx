@@ -57,15 +57,44 @@ export function ContactForm() {
     return Object.keys(e).length === 0;
   };
 
-  const onSubmit = (ev: React.FormEvent) => {
+  const onSubmit = async (ev: React.FormEvent) => {
     ev.preventDefault();
     if (!validate()) return;
     setLoading(true);
-    // Resend / API placeholder — replace with server action or route handler
-    window.setTimeout(() => {
-      setLoading(false);
+    setErrors({});
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          name: name.trim(),
+          company: company.trim(),
+          email: email.trim(),
+          companyType,
+          challenge,
+          conversations,
+        }),
+      });
+      const data = (await res.json().catch(() => ({}))) as {
+        success?: boolean;
+        error?: string;
+      };
+      if (!res.ok || !data.success) {
+        setErrors({
+          _form:
+            data.error ??
+            "Something went wrong. Please try again or email us directly.",
+        });
+        return;
+      }
       setDone(true);
-    }, 800);
+    } catch {
+      setErrors({
+        _form: "Network error. Please check your connection and try again.",
+      });
+    } finally {
+      setLoading(false);
+    }
   };
 
   if (done) {
@@ -242,6 +271,12 @@ export function ContactForm() {
           <p className="mt-1 text-xs text-red-400">{errors.conversations}</p>
         ) : null}
       </div>
+
+      {errors._form ? (
+        <p className="mt-6 text-sm text-red-400" role="alert">
+          {errors._form}
+        </p>
+      ) : null}
 
       <Button
         type="submit"

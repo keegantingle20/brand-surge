@@ -5,7 +5,7 @@ import { PageHero } from "@/components/shared/PageHero";
 import { SectionLabel } from "@/components/ui/SectionLabel";
 
 export const metadata: Metadata = {
-  title: "About",
+  title: "About — Brand Surge",
   description:
     "Brand Surge was built by two University of Louisville students who started with a camera and built a B2B outbound agency. Here's the real story.",
 };

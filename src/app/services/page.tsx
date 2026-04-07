@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/Button";
 import { CALENDLY_AUDIT_URL } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: { absolute: "Services — Brand Surge" },
+  title: "Services — Brand Surge",
   description:
     "Done-for-you LinkedIn outbound systems for B2B service companies. Three engagement tiers from pipeline ignition to full GTM consulting.",
 };
@@ -87,7 +87,7 @@ export default function ServicesPage() {
         subline="From your first structured outbound campaign to a full revenue architecture — we build the system that fits where you are and where you're going."
       />
 
-      <div className="mx-auto mt-16 grid max-w-6xl grid-cols-1 gap-6 px-6 md:grid-cols-3">
+      <div className="mx-auto mt-16 grid max-w-6xl grid-cols-1 gap-6 px-4 sm:px-6 md:grid-cols-3">
         {/* Tier 1 — Pipeline Ignition */}
         <div className="rounded-2xl border border-[rgba(19,152,183,0.15)] bg-[#0a1628] p-6 md:p-8">
           <TierBadge>ENTRY</TierBadge>
@@ -108,10 +108,9 @@ export default function ServicesPage() {
 
         {/* Tier 2 — Revenue Acceleration (featured) */}
         <div className="relative rounded-2xl border-2 border-brand-cyan bg-[#0a1628] p-6 md:p-8">
-          <span className="absolute right-6 top-0 -translate-y-1/2 translate-x-0 rounded-full bg-brand-cyan px-3 py-1 text-xs font-bold text-brand-navy">
+          <span className="mb-4 inline-block rounded-full bg-brand-cyan px-3 py-1 text-xs font-bold text-brand-navy md:absolute md:right-6 md:top-0 md:mb-0 md:-translate-y-1/2">
             MOST POPULAR
           </span>
-          <TierBadge>RECOMMENDED</TierBadge>
           <h3 className="mb-2 text-xl font-bold text-white">
             Revenue Acceleration
           </h3>
@@ -150,7 +149,7 @@ export default function ServicesPage() {
       </div>
 
       {/* Which tier is right for you? — scenario cards */}
-      <section className="mx-auto max-w-6xl px-6 py-24">
+      <section className="mx-auto max-w-6xl px-4 py-24 sm:px-6">
         <h2 className="mb-10 text-center text-2xl font-bold text-white">
           Not sure where to start?
         </h2>

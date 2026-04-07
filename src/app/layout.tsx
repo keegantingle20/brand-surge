@@ -20,10 +20,7 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://brand-surge.com"),
-  title: {
-    default: "Brand Surge — B2B LinkedIn Outbound & Pipeline Systems",
-    template: "%s — Brand Surge",
-  },
+  title: "Brand Surge — B2B LinkedIn Outbound & Pipeline Systems",
   description:
     "Brand Surge builds done-for-you LinkedIn outbound systems for B2B service companies. Stop relying on referrals — book qualified sales conversations consistently.",
   openGraph: {
@@ -43,8 +40,9 @@ export const metadata: Metadata = {
     follow: true,
   },
   icons: {
-    icon: [{ url: "/images/brand-surge-icon.png", type: "image/png" }],
-    apple: "/images/brand-surge-icon.png",
+    icon: [{ url: "/logo-icon.png", type: "image/png", sizes: "any" }],
+    shortcut: "/logo-icon.png",
+    apple: "/logo-icon.png",
   },
 };
 

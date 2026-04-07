@@ -4,7 +4,7 @@ import { PageHero } from "@/components/shared/PageHero";
 import { SectionLabel } from "@/components/ui/SectionLabel";
 
 export const metadata: Metadata = {
-  title: "How It Works",
+  title: "How It Works — Brand Surge",
   description:
     "No black boxes. Here's exactly how Brand Surge builds your LinkedIn outbound system from ICP definition to booked meetings.",
 };

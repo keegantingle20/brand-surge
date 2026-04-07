@@ -12,7 +12,7 @@ export function HomeLogoStrip() {
     >
       <div className="mx-auto max-w-6xl px-6">
         <Image
-          src="/images/brand-surge-logo-strip.png"
+          src="/brand-surge-logo-strip.png"
           alt=""
           width={1200}
           height={96}

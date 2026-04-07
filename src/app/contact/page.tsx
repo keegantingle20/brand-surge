@@ -3,7 +3,7 @@ import { PageHero } from "@/components/shared/PageHero";
 import { ContactForm } from "./contact-form";
 
 export const metadata: Metadata = {
-  title: "Book a Pipeline Audit",
+  title: "Book a Pipeline Audit — Brand Surge",
   description:
     "Book a free 15-minute pipeline audit with Brand Surge. Tell us about your business and we'll identify exactly where your outbound is breaking.",
 };

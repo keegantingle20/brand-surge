@@ -4,9 +4,9 @@ import Image from "next/image";
 import { cn } from "@/lib/utils";
 
 const ASSETS = {
-  lockup: { src: "/images/brand-surge-lockup.png", w: 400, h: 88 },
-  wordmark: { src: "/images/brand-surge-wordmark.png", w: 320, h: 72 },
-  icon: { src: "/images/brand-surge-icon.png", w: 256, h: 256 },
+  lockup: { src: "/brand-surge-lockup.png", w: 400, h: 88 },
+  wordmark: { src: "/brand-surge-wordmark.png", w: 320, h: 72 },
+  icon: { src: "/brand-surge-icon.png", w: 256, h: 256 },
 } as const;
 
 export type BrandLogoVariant = keyof typeof ASSETS;
