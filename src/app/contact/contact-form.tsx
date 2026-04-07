@@ -31,7 +31,7 @@ function CheckCircleIcon() {
 }
 
 const inputClass =
-  "w-full rounded-lg border border-brand-border bg-[#010f1f] px-4 py-3 text-sm text-white placeholder:text-[#64748b] transition focus:border-brand-cyan/50 focus:outline-none";
+  "w-full rounded-lg border border-brand-border bg-[#010f1f] px-4 py-3 text-sm text-white placeholder:text-[#7c8fa3] transition focus:border-brand-cyan/50 focus:outline-none";
 
 export function ContactForm() {
   const [name, setName] = useState("");
@@ -104,7 +104,7 @@ export function ContactForm() {
         <h3 className="mb-3 text-xl font-semibold text-white">
           You&apos;re all set. Let&apos;s talk pipeline.
         </h3>
-        <p className="mb-6 text-sm text-[#94a3b8]">
+        <p className="mb-6 text-sm text-[#b4c5d8]">
           Click below to pick a time that works for you. The call is 15 minutes
           — we&apos;ll come prepared based on your answers.
         </p>
@@ -121,7 +121,7 @@ export function ContactForm() {
       className="rounded-2xl border border-brand-border bg-[#0a1628] p-8 md:p-10"
     >
       <div className="mb-6">
-        <label htmlFor="name" className="mb-2 block text-sm text-[#94a3b8]">
+        <label htmlFor="name" className="mb-2 block text-sm text-[#b4c5d8]">
           Your name
         </label>
         <input
@@ -142,7 +142,7 @@ export function ContactForm() {
         <div>
           <label
             htmlFor="company"
-            className="mb-2 block text-sm text-[#94a3b8]"
+            className="mb-2 block text-sm text-[#b4c5d8]"
           >
             Company
           </label>
@@ -160,7 +160,7 @@ export function ContactForm() {
           ) : null}
         </div>
         <div>
-          <label htmlFor="email" className="mb-2 block text-sm text-[#94a3b8]">
+          <label htmlFor="email" className="mb-2 block text-sm text-[#b4c5d8]">
             Email
           </label>
           <input
@@ -181,7 +181,7 @@ export function ContactForm() {
       <div className="mb-6">
         <label
           htmlFor="companyType"
-          className="mb-2 block text-sm text-[#94a3b8]"
+          className="mb-2 block text-sm text-[#b4c5d8]"
         >
           What best describes your company?
         </label>
@@ -211,7 +211,7 @@ export function ContactForm() {
       </div>
 
       <fieldset className="mb-6">
-        <legend className="mb-2 text-sm text-[#94a3b8]">
+        <legend className="mb-2 text-sm text-[#b4c5d8]">
           What&apos;s your biggest pipeline challenge right now?
         </legend>
         <div className="mt-1 flex flex-col gap-3">
@@ -235,7 +235,7 @@ export function ContactForm() {
                   />
                   <span className="h-4 w-4 rounded-full border border-brand-cyan/40 peer-checked:border-brand-cyan peer-checked:bg-brand-cyan" />
                 </span>
-                <span className="text-sm text-[#94a3b8]">{opt}</span>
+                <span className="text-sm text-[#b4c5d8]">{opt}</span>
               </label>
             );
           })}
@@ -248,7 +248,7 @@ export function ContactForm() {
       <div className="mb-2">
         <label
           htmlFor="conversations"
-          className="mb-2 block text-sm text-[#94a3b8]"
+          className="mb-2 block text-sm text-[#b4c5d8]"
         >
           How many qualified sales conversations per month?
         </label>

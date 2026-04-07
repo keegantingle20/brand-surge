@@ -13,7 +13,7 @@ export function FinalCTA() {
   const inView = useInView(ref, { once: true, margin: "-80px" });
 
   return (
-    <section ref={ref} className="relative overflow-hidden bg-[#010f1f] py-32">
+    <section ref={ref} className="section-y-bordered relative overflow-hidden bg-[#010f1f]">
       <div
         className="pointer-events-none absolute left-0 right-0 top-0 h-32"
         style={{
@@ -40,7 +40,7 @@ export function FinalCTA() {
           <br />
           <span className="gradient-text">It&apos;s a systems problem.</span>
         </h2>
-        <p className="mb-10 text-lg text-[#94a3b8]">
+        <p className="mb-10 text-lg text-[#b4c5d8]">
           Let&apos;s find out exactly where yours is breaking — and what it
           would take to fix it.
         </p>
@@ -65,11 +65,11 @@ export function FinalCTA() {
         >
           Book your free pipeline audit
         </motion.a>
-        <p className="mt-4 text-sm text-[#64748b]">
+        <p className="mt-4 text-sm text-[#7c8fa3]">
           15 minutes. No pitch. Just clarity on where your pipeline is breaking
           and what to do about it.
         </p>
-        <p className="mt-2 text-xs text-[#64748b]">
+        <p className="mt-2 text-xs text-[#7c8fa3]">
           Built in Louisville. Running outbound for B2B companies nationwide.
         </p>
       </motion.div>

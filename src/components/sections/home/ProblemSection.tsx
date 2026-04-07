@@ -31,7 +31,7 @@ export function ProblemSection() {
   return (
     <section
       ref={ref}
-      className="py-24 lg:py-32"
+      className="section-y-bordered"
       style={{
         background:
           "linear-gradient(180deg, #010f1f 0%, #0a1628 30%, #0a1628 70%, #010f1f 100%)",
@@ -70,7 +70,7 @@ export function ProblemSection() {
               <h3 className="mb-3 text-lg font-semibold text-white">
                 {card.title}
               </h3>
-              <p className="text-sm leading-relaxed text-[#94a3b8]">
+              <p className="text-sm leading-relaxed text-[#b4c5d8]">
                 {card.body}
               </p>
             </motion.div>

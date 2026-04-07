@@ -18,7 +18,7 @@ export default function ContactPage() {
       />
       <div className="mx-auto max-w-xl px-6 py-16">
         <ContactForm />
-        <p className="mt-6 text-center text-xs text-[#64748b]">
+        <p className="mt-6 text-center text-xs text-[#7c8fa3]">
           No spam. No sales pitch. We&apos;ll review your answers before the
           call so we can make every minute count.
         </p>

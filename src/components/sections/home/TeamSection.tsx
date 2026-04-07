@@ -38,7 +38,7 @@ export function TeamSection() {
   return (
     <section
       ref={ref}
-      className="py-24 lg:py-32"
+      className="section-y-bordered"
       style={{
         background:
           "linear-gradient(180deg, #010f1f 0%, #0a1628 50%, #010f1f 100%)",
@@ -75,7 +75,7 @@ export function TeamSection() {
               />
               <p className="text-sm font-semibold text-white">{member.name}</p>
               <p className="mt-1 mb-3 text-xs text-brand-cyan">{member.role}</p>
-              <p className="text-xs leading-relaxed text-[#94a3b8]">
+              <p className="text-xs leading-relaxed text-[#b4c5d8]">
                 {member.bio}
               </p>
             </motion.article>

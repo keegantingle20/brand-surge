@@ -63,7 +63,7 @@ export function Navbar() {
           : undefined
       }
     >
-      <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-6 md:h-[4.5rem]">
+      <div className="mx-auto flex h-[4.25rem] max-w-6xl items-center justify-between px-6 md:h-[5.25rem]">
         <Link
           href="/"
           className="flex shrink-0 items-center outline-offset-4"
@@ -72,7 +72,7 @@ export function Navbar() {
           <BrandLogo
             variant="lockup"
             priority
-            className="h-7 max-w-[min(100vw-8rem,11rem)] md:h-9 md:max-w-[13rem]"
+            className="h-10 max-w-[min(100vw-7rem,15rem)] md:h-12 md:max-w-[18rem]"
           />
         </Link>
 
@@ -84,7 +84,7 @@ export function Navbar() {
             <Link
               key={href}
               href={href}
-              className="group relative pb-1 text-sm text-[#94a3b8] transition hover:text-brand-white"
+              className="group relative pb-1 text-sm text-[#aab8ca] transition hover:text-brand-white"
             >
               {label}
               <span
@@ -167,7 +167,7 @@ export function Navbar() {
               <Link
                 key={href}
                 href={href}
-                className="text-sm text-[#94a3b8] transition hover:text-brand-white"
+                className="text-sm text-[#aab8ca] transition hover:text-brand-white"
                 onClick={() => setMobileOpen(false)}
               >
                 {label}

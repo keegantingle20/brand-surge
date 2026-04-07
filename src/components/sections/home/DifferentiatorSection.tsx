@@ -27,7 +27,7 @@ export function DifferentiatorSection() {
   const inView = useInView(ref, { once: true, margin: "-80px" });
 
   return (
-    <section ref={ref} className="bg-[#010f1f] py-24 lg:py-32">
+    <section ref={ref} className="section-y-bordered bg-[#010f1f]">
       <div className="mx-auto max-w-6xl px-6">
         <SectionLabel>WHAT MAKES US DIFFERENT</SectionLabel>
         <h2 className="mt-3 max-w-3xl text-3xl font-bold text-white md:text-4xl">
@@ -60,7 +60,7 @@ export function DifferentiatorSection() {
               <h3 className="mb-3 text-lg font-semibold text-white">
                 {col.title}
               </h3>
-              <p className="text-sm leading-relaxed text-[#94a3b8]">
+              <p className="text-sm leading-relaxed text-[#b4c5d8]">
                 {col.body}
               </p>
             </motion.div>

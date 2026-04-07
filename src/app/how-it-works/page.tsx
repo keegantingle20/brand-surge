@@ -39,7 +39,7 @@ export default function HowItWorksPage() {
             <p className="mb-4 text-lg font-semibold text-brand-cyan">
               {b.q}
             </p>
-            <p className="leading-relaxed text-[#94a3b8]">{b.a}</p>
+            <p className="leading-relaxed text-[#b4c5d8]">{b.a}</p>
           </div>
         ))}
       </div>
@@ -50,7 +50,7 @@ export default function HowItWorksPage() {
           <h3 className="mb-3 text-lg font-semibold text-white">
             Built within LinkedIn&apos;s guidelines — by design.
           </h3>
-          <p className="text-sm leading-relaxed text-[#94a3b8]">
+          <p className="text-sm leading-relaxed text-[#b4c5d8]">
             All campaigns are built and managed in full compliance with
             LinkedIn&apos;s terms of service. No bulk blasting. No fake
             accounts. No account risk. Every connection request and message is

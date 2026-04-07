@@ -49,7 +49,7 @@ export function Footer() {
                 className="h-7 max-w-[11rem] md:h-8 md:max-w-[12rem]"
               />
             </Link>
-            <p className="mx-auto mt-3 max-w-[200px] text-sm leading-relaxed text-[#94a3b8] md:mx-0">
+            <p className="mx-auto mt-3 max-w-[200px] text-sm leading-relaxed text-[#b4c5d8] md:mx-0">
               Started in Louisville. Built for B2B companies tired of waiting
               for referrals.
             </p>
@@ -76,14 +76,14 @@ export function Footer() {
           </div>
 
           <div className="text-center md:text-left">
-            <p className="text-xs font-semibold tracking-widest text-[#64748b]">
+            <p className="text-xs font-semibold tracking-widest text-[#7c8fa3]">
               COMPANY
             </p>
             <ul className="mt-4 flex flex-col items-center gap-3 md:items-start">
               <li>
                 <Link
                   href="/about"
-                  className="text-sm text-[#94a3b8] transition hover:text-white"
+                  className="text-sm text-[#b4c5d8] transition hover:text-white"
                 >
                   About
                 </Link>
@@ -91,7 +91,7 @@ export function Footer() {
               <li>
                 <Link
                   href="/case-studies"
-                  className="text-sm text-[#94a3b8] transition hover:text-white"
+                  className="text-sm text-[#b4c5d8] transition hover:text-white"
                 >
                   Case Studies
                 </Link>
@@ -99,7 +99,7 @@ export function Footer() {
               <li>
                 <Link
                   href="/blog"
-                  className="text-sm text-[#94a3b8] transition hover:text-white"
+                  className="text-sm text-[#b4c5d8] transition hover:text-white"
                 >
                   Blog
                 </Link>
@@ -108,14 +108,14 @@ export function Footer() {
           </div>
 
           <div className="text-center md:text-left">
-            <p className="text-xs font-semibold tracking-widest text-[#64748b]">
+            <p className="text-xs font-semibold tracking-widest text-[#7c8fa3]">
               SERVICES
             </p>
             <ul className="mt-4 flex flex-col items-center gap-3 md:items-start">
               <li>
                 <Link
                   href="/services"
-                  className="text-sm text-[#94a3b8] transition hover:text-white"
+                  className="text-sm text-[#b4c5d8] transition hover:text-white"
                 >
                   Pipeline Ignition
                 </Link>
@@ -123,7 +123,7 @@ export function Footer() {
               <li>
                 <Link
                   href="/services"
-                  className="text-sm text-[#94a3b8] transition hover:text-white"
+                  className="text-sm text-[#b4c5d8] transition hover:text-white"
                 >
                   Revenue Acceleration
                 </Link>
@@ -131,7 +131,7 @@ export function Footer() {
               <li>
                 <Link
                   href="/services"
-                  className="text-sm text-[#94a3b8] transition hover:text-white"
+                  className="text-sm text-[#b4c5d8] transition hover:text-white"
                 >
                   Revenue Partnership
                 </Link>
@@ -139,7 +139,7 @@ export function Footer() {
               <li>
                 <Link
                   href="/how-it-works"
-                  className="text-sm text-[#94a3b8] transition hover:text-white"
+                  className="text-sm text-[#b4c5d8] transition hover:text-white"
                 >
                   How It Works
                 </Link>
@@ -148,10 +148,10 @@ export function Footer() {
           </div>
 
           <div className="text-center md:text-left">
-            <p className="text-xs font-semibold tracking-widest text-[#64748b]">
+            <p className="text-xs font-semibold tracking-widest text-[#7c8fa3]">
               GET STARTED
             </p>
-            <p className="mb-4 mt-4 text-sm text-[#94a3b8]">
+            <p className="mb-4 mt-4 text-sm text-[#b4c5d8]">
               Ready to build a consistent pipeline?
             </p>
             <Button
@@ -166,10 +166,10 @@ export function Footer() {
         </div>
 
         <div className="mt-12 flex flex-col items-center justify-between gap-4 border-t border-[rgba(19,152,183,0.1)] pt-8 md:flex-row">
-          <p className="text-xs text-[#64748b]">
+          <p className="text-xs text-[#7c8fa3]">
             © 2026 Brand Surge. All rights reserved.
           </p>
-          <p className="text-xs text-[#64748b]">Louisville, KY</p>
+          <p className="text-xs text-[#7c8fa3]">Louisville, KY</p>
         </div>
       </div>
     </footer>

@@ -27,7 +27,7 @@ export function CaseStudiesClient() {
             className={
               active === f
                 ? "cursor-pointer rounded-full border border-brand-cyan bg-brand-cyan/5 px-4 py-2 text-sm text-brand-cyan"
-                : "cursor-pointer rounded-full border border-brand-border px-4 py-2 text-sm text-[#94a3b8]"
+                : "cursor-pointer rounded-full border border-brand-border px-4 py-2 text-sm text-[#b4c5d8]"
             }
           >
             {f}
@@ -47,7 +47,7 @@ export function CaseStudiesClient() {
         id="more-case-studies"
         className="scroll-mt-24 py-16 text-center"
       >
-        <p className="mx-auto max-w-xl text-sm text-[#64748b]">
+        <p className="mx-auto max-w-xl text-sm text-[#7c8fa3]">
           Client case studies across professional services, SaaS, and
           construction are being prepared. Check back soon — or book a call
           to hear specific results for your industry.

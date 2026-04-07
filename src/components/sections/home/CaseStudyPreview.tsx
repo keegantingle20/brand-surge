@@ -10,7 +10,7 @@ export function CaseStudyPreview() {
   const inView = useInView(ref, { once: true, margin: "-80px" });
 
   return (
-    <section ref={ref} className="bg-[#010f1f] py-24 lg:py-32">
+    <section ref={ref} className="section-y-bordered bg-[#010f1f]">
       <div className="mx-auto max-w-6xl px-6">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -29,7 +29,7 @@ export function CaseStudyPreview() {
         >
           <FeaturedOwnAccountCard
             pullQuote={
-              <blockquote className="mb-8 border-l border-brand-cyan/40 pl-4 text-sm italic text-[#94a3b8]">
+              <blockquote className="mb-8 border-l border-brand-cyan/40 pl-4 text-sm italic text-[#b4c5d8]">
                 <p>
                   &quot;317 messages. 79 replies. 14 demo meetings. One week.
                   This is what a dialed-in outbound system looks like — we built

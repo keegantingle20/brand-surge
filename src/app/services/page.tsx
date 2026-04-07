@@ -41,7 +41,7 @@ function FeatureList({ items }: { items: string[] }) {
       {items.map((item) => (
         <li
           key={item}
-          className="flex items-start gap-2 text-sm text-[#94a3b8]"
+          className="flex items-start gap-2 text-sm text-[#b4c5d8]"
         >
           <CheckIcon />
           <span>{item}</span>
@@ -87,14 +87,14 @@ export default function ServicesPage() {
         subline="From your first structured outbound campaign to a full revenue architecture — we build the system that fits where you are and where you're going."
       />
 
-      <div className="mx-auto mt-16 grid max-w-6xl grid-cols-1 gap-6 px-4 sm:px-6 md:grid-cols-3">
+      <div className="section-y-bordered mx-auto grid max-w-6xl grid-cols-1 gap-6 px-4 sm:px-6 md:grid-cols-3">
         {/* Tier 1 — Pipeline Ignition */}
         <div className="rounded-2xl border border-[rgba(19,152,183,0.15)] bg-[#0a1628] p-6 md:p-8">
           <TierBadge>ENTRY</TierBadge>
           <h3 className="mb-2 text-xl font-bold text-white">
             Pipeline Ignition
           </h3>
-          <p className="mb-6 text-sm text-[#94a3b8]">
+          <p className="mb-6 text-sm text-[#b4c5d8]">
             For B2B service companies starting from scratch or replacing a
             broken outbound process. We build and run the system so you
             don&apos;t have to.
@@ -114,7 +114,7 @@ export default function ServicesPage() {
           <h3 className="mb-2 text-xl font-bold text-white">
             Revenue Acceleration
           </h3>
-          <p className="mb-6 text-sm text-[#94a3b8]">
+          <p className="mb-6 text-sm text-[#b4c5d8]">
             For companies with an active outbound process that need strategic
             oversight, conversion consulting, and expansion into multi-channel
             ABM.
@@ -136,7 +136,7 @@ export default function ServicesPage() {
           <h3 className="mb-2 text-xl font-bold text-white">
             Revenue Partnership
           </h3>
-          <p className="mb-6 text-sm text-[#94a3b8]">
+          <p className="mb-6 text-sm text-[#b4c5d8]">
             For scale-ready companies that want to systematize every stage of
             revenue — from first touch to repeat expansion.
           </p>
@@ -149,7 +149,7 @@ export default function ServicesPage() {
       </div>
 
       {/* Which tier is right for you? — scenario cards */}
-      <section className="mx-auto max-w-6xl px-4 py-24 sm:px-6">
+      <section className="section-y-bordered mx-auto max-w-6xl px-4 sm:px-6">
         <h2 className="mb-10 text-center text-2xl font-bold text-white">
           Not sure where to start?
         </h2>
@@ -161,7 +161,7 @@ export default function ServicesPage() {
             <p className="mb-2 font-medium text-white">
               Starting from zero with no structured outbound process
             </p>
-            <p className="text-sm text-[#94a3b8]">
+            <p className="text-sm text-[#b4c5d8]">
               → Start with Pipeline Ignition
             </p>
           </div>
@@ -172,7 +172,7 @@ export default function ServicesPage() {
             <p className="mb-2 font-medium text-white">
               Tried outbound before but can&apos;t get consistent results
             </p>
-            <p className="text-sm text-[#94a3b8]">
+            <p className="text-sm text-[#b4c5d8]">
               → Revenue Acceleration is built for you
             </p>
           </div>
@@ -183,7 +183,7 @@ export default function ServicesPage() {
             <p className="mb-2 font-medium text-white">
               Ready to build a full revenue infrastructure and scale
             </p>
-            <p className="text-sm text-[#94a3b8]">
+            <p className="text-sm text-[#b4c5d8]">
               → Revenue Partnership is the right fit
             </p>
           </div>

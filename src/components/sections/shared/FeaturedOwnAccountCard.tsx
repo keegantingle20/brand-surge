@@ -44,7 +44,7 @@ export function FeaturedOwnAccountCard({
             <span className="gradient-text">4.4%</span> message-to-meeting
             conversion. In a single 7-day campaign.
           </h3>
-          <p className="mb-8 text-sm leading-relaxed text-[#94a3b8]">
+          <p className="mb-8 text-sm leading-relaxed text-[#b4c5d8]">
             Before we build outbound systems for clients, we run them on
             ourselves. This is what Brand Surge&apos;s own LinkedIn outbound
             produced — using the exact ICP-first methodology and campaign
@@ -88,7 +88,7 @@ export function FeaturedOwnAccountCard({
               <p className="text-2xl font-bold text-brand-cyan md:text-3xl">
                 {s.n}
               </p>
-              <p className="mt-1 text-xs text-[#94a3b8]">{s.l}</p>
+              <p className="mt-1 text-xs text-[#b4c5d8]">{s.l}</p>
             </motion.div>
           ))}
         </div>

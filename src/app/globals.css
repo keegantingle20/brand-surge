@@ -6,13 +6,25 @@
   --color-bg-primary: #010f1f;
   --color-bg-card: #0a1628;
   --color-bg-elevated: #0d1e35;
-  --color-border: rgba(19, 152, 183, 0.15);
-  --color-border-hover: rgba(37, 222, 227, 0.3);
+  --color-border: rgba(19, 152, 183, 0.22);
+  --color-border-hover: rgba(37, 222, 227, 0.4);
   --color-text-primary: #fefefe;
-  --color-text-secondary: #94a3b8;
-  --color-text-muted: #64748b;
+  --color-text-secondary: #b4c5d8;
+  --color-text-muted: #7c8fa3;
   --color-accent: #25dee3;
   --color-accent-dim: rgba(37, 222, 227, 0.08);
+}
+
+@layer components {
+  /** Consistent vertical rhythm between homepage / marketing sections */
+  .section-y {
+    @apply py-24 md:py-28 lg:py-32;
+  }
+
+  /** Subtle top edge so stacked dark sections read as separate bands */
+  .section-y-bordered {
+    @apply section-y border-t border-[rgba(37,222,227,0.1)];
+  }
 }
 
 @layer base {

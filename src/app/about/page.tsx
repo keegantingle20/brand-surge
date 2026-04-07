@@ -64,7 +64,7 @@ export default function AboutPage() {
       <div className="mx-auto flex max-w-3xl flex-col gap-12 px-6 py-24">
         <div>
           <SectionLabel className="mb-4">Where we started</SectionLabel>
-          <p className="text-base leading-relaxed text-[#94a3b8]">
+          <p className="text-base leading-relaxed text-[#b4c5d8]">
             Brand Surge started in 2022 with a camera, a drone, and one goal:
             do great work and keep getting better. Koby Batts and Keegan Tingle —
             two University of Louisville students — built the first version of
@@ -78,7 +78,7 @@ export default function AboutPage() {
         </div>
         <div>
           <SectionLabel className="mb-4">What we discovered</SectionLabel>
-          <p className="text-base leading-relaxed text-[#94a3b8]">
+          <p className="text-base leading-relaxed text-[#b4c5d8]">
             Over time, they noticed something. Photos weren&apos;t the whole
             game — marketing was. Clients didn&apos;t just want their listings
             to look good. They wanted demand. So Brand Surge expanded into
@@ -91,7 +91,7 @@ export default function AboutPage() {
         </div>
         <div>
           <SectionLabel className="mb-4">What we built</SectionLabel>
-          <p className="text-base leading-relaxed text-[#94a3b8]">
+          <p className="text-base leading-relaxed text-[#b4c5d8]">
             That insight became Brand Surge&apos;s focus. Today, Surge
             specializes in building outbound engines for B2B service companies
             who are exceptional at delivery but don&apos;t have a repeatable way
@@ -122,7 +122,7 @@ export default function AboutPage() {
               <div>
                 <p className="font-semibold text-white">{m.name}</p>
                 <p className="mt-0.5 text-sm text-brand-cyan">{m.role}</p>
-                <p className="mt-3 text-sm leading-relaxed text-[#94a3b8]">
+                <p className="mt-3 text-sm leading-relaxed text-[#b4c5d8]">
                   {m.bio}
                 </p>
                 {m.linkedIn ? (
@@ -135,7 +135,7 @@ export default function AboutPage() {
                     LinkedIn
                   </Link>
                 ) : (
-                  <span className="mt-4 inline-block text-xs text-[#64748b]">
+                  <span className="mt-4 inline-block text-xs text-[#7c8fa3]">
                     LinkedIn (coming soon)
                   </span>
                 )}
@@ -160,7 +160,7 @@ export default function AboutPage() {
                 <h3 className="mb-3 text-lg font-semibold text-white">
                   {v.title}
                 </h3>
-                <p className="text-sm leading-relaxed text-[#94a3b8]">
+                <p className="text-sm leading-relaxed text-[#b4c5d8]">
                   {v.body}
                 </p>
               </div>

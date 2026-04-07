@@ -47,7 +47,7 @@ export function ProcessSection() {
     <section
       id="process"
       ref={ref}
-      className="overflow-x-hidden py-24 lg:py-32"
+      className="section-y-bordered overflow-x-hidden"
       style={{
         background:
           "linear-gradient(180deg, #010f1f 0%, #0a1628 50%, #010f1f 100%)",
@@ -86,7 +86,7 @@ export function ProcessSection() {
                 <h3 className="mb-2 text-base font-semibold text-white">
                   {step.title}
                 </h3>
-                <p className="max-w-none text-sm leading-relaxed text-[#94a3b8]">
+                <p className="max-w-none text-sm leading-relaxed text-[#b4c5d8]">
                   {step.body}
                 </p>
               </div>
@@ -124,7 +124,7 @@ export function ProcessSection() {
                 <h3 className="mt-4 mb-2 text-base font-semibold text-white">
                   {step.title}
                 </h3>
-                <p className="mx-auto max-w-[220px] text-sm leading-relaxed text-[#94a3b8]">
+                <p className="mx-auto max-w-[220px] text-sm leading-relaxed text-[#b4c5d8]">
                   {step.body}
                 </p>
               </motion.div>
