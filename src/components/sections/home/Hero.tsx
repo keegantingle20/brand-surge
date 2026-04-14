@@ -2,7 +2,6 @@
 
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/Button";
-import { SectionLabel } from "@/components/ui/SectionLabel";
 import { CALENDLY_AUDIT_URL } from "@/lib/constants";
 
 const mount = (delay: number) => ({
@@ -44,27 +43,21 @@ export function Hero() {
       />
 
       <div className="relative mx-auto max-w-4xl px-6 pb-20 pt-32 sm:pb-12 md:pb-0 md:pt-36">
-        <motion.div {...mount(0)}>
-          <SectionLabel className="mb-4">
-            LOUISVILLE, KY · B2B OUTBOUND PIPELINE
-          </SectionLabel>
-        </motion.div>
-
         <motion.h1
           className="text-4xl font-bold leading-tight tracking-tight text-white drop-shadow-sm md:text-5xl lg:text-6xl"
           {...mount(0.12)}
         >
-          Your pipeline shouldn&apos;t depend on{" "}
-          <span className="gradient-text">referrals and luck</span>.
+          Custom LinkedIn Outbound{" "}
+          <span className="gradient-text">Done The Right Way.</span>
         </motion.h1>
 
         <motion.p
           className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-[#b4c5d8] md:text-xl"
           {...mount(0.24)}
         >
-          Brand Surge builds done-for-you LinkedIn outbound systems that put
-          qualified B2B conversations on your calendar consistently, without
-          adding headcount.
+          Let&apos;s get you in front of prospects worth your time. We build
+          LinkedIn outbound systems with strategy, structure, and consistency —
+          to set appointments and grow your influence.
         </motion.p>
 
         <motion.div
