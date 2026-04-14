@@ -28,7 +28,7 @@ export function CTABanner() {
           is breaking, and what it would take to fix it.
         </p>
         <Button href={CALENDLY_AUDIT_URL} variant="primary" className="px-8 py-4 text-base">
-          Book your free pipeline audit
+          Get Started Today
         </Button>
         <p className="mt-4 text-xs text-[#7c8fa3]">
           15 minutes. No pitch. Just clarity.

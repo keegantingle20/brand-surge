@@ -117,7 +117,7 @@ export function Footer() {
                   href="/services"
                   className="text-sm text-[#b4c5d8] transition hover:text-white"
                 >
-                  Pipeline Ignition
+                  LinkedIn Outbound
                 </Link>
               </li>
               <li>
@@ -125,15 +125,7 @@ export function Footer() {
                   href="/services"
                   className="text-sm text-[#b4c5d8] transition hover:text-white"
                 >
-                  Revenue Acceleration
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/services"
-                  className="text-sm text-[#b4c5d8] transition hover:text-white"
-                >
-                  Revenue Partnership
+                  Digital Marketing & Consulting
                 </Link>
               </li>
               <li>
@@ -160,7 +152,7 @@ export function Footer() {
               className="mx-auto w-full hover:opacity-95 md:mx-0"
               style={footerCtaGradientStyle}
             >
-              Book a pipeline audit
+              Get Started Today
             </Button>
           </div>
         </div>

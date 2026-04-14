@@ -63,7 +63,7 @@ export function FinalCTA() {
             ease: "easeInOut",
           }}
         >
-          Book your free pipeline audit
+          Get Started Today
         </motion.a>
         <p className="mt-4 text-sm text-[#7c8fa3]">
           15 minutes. No pitch. Just clarity on where your pipeline is breaking

@@ -73,7 +73,7 @@ export function FeaturedOwnAccountCard({
         </div>
         <div className="grid grid-cols-2 gap-4">
           {[
-            { n: "22.9%", l: "Reply rate over 6 months" },
+            { n: "23.1%", l: "Reply rate over 6 months" },
             { n: "79", l: "Replies from a single 317-message campaign" },
             { n: "14", l: "Demo meetings booked in one week" },
             { n: "+4,733", l: "New LinkedIn followers in 12 months (201.9% growth)" },

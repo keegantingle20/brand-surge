@@ -6,16 +6,16 @@ import { SectionLabel } from "@/components/ui/SectionLabel";
 
 const cards = [
   {
-    title: "Referral dependency",
-    body: "You're good at what you do. Your clients love you. And yet your pipeline is one lost retainer away from a crisis because you never built a system to generate demand on your own terms.",
+    title: "Custom sequences",
+    body: "Custom sequences built around your angle. Every message is crafted around a specific reason why that person is on the list.",
   },
   {
-    title: "Inconsistent outreach",
-    body: "You've tried LinkedIn. Maybe email. Cold calls. Nothing sticks. The problem isn't your effort. It's the absence of a repeatable system built around the right people and the right message.",
+    title: "Genuine messaging",
+    body: "Messaging that's genuine. We research the factors that put each prospect on the list and make sure they feel it.",
   },
   {
-    title: "The founder-led ceiling",
-    body: "When you're the one doing all the selling, growth is capped at your calendar. That's not a business model. That's a job with expensive overhead.",
+    title: "We want to see our clients win",
+    body: "We want to see our clients win. When we work together, we're passionate about helping you meet your goals.",
   },
 ] as const;
 
@@ -40,8 +40,7 @@ export function ProblemSection() {
       <div className="mx-auto max-w-6xl px-6">
         <SectionLabel>THE PROBLEM</SectionLabel>
         <h2 className="mt-3 max-w-3xl text-2xl font-bold leading-snug text-white md:text-4xl">
-          The best B2B service companies don&apos;t lose to worse competitors.
-          They lose because nobody knew they existed.
+          It&apos;s not who you approach. It&apos;s how you approach them.
         </h2>
 
         <div className="mt-16 grid grid-cols-1 gap-6 md:grid-cols-3">

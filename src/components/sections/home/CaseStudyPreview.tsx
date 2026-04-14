@@ -2,8 +2,10 @@
 
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
+import { ClientCaseStudyCard } from "@/components/sections/shared/ClientCaseStudyCard";
 import { FeaturedOwnAccountCard } from "@/components/sections/shared/FeaturedOwnAccountCard";
 import { SectionLabel } from "@/components/ui/SectionLabel";
+import { clientCaseStudies } from "@/lib/client-case-studies";
 
 export function CaseStudyPreview() {
   const ref = useRef(null);
@@ -22,6 +24,18 @@ export function CaseStudyPreview() {
             We use the same system on ourselves. Here&apos;s what it produces.
           </h2>
         </motion.div>
+
+        <div className="mt-16 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+          {clientCaseStudies.map((study, index) => (
+            <ClientCaseStudyCard
+              key={study.id}
+              study={study}
+              index={index}
+              inView={inView}
+            />
+          ))}
+        </div>
+
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={inView ? { opacity: 1, y: 0 } : undefined}

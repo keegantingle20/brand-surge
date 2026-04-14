@@ -7,7 +7,7 @@ import { CALENDLY_AUDIT_URL } from "@/lib/constants";
 export const metadata: Metadata = {
   title: "Services | Brand Surge",
   description:
-    "Done-for-you LinkedIn outbound systems for B2B service companies. Three engagement tiers from pipeline ignition to full GTM consulting.",
+    "Done-for-you LinkedIn outbound systems for B2B service companies. LinkedIn outbound and digital marketing consulting.",
 };
 
 function TierBadge({ children }: { children: React.ReactNode }) {
@@ -51,31 +51,22 @@ function FeatureList({ items }: { items: string[] }) {
   );
 }
 
-const pipelineIgnitionFeatures = [
+const linkedInOutboundFeatures = [
   "ICP definition and ideal buyer persona build",
   "LinkedIn profile optimization for outbound",
   "HeyReach campaign architecture and setup",
-  "Custom 3–5 touch message sequence development",
+  "Custom 3-5 touch message sequence development",
   "Weekly campaign optimization and reporting",
-  "Target: 10–20 qualified B2B conversations per month",
+  "Target: 10-20 qualified B2B conversations per month",
 ] as const;
 
-const revenueAccelerationFeatures = [
-  "Everything in Pipeline Ignition",
+const digitalMarketingFeatures = [
+  "Everything in LinkedIn Outbound",
   "Account-based marketing list builds",
   "Multi-touch LinkedIn + email sequences",
   "Sales call coaching and objection frameworks",
   "Deal review and pipeline conversion consulting",
   "Monthly revenue strategy session",
-] as const;
-
-const revenuePartnershipFeatures = [
-  "Everything in Revenue Acceleration",
-  "Full GTM strategy and channel mix design",
-  "CRM setup and pipeline architecture",
-  "LinkedIn thought leadership content strategy",
-  "Sales team hiring and onboarding support",
-  "Quarterly business reviews and revenue roadmapping",
 ] as const;
 
 export default function ServicesPage() {
@@ -87,12 +78,11 @@ export default function ServicesPage() {
         subline="From your first structured outbound campaign to a full revenue architecture, we build the system that fits where you are and where you are headed."
       />
 
-      <div className="section-y-bordered mx-auto grid max-w-6xl grid-cols-1 gap-6 px-4 sm:px-6 md:grid-cols-3">
-        {/* Tier 1: Pipeline Ignition */}
+      <div className="section-y-bordered mx-auto grid max-w-6xl grid-cols-1 gap-6 px-4 sm:px-6 md:grid-cols-2">
         <div className="rounded-2xl border border-[rgba(19,152,183,0.15)] bg-[#0a1628] p-6 md:p-8">
           <TierBadge>ENTRY</TierBadge>
           <h3 className="mb-2 text-xl font-bold text-white">
-            Pipeline Ignition
+            LinkedIn Outbound
           </h3>
           <p className="mb-6 text-sm text-[#b4c5d8]">
             For B2B service companies starting from scratch or replacing a
@@ -100,19 +90,18 @@ export default function ServicesPage() {
             don&apos;t have to.
           </p>
           <div className="mb-6 border-t border-brand-border" />
-          <FeatureList items={[...pipelineIgnitionFeatures]} />
+          <FeatureList items={[...linkedInOutboundFeatures]} />
           <Button href="/contact" variant="outline" className="mt-8 w-full">
             Learn more
           </Button>
         </div>
 
-        {/* Tier 2: Revenue Acceleration (featured) */}
         <div className="relative rounded-2xl border-2 border-brand-cyan bg-[#0a1628] p-6 md:p-8">
           <span className="mb-4 inline-block rounded-full bg-brand-cyan px-3 py-1 text-xs font-bold text-brand-navy md:absolute md:right-6 md:top-0 md:mb-0 md:-translate-y-1/2">
             MOST POPULAR
           </span>
           <h3 className="mb-2 text-xl font-bold text-white">
-            Revenue Acceleration
+            Digital Marketing & Consulting
           </h3>
           <p className="mb-6 text-sm text-[#b4c5d8]">
             For companies with an active outbound process that need strategic
@@ -120,40 +109,22 @@ export default function ServicesPage() {
             ABM.
           </p>
           <div className="mb-6 border-t border-brand-border" />
-          <FeatureList items={[...revenueAccelerationFeatures]} />
+          <FeatureList items={[...digitalMarketingFeatures]} />
           <Button
             href={CALENDLY_AUDIT_URL}
             variant="primary"
             className="mt-8 w-full"
           >
-            Book a pipeline audit
-          </Button>
-        </div>
-
-        {/* Tier 3: Revenue Partnership */}
-        <div className="rounded-2xl border border-[rgba(19,152,183,0.15)] bg-[#0a1628] p-6 md:p-8">
-          <TierBadge>FULL PARTNERSHIP</TierBadge>
-          <h3 className="mb-2 text-xl font-bold text-white">
-            Revenue Partnership
-          </h3>
-          <p className="mb-6 text-sm text-[#b4c5d8]">
-            For scale-ready companies that want to systematize every stage of
-            revenue, from first touch to repeat expansion.
-          </p>
-          <div className="mb-6 border-t border-brand-border" />
-          <FeatureList items={[...revenuePartnershipFeatures]} />
-          <Button href="/contact" variant="outline" className="mt-8 w-full">
-            Let&apos;s talk
+            Get Started Today
           </Button>
         </div>
       </div>
 
-      {/* Which tier is right for you? Scenario cards */}
       <section className="section-y-bordered mx-auto max-w-6xl px-4 sm:px-6">
         <h2 className="mb-10 text-center text-2xl font-bold text-white">
           Not sure where to start?
         </h2>
-        <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
+        <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
           <div className="rounded-xl border border-brand-border bg-[#0a1628] p-6">
             <p className="mb-3 text-xs font-semibold text-brand-cyan">
               IF YOU&apos;RE...
@@ -162,7 +133,7 @@ export default function ServicesPage() {
               Starting from zero with no structured outbound process
             </p>
             <p className="text-sm text-[#b4c5d8]">
-              → Start with Pipeline Ignition
+              → Start with LinkedIn Outbound
             </p>
           </div>
           <div className="rounded-xl border border-brand-border bg-[#0a1628] p-6">
@@ -173,18 +144,7 @@ export default function ServicesPage() {
               Tried outbound before but can&apos;t get consistent results
             </p>
             <p className="text-sm text-[#b4c5d8]">
-              → Revenue Acceleration is built for you
-            </p>
-          </div>
-          <div className="rounded-xl border border-brand-border bg-[#0a1628] p-6">
-            <p className="mb-3 text-xs font-semibold text-brand-cyan">
-              IF YOU&apos;RE...
-            </p>
-            <p className="mb-2 font-medium text-white">
-              Ready to build a full revenue infrastructure and scale
-            </p>
-            <p className="text-sm text-[#b4c5d8]">
-              → Revenue Partnership is the right fit
+              → Digital Marketing & Consulting is built for you
             </p>
           </div>
         </div>

@@ -26,7 +26,7 @@ export default function BlogPage() {
         </p>
         <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
           <Button href="/contact" variant="primary">
-            Book a pipeline audit
+            Get Started Today
           </Button>
           <Link
             href="/"

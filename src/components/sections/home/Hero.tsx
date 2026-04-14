@@ -56,7 +56,7 @@ export function Hero() {
           {...mount(0.24)}
         >
           Let&apos;s get you in front of prospects worth your time. We build
-          LinkedIn outbound systems with strategy, structure, and consistency —
+          LinkedIn outbound systems with strategy, structure, and consistency,
           to set appointments and grow your influence.
         </motion.p>
 
@@ -69,7 +69,7 @@ export function Hero() {
             variant="primary"
             className="w-full sm:w-auto"
           >
-            Book a free pipeline audit
+            Get Started Today
           </Button>
           <Button
             variant="outline"
@@ -92,7 +92,7 @@ export function Hero() {
             </p>
           </div>
           <div className="sm:min-w-0 sm:flex-1">
-            <p className="text-3xl font-bold gradient-text">22.9%</p>
+            <p className="text-3xl font-bold gradient-text">23.1%</p>
             <p className="mt-1 text-sm text-[#b4c5d8]">
               Average reply rate sustained over 6 months
             </p>

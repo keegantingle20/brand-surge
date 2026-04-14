@@ -262,9 +262,9 @@ export function ContactForm() {
           <option value="" disabled>
             Select a range
           </option>
-          <option>0–2 per month</option>
-          <option>3–5 per month</option>
-          <option>6–10 per month</option>
+          <option>0-2 per month</option>
+          <option>3-5 per month</option>
+          <option>6-10 per month</option>
           <option>10+ per month</option>
         </select>
         {errors.conversations ? (
@@ -284,7 +284,7 @@ export function ContactForm() {
         className="mt-8 w-full"
         disabled={loading}
       >
-        {loading ? "Submitting..." : "Book my free pipeline audit"}
+        {loading ? "Submitting..." : "Get Started Today"}
       </Button>
     </form>
   );

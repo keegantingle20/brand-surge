@@ -105,7 +105,7 @@ export function Navbar() {
             className="hover:opacity-95"
             style={navCtaGradientStyle}
           >
-            Book a pipeline audit
+            Get Started Today
           </Button>
         </div>
 
@@ -180,7 +180,7 @@ export function Navbar() {
               style={navCtaGradientStyle}
               onClick={() => setMobileOpen(false)}
             >
-              Book a pipeline audit
+              Get Started Today
             </Button>
           </nav>
         </div>

@@ -7,13 +7,13 @@ import { SectionLabel } from "@/components/ui/SectionLabel";
 const columns = [
   {
     n: "01",
-    title: "ICP-first, always",
-    body: "Before a single message goes out, we define exactly who you should be talking to: industry, title, company size, buying triggers. Most agencies skip this step. That's why most campaigns fail.",
+    title: "Identify & Target",
+    body: "We help you identify your ideal customer. We build custom signals to find exactly who to go after and from what angle, so your outreach always has a reason.",
   },
   {
     n: "02",
-    title: "AI-powered LinkedIn infrastructure",
-    body: "We deploy LinkedIn automation built around your positioning, not a template. Personalized at scale, optimized weekly on real response data, and built to stay within LinkedIn's compliance guidelines.",
+    title: "Build Your Sequence",
+    body: "We build a fully custom outreach sequence that triggers when a connection request is accepted. Every sequence is unique to the client: tailored messaging, tailored timing, zero templates.",
   },
   {
     n: "03",
@@ -29,10 +29,9 @@ export function DifferentiatorSection() {
   return (
     <section ref={ref} className="section-y-bordered bg-[#010f1f]">
       <div className="mx-auto max-w-6xl px-6">
-        <SectionLabel>WHAT MAKES US DIFFERENT</SectionLabel>
+        <SectionLabel>OUR PROCESS</SectionLabel>
         <h2 className="mt-3 max-w-3xl text-3xl font-bold text-white md:text-4xl">
-          We don&apos;t run campaigns. We build the system that{" "}
-          <span className="gradient-text">makes outbound repeatable.</span>
+          Our Process
         </h2>
 
         <div className="mt-16 grid grid-cols-1 gap-0 md:grid-cols-3 md:gap-12">
