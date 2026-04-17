@@ -25,7 +25,7 @@ export function PageHero({
         aria-hidden
       />
       <div
-        className="pointer-events-none absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[rgba(37,222,227,0.35)] to-transparent"
+        className="pointer-events-none absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[rgba(141,234,255,0.4)] to-transparent"
         aria-hidden
       />
       <div className="relative mx-auto max-w-4xl px-6 text-center">

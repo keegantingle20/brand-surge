@@ -13,12 +13,13 @@ const config = {
     extend: {
       colors: {
         "brand-navy": "#013273",
-        "brand-blue": "#0e6ea1",
-        "brand-teal": "#1398b7",
+        "brand-blue": "#45beef",
+        "brand-teal": "#1dcfff",
         "brand-cyan": "#25dee3",
+        "brand-frost": "#8deaff",
         "brand-white": "#fefefe",
         /** Semantic border token (matches --color-border) */
-        "brand-border": "rgba(19, 152, 183, 0.15)",
+        "brand-border": "rgba(29, 207, 255, 0.15)",
       },
       fontFamily: {
         heading: ["var(--font-heading)", "system-ui", "sans-serif"],

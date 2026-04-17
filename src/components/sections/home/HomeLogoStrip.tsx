@@ -7,7 +7,7 @@ import Image from "next/image";
 export function HomeLogoStrip() {
   return (
     <section
-      className="border-y border-[rgba(19,152,183,0.08)] bg-[#010f1f]/90 py-8 md:py-10"
+      className="border-y border-[rgba(141,234,255,0.1)] bg-[#010f1f]/90 py-8 md:py-10"
       aria-hidden
     >
       <div className="mx-auto max-w-6xl px-6">

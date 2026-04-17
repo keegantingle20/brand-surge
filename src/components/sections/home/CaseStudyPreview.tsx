@@ -2,6 +2,7 @@
 
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
+import { CampaignWeekStatsQuote } from "@/components/sections/shared/CampaignWeekStatsQuote";
 import { ClientCaseStudyCard } from "@/components/sections/shared/ClientCaseStudyCard";
 import { FeaturedOwnAccountCard } from "@/components/sections/shared/FeaturedOwnAccountCard";
 import { SectionLabel } from "@/components/ui/SectionLabel";
@@ -41,20 +42,7 @@ export function CaseStudyPreview() {
           animate={inView ? { opacity: 1, y: 0 } : undefined}
           transition={{ duration: 0.5, ease: "easeOut", delay: 0.1 }}
         >
-          <FeaturedOwnAccountCard
-            pullQuote={
-              <blockquote className="mb-8 border-l border-brand-cyan/40 pl-4 text-sm italic text-[#b4c5d8]">
-                <p>
-                  &quot;317 messages. 79 replies. 14 demo meetings. One week.
-                  This is what a dialed-in outbound system looks like. We built
-                  it for ourselves first so we could build it for you.&quot;
-                </p>
-                <p className="mt-2 not-italic text-[#b4c5d8]">
-                  Koby Batts, Co-Founder
-                </p>
-              </blockquote>
-            }
-          />
+          <FeaturedOwnAccountCard pullQuote={<CampaignWeekStatsQuote />} />
         </motion.div>
       </div>
     </section>

@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/Button";
 import { CALENDLY_AUDIT_URL } from "@/lib/constants";
 
 const footerCtaGradientStyle = {
-  background: "linear-gradient(135deg, #25dee3 0%, #1398b7 100%)",
+  background: "linear-gradient(135deg, #25dee3 0%, #1dcfff 55%, #45beef 100%)",
 } as const;
 
 function LinkedInIcon() {
@@ -32,7 +32,7 @@ export function Footer() {
         className="h-px w-full"
         style={{
           background:
-            "linear-gradient(90deg, transparent, #1398b7, #25dee3, #1398b7, transparent)",
+            "linear-gradient(90deg, transparent, #1dcfff, #25dee3, #8deaff, #1dcfff, transparent)",
         }}
         aria-hidden
       />
@@ -152,12 +152,12 @@ export function Footer() {
               className="mx-auto w-full hover:opacity-95 md:mx-0"
               style={footerCtaGradientStyle}
             >
-              Get Started Today
+              Get Started
             </Button>
           </div>
         </div>
 
-        <div className="mt-12 flex flex-col items-center justify-between gap-4 border-t border-[rgba(19,152,183,0.1)] pt-8 md:flex-row">
+        <div className="mt-12 flex flex-col items-center justify-between gap-4 border-t border-[rgba(29,207,255,0.12)] pt-8 md:flex-row">
           <p className="text-xs text-[#7c8fa3]">
             © 2026 Brand Surge. All rights reserved.
           </p>

@@ -6,8 +6,8 @@ import { SectionLabel } from "@/components/ui/SectionLabel";
 
 const cards = [
   {
-    title: "Custom sequences",
-    body: "Custom sequences built around your angle. Every message is crafted around a specific reason why that person is on the list.",
+    title: "A sales process that won't stay static",
+    body: "When stages, follow-ups, and who qualifies shift week to week—or live only in your head—you can't delegate, measure, or compound what works. Without a stable, written motion, growth caps at one person's calendar instead of a business you can scale.",
   },
   {
     title: "Genuine messaging",
@@ -21,7 +21,7 @@ const cards = [
 
 const iconPlaceholderStyle = {
   background:
-    "linear-gradient(135deg, rgba(37,222,227,0.15), rgba(19,152,183,0.05))",
+    "linear-gradient(135deg, rgba(141,234,255,0.14), rgba(29,207,255,0.06))",
 } as const;
 
 export function ProblemSection() {
@@ -40,7 +40,8 @@ export function ProblemSection() {
       <div className="mx-auto max-w-6xl px-6">
         <SectionLabel>THE PROBLEM</SectionLabel>
         <h2 className="mt-3 max-w-3xl text-2xl font-bold leading-snug text-white md:text-4xl">
-          It&apos;s not who you approach. It&apos;s how you approach them.
+          Success isn&apos;t about reaching more people. It&apos;s about reaching
+          the right people with messaging that actually resonates.
         </h2>
 
         <div className="mt-16 grid grid-cols-1 gap-6 md:grid-cols-3">

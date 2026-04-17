@@ -28,7 +28,7 @@ const team = [
 ] as const;
 
 const photoPlaceholderStyle = {
-  background: "linear-gradient(135deg, #0e6ea1 0%, #013273 100%)",
+  background: "linear-gradient(135deg, #45beef 0%, #1dcfff 45%, #013273 100%)",
 } as const;
 
 export function TeamSection() {

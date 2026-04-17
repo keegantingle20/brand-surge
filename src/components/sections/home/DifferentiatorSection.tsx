@@ -7,17 +7,17 @@ import { SectionLabel } from "@/components/ui/SectionLabel";
 const columns = [
   {
     n: "01",
-    title: "Identify & Target",
-    body: "We help you identify your ideal customer. We build custom signals to find exactly who to go after and from what angle, so your outreach always has a reason.",
+    title: "Identify your ideal customer",
+    body: "We help you identify and find your ideal customer. We build custom signals to identify exactly who to go after and from what angle.",
   },
   {
     n: "02",
-    title: "Build Your Sequence",
-    body: "We build a fully custom outreach sequence that triggers when a connection request is accepted. Every sequence is unique to the client: tailored messaging, tailored timing, zero templates.",
+    title: "Custom sequence on connect",
+    body: "We build a custom sequence to trigger when an invitation to connect is accepted. It is different for everyone we work with.",
   },
   {
     n: "03",
-    title: "Strategy that stays",
+    title: "We Want To See You Win",
     body: "We don't hand you a campaign and disappear. We analyze what's working, refine targeting, rewrite underperforming sequences, and consult on the deals coming in. Your process grows with your pipeline.",
   },
 ] as const;
@@ -29,9 +29,9 @@ export function DifferentiatorSection() {
   return (
     <section ref={ref} className="section-y-bordered bg-[#010f1f]">
       <div className="mx-auto max-w-6xl px-6">
-        <SectionLabel>OUR PROCESS</SectionLabel>
+        <SectionLabel>WHAT MAKES US DIFFERENT</SectionLabel>
         <h2 className="mt-3 max-w-3xl text-3xl font-bold text-white md:text-4xl">
-          Our Process
+          What makes us different
         </h2>
 
         <div className="mt-16 grid grid-cols-1 gap-0 md:grid-cols-3 md:gap-12">

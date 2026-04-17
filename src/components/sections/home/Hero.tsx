@@ -1,8 +1,22 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { TypeAnimation } from "react-type-animation";
 import { Button } from "@/components/ui/Button";
+import { StatCountUp } from "@/components/ui/StatCountUp";
 import { CALENDLY_AUDIT_URL } from "@/lib/constants";
+
+/** Module-level so TypeAnimation’s memoization always sees a stable sequence. */
+const HERO_CYCLING_PHRASES_SEQUENCE = [
+  "referrals and luck.",
+  2600,
+  "hoping the phone rings.",
+  2800,
+  "one key client.",
+  2400,
+  "word of mouth alone.",
+  2800,
+] as const;
 
 const mount = (delay: number) => ({
   initial: { opacity: 0, y: 24 },
@@ -16,12 +30,15 @@ export function Hero() {
   };
 
   return (
-    <section className="relative flex min-h-[90vh] flex-col items-center justify-center overflow-hidden bg-[#010f1f] text-center">
+    <section
+      id="hero"
+      className="relative flex min-h-[90vh] flex-col items-center justify-center overflow-hidden bg-[#010f1f] text-center"
+    >
       <div
         className="pointer-events-none absolute left-0 top-0 h-px w-full"
         style={{
           background:
-            "linear-gradient(90deg, transparent, #25dee3, #1398b7, transparent)",
+            "linear-gradient(90deg, transparent, #8deaff, #25dee3, #1dcfff, transparent)",
         }}
         aria-hidden
       />
@@ -29,7 +46,7 @@ export function Hero() {
         className="pointer-events-none absolute left-[-100px] top-[-100px] h-[500px] w-[500px] rounded-full opacity-20 blur-[120px]"
         style={{
           background:
-            "radial-gradient(circle, #0e6ea1 0%, #013273 60%, transparent 100%)",
+            "radial-gradient(circle, #45beef 0%, #013273 60%, transparent 100%)",
         }}
         aria-hidden
       />
@@ -37,7 +54,7 @@ export function Hero() {
         className="pointer-events-none absolute bottom-[-50px] right-[-50px] h-[400px] w-[400px] rounded-full opacity-15 blur-[100px]"
         style={{
           background:
-            "radial-gradient(circle, #25dee3 0%, #1398b7 50%, transparent 100%)",
+            "radial-gradient(circle, #25dee3 0%, #1dcfff 45%, #45beef 100%)",
         }}
         aria-hidden
       />
@@ -48,7 +65,17 @@ export function Hero() {
           {...mount(0.12)}
         >
           Custom LinkedIn Outbound{" "}
-          <span className="gradient-text">Done The Right Way.</span>
+          <TypeAnimation
+            sequence={[...HERO_CYCLING_PHRASES_SEQUENCE]}
+            wrapper="span"
+            repeat={Infinity}
+            cursor
+            preRenderFirstString={false}
+            speed={{ type: "keyStrokeDelayInMs", value: 28 }}
+            deletionSpeed={{ type: "keyStrokeDelayInMs", value: 14 }}
+            className="gradient-text inline-block min-h-[1.2em] text-center align-baseline"
+            style={{ maxWidth: "min(100%, 22rem)" }}
+          />
         </motion.h1>
 
         <motion.p
@@ -56,8 +83,8 @@ export function Hero() {
           {...mount(0.24)}
         >
           Let&apos;s get you in front of prospects worth your time. We build
-          LinkedIn outbound systems with strategy, structure, and consistency,
-          to set appointments and grow your influence.
+          LinkedIn outbound systems with strategy, structure, and consistency to
+          set appointments and grow your influence.
         </motion.p>
 
         <motion.div
@@ -69,7 +96,7 @@ export function Hero() {
             variant="primary"
             className="w-full sm:w-auto"
           >
-            Get Started Today
+            Get Started
           </Button>
           <Button
             variant="outline"
@@ -82,23 +109,48 @@ export function Hero() {
         </motion.div>
 
         <motion.div
-          className="mx-auto mt-16 flex max-w-2xl flex-col gap-8 border-t border-[rgba(37,222,227,0.2)] pt-8 sm:flex-row sm:items-start sm:justify-between"
+          className="mx-auto mt-16 flex max-w-2xl flex-col gap-8 border-t border-[rgba(141,234,255,0.22)] pt-8 sm:flex-row sm:items-start sm:justify-between"
           {...mount(0.48)}
         >
           <div className="sm:min-w-0 sm:flex-1">
-            <p className="text-3xl font-bold gradient-text">4.4%</p>
+            <p className="text-3xl font-bold tabular-nums">
+              <StatCountUp
+                className="gradient-text"
+                end={4.4}
+                decimals={1}
+                suffix="%"
+                duration={2.2}
+              />
+            </p>
             <p className="mt-1 text-sm text-[#b4c5d8]">
               Message-to-meeting conversion on our own campaigns
             </p>
           </div>
           <div className="sm:min-w-0 sm:flex-1">
-            <p className="text-3xl font-bold gradient-text">23.1%</p>
+            <p className="text-3xl font-bold tabular-nums">
+              <StatCountUp
+                className="gradient-text"
+                end={23.3}
+                decimals={1}
+                suffix="%"
+                duration={2.2}
+                delay={0.12}
+              />
+            </p>
             <p className="mt-1 text-sm text-[#b4c5d8]">
               Average reply rate sustained over 6 months
             </p>
           </div>
           <div className="sm:min-w-0 sm:flex-1">
-            <p className="text-3xl font-bold gradient-text">4 Years</p>
+            <p className="text-3xl font-bold tabular-nums">
+              <StatCountUp
+                className="gradient-text"
+                end={4}
+                suffix=" Years"
+                duration={2.2}
+                delay={0.24}
+              />
+            </p>
             <p className="mt-1 text-sm text-[#b4c5d8]">
               Building revenue systems for B2B service companies
             </p>

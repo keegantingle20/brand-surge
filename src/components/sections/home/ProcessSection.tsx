@@ -29,13 +29,13 @@ const steps = [
 
 const stepCircleStyle = {
   background:
-    "linear-gradient(#010f1f, #010f1f) padding-box, linear-gradient(135deg, #25dee3, #1398b7) border-box",
+    "linear-gradient(#010f1f, #010f1f) padding-box, linear-gradient(135deg, #8deaff, #25dee3, #1dcfff, #45beef) border-box",
   border: "2px solid transparent",
 } as const;
 
 const connectorLineStyle = {
   background:
-    "linear-gradient(90deg, transparent, #25dee3, #1398b7, #0e6ea1, transparent)",
+    "linear-gradient(90deg, transparent, #8deaff, #25dee3, #1dcfff, #45beef, transparent)",
   height: "1px",
 } as const;
 

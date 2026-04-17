@@ -15,7 +15,7 @@ const navLinks = [
 ] as const;
 
 const navCtaGradientStyle = {
-  background: "linear-gradient(135deg, #25dee3 0%, #1398b7 100%)",
+  background: "linear-gradient(135deg, #25dee3 0%, #1dcfff 55%, #45beef 100%)",
 } as const;
 
 export function Navbar() {
@@ -48,7 +48,7 @@ export function Navbar() {
   const headerClass =
     "fixed top-0 z-50 w-full transition-all duration-300" +
     (scrolled
-      ? " border-b border-[rgba(19,152,183,0.15)] backdrop-blur-md"
+      ? " border-b border-[rgba(29,207,255,0.16)] backdrop-blur-md"
       : " border-b border-transparent bg-transparent");
 
   return (
@@ -90,7 +90,7 @@ export function Navbar() {
               <span
                 className="absolute bottom-0 left-0 right-0 h-px origin-left scale-x-0 transition-transform duration-300 group-hover:scale-x-100"
                 style={{
-                  background: "linear-gradient(90deg, #25dee3, #1398b7)",
+                  background: "linear-gradient(90deg, #25dee3, #1dcfff, #45beef)",
                 }}
                 aria-hidden
               />
@@ -105,7 +105,7 @@ export function Navbar() {
             className="hover:opacity-95"
             style={navCtaGradientStyle}
           >
-            Get Started Today
+            Get Started
           </Button>
         </div>
 
@@ -180,7 +180,7 @@ export function Navbar() {
               style={navCtaGradientStyle}
               onClick={() => setMobileOpen(false)}
             >
-              Get Started Today
+              Get Started
             </Button>
           </nav>
         </div>

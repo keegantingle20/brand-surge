@@ -284,7 +284,7 @@ export function ContactForm() {
         className="mt-8 w-full"
         disabled={loading}
       >
-        {loading ? "Submitting..." : "Get Started Today"}
+        {loading ? "Submitting..." : "Get Started"}
       </Button>
     </form>
   );

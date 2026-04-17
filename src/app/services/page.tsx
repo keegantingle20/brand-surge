@@ -79,7 +79,7 @@ export default function ServicesPage() {
       />
 
       <div className="section-y-bordered mx-auto grid max-w-6xl grid-cols-1 gap-6 px-4 sm:px-6 md:grid-cols-2">
-        <div className="rounded-2xl border border-[rgba(19,152,183,0.15)] bg-[#0a1628] p-6 md:p-8">
+        <div className="rounded-2xl border border-[rgba(29,207,255,0.15)] bg-[#0a1628] p-6 md:p-8">
           <TierBadge>ENTRY</TierBadge>
           <h3 className="mb-2 text-xl font-bold text-white">
             LinkedIn Outbound
@@ -115,7 +115,7 @@ export default function ServicesPage() {
             variant="primary"
             className="mt-8 w-full"
           >
-            Get Started Today
+            Get Started
           </Button>
         </div>
       </div>

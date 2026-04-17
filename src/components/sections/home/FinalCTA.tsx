@@ -5,7 +5,7 @@ import { useRef } from "react";
 import { CALENDLY_AUDIT_URL } from "@/lib/constants";
 
 const ctaButtonStyle = {
-  background: "linear-gradient(135deg, #25dee3 0%, #1398b7 100%)",
+  background: "linear-gradient(135deg, #25dee3 0%, #1dcfff 55%, #45beef 100%)",
 } as const;
 
 export function FinalCTA() {
@@ -25,7 +25,7 @@ export function FinalCTA() {
         className="pointer-events-none absolute left-1/2 top-1/2 h-[500px] w-[800px] -translate-x-1/2 -translate-y-1/2 rounded-full blur-3xl"
         style={{
           background:
-            "radial-gradient(ellipse, rgba(37,222,227,0.12) 0%, rgba(19,152,183,0.06) 40%, transparent 70%)",
+            "radial-gradient(ellipse, rgba(141,234,255,0.1) 0%, rgba(29,207,255,0.07) 40%, transparent 70%)",
         }}
         aria-hidden
       />
@@ -63,7 +63,7 @@ export function FinalCTA() {
             ease: "easeInOut",
           }}
         >
-          Get Started Today
+          Get Started
         </motion.a>
         <p className="mt-4 text-sm text-[#7c8fa3]">
           15 minutes. No pitch. Just clarity on where your pipeline is breaking

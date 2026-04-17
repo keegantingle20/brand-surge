@@ -6,13 +6,17 @@
   --color-bg-primary: #010f1f;
   --color-bg-card: #0a1628;
   --color-bg-elevated: #0d1e35;
-  --color-border: rgba(19, 152, 183, 0.22);
-  --color-border-hover: rgba(37, 222, 227, 0.4);
+  --color-border: rgba(29, 207, 255, 0.22);
+  --color-border-hover: rgba(141, 234, 255, 0.45);
   --color-text-primary: #fefefe;
   --color-text-secondary: #b4c5d8;
   --color-text-muted: #7c8fa3;
   --color-accent: #25dee3;
   --color-accent-dim: rgba(37, 222, 227, 0.08);
+  --color-brand-frost: #8deaff;
+  --color-brand-cyan: #25dee3;
+  --color-brand-sky: #1dcfff;
+  --color-brand-wave: #45beef;
 }
 
 @layer components {
@@ -23,7 +27,7 @@
 
   /** Subtle top edge so stacked dark sections read as separate bands */
   .section-y-bordered {
-    @apply section-y border-t border-[rgba(37,222,227,0.1)];
+    @apply section-y border-t border-[rgba(141,234,255,0.12)];
   }
 }
 
@@ -46,7 +50,13 @@
 }
 
 .gradient-text {
-  background: linear-gradient(135deg, #25dee3 0%, #1398b7 50%, #0e6ea1 100%);
+  background: linear-gradient(
+    135deg,
+    #8deaff 0%,
+    #25dee3 38%,
+    #1dcfff 72%,
+    #45beef 100%
+  );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -56,7 +66,8 @@
   position: relative;
   background:
     linear-gradient(#0a1628, #0a1628) padding-box,
-    linear-gradient(135deg, #25dee3, #1398b7, #013273) border-box;
+    linear-gradient(135deg, #8deaff, #25dee3, #1dcfff, #45beef, #013273)
+      border-box;
   border: 1px solid transparent;
 }
 
@@ -65,14 +76,15 @@
   position: relative;
   background:
     linear-gradient(#010f1f, #010f1f) padding-box,
-    linear-gradient(135deg, #25dee3, #1398b7, #013273) border-box;
+    linear-gradient(135deg, #8deaff, #25dee3, #1dcfff, #45beef, #013273)
+      border-box;
   border: 1px solid transparent;
 }
 
 .gradient-glow {
   box-shadow:
     0 0 40px rgba(37, 222, 227, 0.08),
-    0 0 80px rgba(19, 152, 183, 0.04);
+    0 0 80px rgba(29, 207, 255, 0.06);
 }
 
 @keyframes gradientShift {
@@ -88,7 +100,7 @@
 }
 
 .grad-label-sweep {
-  background: linear-gradient(90deg, #25dee3, #1398b7, #25dee3);
+  background: linear-gradient(90deg, #25dee3, #1dcfff, #8deaff, #1dcfff, #25dee3);
   background-size: 200%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -102,7 +114,7 @@
     border-image-source: linear-gradient(
       180deg,
       transparent,
-      #1398b7,
+      #1dcfff,
       transparent
     );
     border-image-slice: 1;

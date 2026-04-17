@@ -76,7 +76,7 @@ export function CaseStudiesClient() {
           variant="outline"
           className="mt-6"
         >
-          Get Started Today
+          Get Started
         </Button>
       </div>
     </>

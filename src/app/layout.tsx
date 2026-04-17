@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Inter, Plus_Jakarta_Sans } from "next/font/google";
 import { Footer } from "@/components/layout/Footer";
 import { Navbar } from "@/components/layout/Navbar";
+import { FloatingAuditCta } from "@/components/layout/FloatingAuditCta";
+import { ScrollProgressBar } from "@/components/layout/ScrollProgressBar";
 import "./globals.css";
 
 const plusJakarta = Plus_Jakarta_Sans({
@@ -54,8 +56,10 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${plusJakarta.variable} ${inter.variable}`}>
       <body className="min-h-screen font-body antialiased">
+        <ScrollProgressBar />
         <Navbar />
         <main>{children}</main>
+        <FloatingAuditCta />
         <Footer />
       </body>
     </html>

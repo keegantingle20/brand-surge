@@ -1,11 +1,12 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { MetricLineWithCountUp } from "@/components/sections/shared/MetricLineWithCountUp";
 import type { ClientCaseStudy } from "@/lib/client-case-studies";
 
 const iconPlaceholderStyle = {
   background:
-    "linear-gradient(135deg, rgba(37,222,227,0.15), rgba(19,152,183,0.05))",
+    "linear-gradient(135deg, rgba(141,234,255,0.14), rgba(29,207,255,0.06))",
 } as const;
 
 type Props = {
@@ -42,7 +43,9 @@ export function ClientCaseStudyCard({ study, index, inView }: Props) {
       ) : null}
       <ul className="space-y-2 text-sm leading-relaxed text-[#b4c5d8]">
         {study.metrics.map((line) => (
-          <li key={line}>• {line}</li>
+          <li key={line}>
+            • <MetricLineWithCountUp line={line} />
+          </li>
         ))}
       </ul>
     </motion.div>
