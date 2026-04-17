@@ -53,22 +53,13 @@ export function Footer() {
               Started in Louisville. Built for B2B companies tired of waiting
               for referrals.
             </p>
-            <div className="mt-6 flex justify-center gap-3 text-brand-cyan md:justify-start">
+            <div className="mt-6 flex justify-center text-brand-cyan md:justify-start">
               <a
-                href="https://www.linkedin.com/in/koby-batts-50b068190"
+                href="https://www.linkedin.com/company/brandsurgeky"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="transition hover:text-brand-white"
-                aria-label="Koby Batts on LinkedIn"
-              >
-                <LinkedInIcon />
-              </a>
-              <a
-                href="https://www.linkedin.com/in/keegan-tingle/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="transition hover:text-brand-white"
-                aria-label="Keegan Tingle on LinkedIn"
+                aria-label="Brand Surge on LinkedIn"
               >
                 <LinkedInIcon />
               </a>

@@ -10,18 +10,23 @@ export const metadata: Metadata = {
     "Brand Surge was built by two University of Louisville students who started with a camera and built a B2B outbound agency. Here's the real story.",
 };
 
-const bios = [
+type TeamBio = {
+  name: string;
+  role: string;
+  bio: string;
+  linkedIn?: string;
+};
+
+const bios: TeamBio[] = [
   {
     name: "Koby Batts",
     role: "Co-Founder & Partner",
     bio: "Koby holds an MS in Economics from the University of Louisville, where he also served as College of Business Student Body President. He co-founded Brand Surge in 2022 while still an undergraduate, starting with real estate photography and building it into a B2B outbound agency. Koby leads ICP strategy, outbound system design, and client engagements.",
-    linkedIn: "https://www.linkedin.com/in/koby-batts-50b068190",
   },
   {
     name: "Keegan Tingle",
     role: "Co-Founder & Partner",
     bio: "Keegan graduated from the University of Louisville's Innovation MBA program and served as Fraternity President during his undergrad years. He co-built Brand Surge from the ground up alongside Koby, leading growth operations, new market development, and strategic partnerships. He also runs Valent, a parallel venture focused on relationship-driven growth.",
-    linkedIn: "https://www.linkedin.com/in/keegan-tingle/",
   },
   {
     name: "James Miscione",
@@ -35,7 +40,7 @@ const bios = [
     bio: "Kellen leads new client acquisition at Brand Surge, building the pipeline that fuels the agency's own growth. He's responsible for partnership development and expanding Brand Surge's presence in new verticals.",
     linkedIn: "https://www.linkedin.com/in/kellen-mchugh-47b917199/",
   },
-] as const;
+];
 
 const values = [
   {
@@ -134,11 +139,7 @@ export default function AboutPage() {
                   >
                     LinkedIn
                   </Link>
-                ) : (
-                  <span className="mt-4 inline-block text-xs text-[#7c8fa3]">
-                    LinkedIn (coming soon)
-                  </span>
-                )}
+                ) : null}
               </div>
             </div>
           ))}

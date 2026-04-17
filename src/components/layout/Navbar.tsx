@@ -72,7 +72,7 @@ export function Navbar() {
           <BrandLogo
             variant="lockup"
             priority
-            className="h-10 max-w-[min(100vw-7rem,15rem)] md:h-12 md:max-w-[18rem]"
+            className="h-12 max-w-[min(100vw-8rem,19rem)] md:h-[2.875rem] md:max-w-[22rem]"
           />
         </Link>
 

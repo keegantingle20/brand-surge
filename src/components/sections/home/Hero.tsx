@@ -19,7 +19,7 @@ export function Hero() {
   return (
     <section
       id="hero"
-      className="relative flex min-h-[100svh] flex-col items-center justify-start overflow-x-hidden bg-[#010f1f] pb-10 pt-14 text-center md:pb-14 md:pt-16 lg:pt-20"
+      className="relative flex min-h-[100svh] flex-col items-center justify-start overflow-x-hidden bg-[#010f1f] pb-10 pt-[calc(4.25rem+1.75rem)] text-center md:pb-14 md:pt-[calc(5.25rem+2rem)] lg:pt-[calc(5.25rem+2.25rem)]"
     >
       <div
         className="pointer-events-none absolute left-0 top-0 h-px w-full"
