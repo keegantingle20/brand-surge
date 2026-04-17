@@ -19,7 +19,7 @@ export function Hero() {
   return (
     <section
       id="hero"
-      className="relative flex min-h-[90vh] flex-col items-center justify-center overflow-hidden bg-[#010f1f] text-center"
+      className="relative flex min-h-[100svh] flex-col items-center justify-start overflow-x-hidden bg-[#010f1f] pb-10 pt-14 text-center md:pb-14 md:pt-16 lg:pt-20"
     >
       <div
         className="pointer-events-none absolute left-0 top-0 h-px w-full"
@@ -46,7 +46,7 @@ export function Hero() {
         aria-hidden
       />
 
-      <div className="relative mx-auto max-w-4xl px-6 py-[var(--section-pad-y)] md:py-[var(--section-pad-y-md)] lg:py-[var(--section-pad-y-lg)]">
+      <div className="relative mx-auto max-w-4xl px-6 pb-2 pt-2 md:pb-4 md:pt-4">
         <motion.h1
           className="text-4xl font-bold leading-tight tracking-tight text-white drop-shadow-sm md:text-5xl lg:text-6xl"
           {...mount(0.12)}
@@ -86,51 +86,61 @@ export function Hero() {
         </motion.div>
 
         <motion.div
-          className="mx-auto mt-20 flex max-w-2xl flex-col gap-10 border-t border-[rgba(141,234,255,0.1)] pt-16 sm:flex-row sm:items-start sm:justify-between md:mt-24 md:pt-24"
+          className="mx-auto mt-10 w-full max-w-2xl md:mt-12"
           {...mount(0.48)}
         >
-          <div className="sm:min-w-0 sm:flex-1">
-            <p className="text-3xl font-bold tabular-nums">
-              <StatCountUp
-                className="gradient-text"
-                end={4.4}
-                decimals={1}
-                suffix="%"
-                duration={2.2}
-              />
-            </p>
-            <p className="mt-1 text-sm text-[#b4c5d8]">
-              Message-to-meeting conversion on our own campaigns
-            </p>
-          </div>
-          <div className="sm:min-w-0 sm:flex-1">
-            <p className="text-3xl font-bold tabular-nums">
-              <StatCountUp
-                className="gradient-text"
-                end={23.3}
-                decimals={1}
-                suffix="%"
-                duration={2.2}
-                delay={0.12}
-              />
-            </p>
-            <p className="mt-1 text-sm text-[#b4c5d8]">
-              Average reply rate sustained over 6 months
-            </p>
-          </div>
-          <div className="sm:min-w-0 sm:flex-1">
-            <p className="text-3xl font-bold tabular-nums">
-              <StatCountUp
-                className="gradient-text"
-                end={4}
-                suffix=" Years"
-                duration={2.2}
-                delay={0.24}
-              />
-            </p>
-            <p className="mt-1 text-sm text-[#b4c5d8]">
-              Building revenue systems for B2B service companies
-            </p>
+          <div
+            className="mx-auto h-px w-full max-w-xl md:max-w-2xl"
+            style={{
+              background:
+                "linear-gradient(90deg, transparent 0%, rgba(141,234,255,0.06) 42%, rgba(29,207,255,0.14) 50%, rgba(141,234,255,0.06) 58%, transparent 100%)",
+            }}
+            aria-hidden
+          />
+          <div className="flex flex-col gap-8 pt-4 sm:flex-row sm:items-start sm:justify-between sm:gap-6 md:gap-8 md:pt-5">
+            <div className="sm:min-w-0 sm:flex-1">
+              <p className="text-3xl font-bold tabular-nums">
+                <StatCountUp
+                  className="gradient-text"
+                  end={4.4}
+                  decimals={1}
+                  suffix="%"
+                  duration={2.2}
+                />
+              </p>
+              <p className="mt-1 text-sm text-[#b4c5d8]">
+                Message-to-meeting conversion on our own campaigns
+              </p>
+            </div>
+            <div className="sm:min-w-0 sm:flex-1">
+              <p className="text-3xl font-bold tabular-nums">
+                <StatCountUp
+                  className="gradient-text"
+                  end={23.3}
+                  decimals={1}
+                  suffix="%"
+                  duration={2.2}
+                  delay={0.12}
+                />
+              </p>
+              <p className="mt-1 text-sm text-[#b4c5d8]">
+                Average reply rate sustained over 6 months
+              </p>
+            </div>
+            <div className="sm:min-w-0 sm:flex-1">
+              <p className="text-3xl font-bold tabular-nums">
+                <StatCountUp
+                  className="gradient-text"
+                  end={4}
+                  suffix=" Years"
+                  duration={2.2}
+                  delay={0.24}
+                />
+              </p>
+              <p className="mt-1 text-sm text-[#b4c5d8]">
+                Building revenue systems for B2B service companies
+              </p>
+            </div>
           </div>
         </motion.div>
       </div>
