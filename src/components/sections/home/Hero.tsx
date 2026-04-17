@@ -65,7 +65,7 @@ export function Hero() {
         </motion.p>
 
         <motion.div
-          className="mt-12 flex flex-col justify-center gap-4 sm:flex-row"
+          className="mt-8 flex flex-col justify-center gap-4 sm:flex-row"
           {...mount(0.36)}
         >
           <Button
@@ -86,7 +86,7 @@ export function Hero() {
         </motion.div>
 
         <motion.div
-          className="mx-auto mt-20 flex max-w-2xl flex-col gap-10 border-t border-[rgba(141,234,255,0.22)] pt-10 sm:flex-row sm:items-start sm:justify-between md:mt-24"
+          className="mx-auto mt-20 flex max-w-2xl flex-col gap-10 border-t border-[rgba(141,234,255,0.1)] pt-16 sm:flex-row sm:items-start sm:justify-between md:mt-24 md:pt-24"
           {...mount(0.48)}
         >
           <div className="sm:min-w-0 sm:flex-1">
