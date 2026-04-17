@@ -60,12 +60,12 @@ export function ProcessSection() {
         </h2>
 
         {/* Mobile vs desktop: mutually exclusive breakpoints (md = 768px) */}
-        <div className="mt-16">
+        <div className="mt-20 md:mt-24">
           <div className="flex flex-col border-l-2 border-brand-cyan/20 pl-5 sm:pl-8 md:!hidden">
           {steps.map((step, index) => (
             <motion.div
               key={step.n}
-              className="mb-12 flex flex-row items-start gap-3 last:mb-0 sm:gap-4"
+              className="mb-14 flex flex-row items-start gap-3 last:mb-0 sm:gap-4"
               initial={{ opacity: 0, y: 20 }}
               animate={inView ? { opacity: 1, y: 0 } : undefined}
               transition={{

@@ -50,7 +50,7 @@ export function TeamSection() {
           Built by founders who started in college and never stopped building.
         </h2>
 
-        <div className="mt-12 grid grid-cols-2 gap-6 md:grid-cols-4">
+        <div className="mt-16 grid grid-cols-2 gap-8 md:mt-20 md:grid-cols-4">
           {team.map((member, index) => (
             <motion.article
               key={member.name}

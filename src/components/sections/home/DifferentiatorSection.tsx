@@ -34,11 +34,11 @@ export function DifferentiatorSection() {
           What makes us different
         </h2>
 
-        <div className="mt-16 grid grid-cols-1 gap-0 md:grid-cols-3 md:gap-12">
+        <div className="mt-20 grid grid-cols-1 gap-0 md:mt-24 md:grid-cols-3 md:gap-16">
           {columns.map((col, index) => (
             <motion.div
               key={col.n}
-              className={`border-b border-brand-border pb-12 last:border-b-0 last:pb-0 md:border-b-0 md:pb-0 ${
+              className={`border-b border-brand-border pb-14 last:border-b-0 last:pb-0 md:border-b-0 md:pb-0 ${
                 index > 0 ? "differentiator-col-border" : ""
               }`}
               initial={{ opacity: 0, y: 20 }}

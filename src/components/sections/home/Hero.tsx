@@ -1,22 +1,9 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { TypeAnimation } from "react-type-animation";
 import { Button } from "@/components/ui/Button";
 import { StatCountUp } from "@/components/ui/StatCountUp";
 import { CALENDLY_AUDIT_URL } from "@/lib/constants";
-
-/** Module-level so TypeAnimation’s memoization always sees a stable sequence. */
-const HERO_CYCLING_PHRASES_SEQUENCE = [
-  "referrals and luck.",
-  2600,
-  "hoping the phone rings.",
-  2800,
-  "one key client.",
-  2400,
-  "word of mouth alone.",
-  2800,
-] as const;
 
 const mount = (delay: number) => ({
   initial: { opacity: 0, y: 24 },
@@ -65,21 +52,11 @@ export function Hero() {
           {...mount(0.12)}
         >
           Custom LinkedIn Outbound{" "}
-          <TypeAnimation
-            sequence={[...HERO_CYCLING_PHRASES_SEQUENCE]}
-            wrapper="span"
-            repeat={Infinity}
-            cursor
-            preRenderFirstString={false}
-            speed={{ type: "keyStrokeDelayInMs", value: 28 }}
-            deletionSpeed={{ type: "keyStrokeDelayInMs", value: 14 }}
-            className="gradient-text inline-block min-h-[1.2em] text-center align-baseline"
-            style={{ maxWidth: "min(100%, 22rem)" }}
-          />
+          <span className="gradient-text">Done The Right Way.</span>
         </motion.h1>
 
         <motion.p
-          className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-[#b4c5d8] md:text-xl"
+          className="mx-auto mt-8 max-w-2xl text-lg leading-relaxed text-[#b4c5d8] md:text-xl"
           {...mount(0.24)}
         >
           Let&apos;s get you in front of prospects worth your time. We build
@@ -88,7 +65,7 @@ export function Hero() {
         </motion.p>
 
         <motion.div
-          className="mt-10 flex flex-col justify-center gap-4 sm:flex-row"
+          className="mt-12 flex flex-col justify-center gap-4 sm:flex-row"
           {...mount(0.36)}
         >
           <Button
@@ -109,7 +86,7 @@ export function Hero() {
         </motion.div>
 
         <motion.div
-          className="mx-auto mt-16 flex max-w-2xl flex-col gap-8 border-t border-[rgba(141,234,255,0.22)] pt-8 sm:flex-row sm:items-start sm:justify-between"
+          className="mx-auto mt-20 flex max-w-2xl flex-col gap-10 border-t border-[rgba(141,234,255,0.22)] pt-10 sm:flex-row sm:items-start sm:justify-between md:mt-24"
           {...mount(0.48)}
         >
           <div className="sm:min-w-0 sm:flex-1">

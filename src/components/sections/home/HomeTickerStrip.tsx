@@ -20,7 +20,7 @@ const loop = [...TICKER_ITEMS, ...TICKER_ITEMS];
 export function HomeTickerStrip() {
   return (
     <section
-      className="border-y border-brand-border bg-[#0d1e35] py-3 shadow-[inset_0_1px_0_rgba(141,234,255,0.06)] md:py-3.5"
+      className="border-y border-brand-border bg-[#0d1e35] py-4 shadow-[inset_0_1px_0_rgba(141,234,255,0.06)] md:py-5"
       aria-label="Brand and performance highlights"
     >
       <div className="relative overflow-hidden">

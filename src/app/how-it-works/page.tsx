@@ -74,7 +74,7 @@ export default function HowItWorksPage() {
         subline="Three questions every prospect asks before they book. Here are the real answers."
       />
 
-      <div className="mx-auto flex max-w-3xl flex-col gap-16 px-6 py-24">
+      <div className="mx-auto flex max-w-3xl flex-col gap-20 px-6 py-28 md:py-36">
         {blocks.map((b) => (
           <div key={b.q}>
             <p className="mb-4 text-lg font-semibold text-brand-cyan">
@@ -85,7 +85,7 @@ export default function HowItWorksPage() {
         ))}
       </div>
 
-      <div className="mx-auto mb-24 max-w-3xl px-6">
+      <div className="mx-auto mb-28 max-w-3xl px-6 md:mb-32">
         <div className="rounded-2xl border border-brand-cyan/15 bg-[#0a1628] p-10">
           <SectionLabel className="mb-2">COMPLIANCE</SectionLabel>
           <h3 className="mb-3 text-lg font-semibold text-white">
@@ -105,7 +105,7 @@ export default function HowItWorksPage() {
       <section className="section-y-bordered bg-[#010f1f]">
         <div className="mx-auto max-w-3xl px-6">
           <SectionLabel className="mb-2">FAQ</SectionLabel>
-          <h2 className="mb-10 mt-3 text-2xl font-bold text-white md:text-3xl">
+          <h2 className="mb-12 mt-3 text-2xl font-bold text-white md:text-3xl">
             Questions we hear before kickoff
           </h2>
           <Accordion idPrefix="how-it-works-faq" items={faqItems} />

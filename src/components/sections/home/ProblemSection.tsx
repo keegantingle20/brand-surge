@@ -44,7 +44,7 @@ export function ProblemSection() {
           the right people with messaging that actually resonates.
         </h2>
 
-        <div className="mt-16 grid grid-cols-1 gap-6 md:grid-cols-3">
+        <div className="mt-20 grid grid-cols-1 gap-8 md:mt-24 md:grid-cols-3">
           {cards.map((card, index) => (
             <motion.div
               key={card.title}

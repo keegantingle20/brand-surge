@@ -26,7 +26,7 @@ export function CaseStudyPreview() {
           </h2>
         </motion.div>
 
-        <div className="mt-16 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-20 grid grid-cols-1 gap-8 md:mt-24 md:grid-cols-2 lg:grid-cols-3">
           {clientCaseStudies.map((study, index) => (
             <ClientCaseStudyCard
               key={study.id}
@@ -42,7 +42,10 @@ export function CaseStudyPreview() {
           animate={inView ? { opacity: 1, y: 0 } : undefined}
           transition={{ duration: 0.5, ease: "easeOut", delay: 0.1 }}
         >
-          <FeaturedOwnAccountCard pullQuote={<CampaignWeekStatsQuote />} />
+          <FeaturedOwnAccountCard
+            className="mt-20 md:mt-24"
+            pullQuote={<CampaignWeekStatsQuote />}
+          />
         </motion.div>
       </div>
     </section>

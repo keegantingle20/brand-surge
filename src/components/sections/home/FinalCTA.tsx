@@ -35,12 +35,12 @@ export function FinalCTA() {
         animate={inView ? { opacity: 1, y: 0 } : undefined}
         transition={{ duration: 0.5, ease: "easeOut" }}
       >
-        <h2 className="mb-6 text-3xl font-bold leading-tight text-white md:text-4xl lg:text-5xl">
+        <h2 className="mb-8 text-3xl font-bold leading-tight text-white md:text-4xl lg:text-5xl">
           If your pipeline is inconsistent, it&apos;s not a sales problem.
           <br />
           <span className="gradient-text">It&apos;s a systems problem.</span>
         </h2>
-        <p className="mb-10 text-lg text-[#b4c5d8]">
+        <p className="mb-12 text-lg text-[#b4c5d8]">
           Let&apos;s find out exactly where yours is breaking, and what it
           would take to fix it.
         </p>

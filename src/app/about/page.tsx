@@ -61,7 +61,7 @@ export default function AboutPage() {
         subline="Four years, three business models, and one consistent mission: help businesses generate pipeline by design, not by luck."
       />
 
-      <div className="mx-auto flex max-w-3xl flex-col gap-12 px-6 py-24">
+      <div className="mx-auto flex max-w-3xl flex-col gap-16 px-6 py-28 md:py-36">
         <div>
           <SectionLabel className="mb-4">Where we started</SectionLabel>
           <p className="text-base leading-relaxed text-[#b4c5d8]">

@@ -22,7 +22,7 @@
 @layer components {
   /** Consistent vertical rhythm between homepage / marketing sections */
   .section-y {
-    @apply py-24 md:py-28 lg:py-32;
+    @apply py-28 md:py-36 lg:py-44;
   }
 
   /** Subtle top edge so stacked dark sections read as separate bands */
