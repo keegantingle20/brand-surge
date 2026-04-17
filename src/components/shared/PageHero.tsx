@@ -19,7 +19,7 @@ export function PageHero({
   subline: string;
 }) {
   return (
-    <section className="relative overflow-hidden bg-[#010f1f] pb-28 pt-32 md:pb-32 md:pt-40">
+    <section className="section-y relative overflow-hidden bg-[#010f1f]">
       <div
         className="pointer-events-none absolute left-1/2 top-0 h-[520px] w-[780px] -translate-x-1/2 rounded-full bg-brand-teal/15 blur-3xl"
         aria-hidden

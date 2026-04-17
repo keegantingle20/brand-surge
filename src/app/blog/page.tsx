@@ -19,7 +19,7 @@ export default function BlogPage() {
           "We're preparing long-form content on outbound systems, ICP strategy, and what actually moves the needle for B2B service companies. Sanity-powered posts will land here next."
         }
       />
-      <section className="section-y-bordered mx-auto max-w-2xl px-6 text-center">
+      <section className="section-y-bordered-continue mx-auto max-w-2xl px-6 text-center">
         <p className="text-sm text-[#b4c5d8]">
           Want actionable pipeline insight in the meantime? Book a free audit
           and we&apos;ll walk through your outbound gaps on the call.

@@ -25,6 +25,10 @@ const config = {
         heading: ["var(--font-heading)", "system-ui", "sans-serif"],
         body: ["var(--font-body)", "system-ui", "sans-serif"],
       },
+      lineHeight: {
+        /** Slightly more open than default `relaxed` for marketing copy */
+        relaxed: "1.72",
+      },
     },
   },
   plugins: [tailwindcssAnimate],

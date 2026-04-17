@@ -16,7 +16,7 @@ export default function ContactPage() {
         heading="Let's find out where your pipeline is breaking."
         subline="15 minutes. No pitch. Just clarity on what's broken and what it would take to fix it."
       />
-      <div className="mx-auto max-w-xl px-6 py-16">
+      <div className="section-y-continue mx-auto max-w-xl px-6">
         <ContactForm />
         <p className="mt-6 text-center text-xs text-[#7c8fa3]">
           No spam. No sales pitch. We&apos;ll review your answers before the

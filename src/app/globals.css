@@ -17,17 +17,86 @@
   --color-brand-cyan: #25dee3;
   --color-brand-sky: #1dcfff;
   --color-brand-wave: #45beef;
+  /** Uniform vertical padding (top = bottom) for all marketing sections */
+  --section-pad-y: 7rem;
+  --section-pad-y-md: 9rem;
+  --section-pad-y-lg: 11rem;
 }
 
 @layer components {
-  /** Consistent vertical rhythm between homepage / marketing sections */
-  .section-y {
-    @apply py-28 md:py-36 lg:py-44;
+  /**
+   * Same buffer top and bottom everywhere this class is used.
+   * Breakpoints align with Tailwind md / lg.
+   */
+  .section-y,
+  .section-y-bordered {
+    padding-top: var(--section-pad-y);
+    padding-bottom: var(--section-pad-y);
+  }
+
+  @media (min-width: 768px) {
+    .section-y,
+    .section-y-bordered {
+      padding-top: var(--section-pad-y-md);
+      padding-bottom: var(--section-pad-y-md);
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .section-y,
+    .section-y-bordered {
+      padding-top: var(--section-pad-y-lg);
+      padding-bottom: var(--section-pad-y-lg);
+    }
   }
 
   /** Subtle top edge so stacked dark sections read as separate bands */
   .section-y-bordered {
-    @apply section-y border-t border-[rgba(141,234,255,0.12)];
+    border-top: 1px solid rgba(141, 234, 255, 0.12);
+  }
+
+  /**
+   * Same bottom buffer as `.section-y`, modest top (avoids doubling padding
+   * when placed directly under `PageHero` or another `.section-y` block).
+   */
+  .section-y-continue {
+    padding-top: 2.5rem;
+    padding-bottom: var(--section-pad-y);
+  }
+
+  @media (min-width: 768px) {
+    .section-y-continue {
+      padding-top: 3rem;
+      padding-bottom: var(--section-pad-y-md);
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .section-y-continue {
+      padding-top: 3.5rem;
+      padding-bottom: var(--section-pad-y-lg);
+    }
+  }
+
+  /** Like `.section-y-continue` but with the section top border (after PageHero). */
+  .section-y-bordered-continue {
+    border-top: 1px solid rgba(141, 234, 255, 0.12);
+    padding-top: 2.5rem;
+    padding-bottom: var(--section-pad-y);
+  }
+
+  @media (min-width: 768px) {
+    .section-y-bordered-continue {
+      padding-top: 3rem;
+      padding-bottom: var(--section-pad-y-md);
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .section-y-bordered-continue {
+      padding-top: 3.5rem;
+      padding-bottom: var(--section-pad-y-lg);
+    }
   }
 }
 
@@ -37,6 +106,7 @@
     color: #fefefe;
     font-family: var(--font-body);
     -webkit-font-smoothing: antialiased;
+    line-height: 1.58;
   }
 
   h1,
@@ -46,6 +116,10 @@
   h5,
   h6 {
     font-family: var(--font-heading);
+  }
+
+  p {
+    line-height: 1.72;
   }
 }
 

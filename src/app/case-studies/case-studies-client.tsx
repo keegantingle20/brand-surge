@@ -66,7 +66,7 @@ export function CaseStudiesClient() {
         </div>
       </div>
 
-      <div className="scroll-mt-24 py-16 text-center">
+      <div className="section-y scroll-mt-24 text-center">
         <p className="mx-auto max-w-xl text-sm text-[#7c8fa3]">
           Want results like these for your business? Book a call to talk
           through your goals and how outbound can support them.

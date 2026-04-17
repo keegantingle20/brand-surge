@@ -36,7 +36,7 @@ export function Footer() {
         }}
         aria-hidden
       />
-      <div className="mx-auto max-w-6xl px-6 pt-16">
+      <div className="mx-auto max-w-6xl px-6 pt-10">
         <div className="grid grid-cols-1 gap-8 md:grid-cols-4 md:gap-12">
           <div className="text-center md:text-left">
             <Link

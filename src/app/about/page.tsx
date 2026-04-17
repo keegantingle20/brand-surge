@@ -61,7 +61,7 @@ export default function AboutPage() {
         subline="Four years, three business models, and one consistent mission: help businesses generate pipeline by design, not by luck."
       />
 
-      <div className="mx-auto flex max-w-3xl flex-col gap-16 px-6 py-28 md:py-36">
+      <div className="section-y-continue mx-auto flex max-w-3xl flex-col gap-16 px-6">
         <div>
           <SectionLabel className="mb-4">Where we started</SectionLabel>
           <p className="text-base leading-relaxed text-[#b4c5d8]">
@@ -105,7 +105,7 @@ export default function AboutPage() {
 
       <div className="mx-auto max-w-6xl border-t border-brand-border px-6" />
 
-      <section className="mx-auto max-w-6xl px-6 py-16">
+      <section className="section-y mx-auto max-w-6xl px-6">
         <h2 className="mb-10 text-2xl font-bold text-white">
           The people behind the system
         </h2>
@@ -145,7 +145,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section className="bg-[#0a1628] py-16">
+      <section className="section-y bg-[#0a1628]">
         <div className="mx-auto max-w-6xl px-6">
           <SectionLabel>HOW WE WORK</SectionLabel>
           <h2 className="mb-10 mt-3 text-2xl font-bold text-white">

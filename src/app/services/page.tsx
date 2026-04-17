@@ -41,7 +41,7 @@ function FeatureList({ items }: { items: string[] }) {
       {items.map((item) => (
         <li
           key={item}
-          className="flex items-start gap-2 text-sm text-[#b4c5d8]"
+          className="flex items-start gap-2 text-sm leading-relaxed text-[#b4c5d8]"
         >
           <CheckIcon />
           <span>{item}</span>
@@ -78,7 +78,7 @@ export default function ServicesPage() {
         subline="From your first structured outbound campaign to a full revenue architecture, we build the system that fits where you are and where you are headed."
       />
 
-      <div className="section-y-bordered mx-auto grid max-w-6xl grid-cols-1 gap-8 px-4 sm:px-6 md:grid-cols-2">
+      <div className="section-y-bordered-continue mx-auto grid max-w-6xl grid-cols-1 gap-8 px-4 sm:px-6 md:grid-cols-2">
         <div className="rounded-2xl border border-[rgba(29,207,255,0.15)] bg-[#0a1628] p-6 md:p-8">
           <TierBadge>ENTRY</TierBadge>
           <h3 className="mb-2 text-xl font-bold text-white">

@@ -74,7 +74,7 @@ export default function HowItWorksPage() {
         subline="Three questions every prospect asks before they book. Here are the real answers."
       />
 
-      <div className="mx-auto flex max-w-3xl flex-col gap-20 px-6 py-28 md:py-36">
+      <div className="section-y-continue mx-auto flex max-w-3xl flex-col gap-20 px-6">
         {blocks.map((b) => (
           <div key={b.q}>
             <p className="mb-4 text-lg font-semibold text-brand-cyan">

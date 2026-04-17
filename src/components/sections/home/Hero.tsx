@@ -46,7 +46,7 @@ export function Hero() {
         aria-hidden
       />
 
-      <div className="relative mx-auto max-w-4xl px-6 pb-20 pt-32 sm:pb-12 md:pb-0 md:pt-36">
+      <div className="relative mx-auto max-w-4xl px-6 py-[var(--section-pad-y)] md:py-[var(--section-pad-y-md)] lg:py-[var(--section-pad-y-lg)]">
         <motion.h1
           className="text-4xl font-bold leading-tight tracking-tight text-white drop-shadow-sm md:text-5xl lg:text-6xl"
           {...mount(0.12)}
