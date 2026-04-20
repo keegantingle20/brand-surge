@@ -28,7 +28,10 @@ export function ScrollProgressBar() {
         setPastHero(true);
         return;
       }
-      setPastHero(hero.getBoundingClientRect().bottom < 1);
+      const r = hero.getBoundingClientRect();
+      const heroIntersectsViewport =
+        r.bottom > 0 && r.top < window.innerHeight;
+      setPastHero(!heroIntersectsViewport);
     };
     update();
     window.addEventListener("scroll", update, { passive: true });

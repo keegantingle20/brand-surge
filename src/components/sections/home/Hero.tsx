@@ -19,29 +19,32 @@ export function Hero() {
   return (
     <section
       id="hero"
-      className="relative flex min-h-[100svh] flex-col items-center justify-start overflow-x-hidden bg-[#010f1f] pb-10 pt-[calc(4.25rem+1.75rem)] text-center md:pb-14 md:pt-[calc(5.25rem+2rem)] lg:pt-[calc(5.25rem+2.25rem)]"
+      className="relative flex min-h-[100svh] flex-col items-center justify-start bg-[#010f1f] pb-10 pt-[calc(4.25rem+1.75rem)] text-center md:pb-14 md:pt-[calc(5.25rem+2rem)] lg:pt-[calc(5.25rem+2.25rem)]"
     >
+      <div
+        className="pointer-events-none absolute inset-0 overflow-hidden"
+        aria-hidden
+      >
+        <div
+          className="absolute left-[-100px] top-[-100px] h-[500px] w-[500px] rounded-full opacity-20 blur-[120px]"
+          style={{
+            background:
+              "radial-gradient(circle, #45beef 0%, #013273 60%, transparent 100%)",
+          }}
+        />
+        <div
+          className="absolute bottom-[-50px] right-[-50px] h-[400px] w-[400px] rounded-full opacity-15 blur-[100px]"
+          style={{
+            background:
+              "radial-gradient(circle, #25dee3 0%, #1dcfff 45%, #45beef 100%)",
+          }}
+        />
+      </div>
       <div
         className="pointer-events-none absolute left-0 top-0 h-px w-full"
         style={{
           background:
             "linear-gradient(90deg, transparent, #8deaff, #25dee3, #1dcfff, transparent)",
-        }}
-        aria-hidden
-      />
-      <div
-        className="pointer-events-none absolute left-[-100px] top-[-100px] h-[500px] w-[500px] rounded-full opacity-20 blur-[120px]"
-        style={{
-          background:
-            "radial-gradient(circle, #45beef 0%, #013273 60%, transparent 100%)",
-        }}
-        aria-hidden
-      />
-      <div
-        className="pointer-events-none absolute bottom-[-50px] right-[-50px] h-[400px] w-[400px] rounded-full opacity-15 blur-[100px]"
-        style={{
-          background:
-            "radial-gradient(circle, #25dee3 0%, #1dcfff 45%, #45beef 100%)",
         }}
         aria-hidden
       />
