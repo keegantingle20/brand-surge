@@ -19,10 +19,10 @@ export function Hero() {
   return (
     <section
       id="hero"
-      className="relative flex min-h-[100svh] flex-col items-center justify-start bg-[#010f1f] pb-10 pt-[calc(4.25rem+1.75rem)] text-center md:pb-14 md:pt-[calc(5.25rem+2rem)] lg:pt-[calc(5.25rem+2.25rem)]"
+      className="relative flex min-h-[100svh] flex-col items-center justify-start overflow-visible bg-[#010f1f] pb-10 pt-[calc(4.25rem+1.75rem)] text-center md:pb-14 md:pt-[calc(5.25rem+2rem)] lg:pt-[calc(5.25rem+2.25rem)]"
     >
       <div
-        className="pointer-events-none absolute inset-0 overflow-hidden"
+        className="pointer-events-none absolute inset-0 overflow-clip"
         aria-hidden
       >
         <div
