@@ -22,11 +22,13 @@ const bios: TeamBio[] = [
     name: "Koby Batts",
     role: "Co-Founder & Partner",
     bio: "Koby holds an MS in Economics from the University of Louisville, where he also served as College of Business Student Body President. He co-founded Brand Surge in 2022 while still an undergraduate, starting with real estate photography and building it into a B2B outbound agency. Koby leads ICP strategy, outbound system design, and client engagements.",
+    linkedIn: "https://www.linkedin.com/in/koby-batts/",
   },
   {
     name: "Keegan Tingle",
     role: "Co-Founder & Partner",
     bio: "Keegan graduated from the University of Louisville's Innovation MBA program and served as Fraternity President during his undergrad years. He co-built Brand Surge from the ground up alongside Koby, leading growth operations, new market development, and strategic partnerships. He also runs Valent, a parallel venture focused on relationship-driven growth.",
+    linkedIn: "https://www.linkedin.com/in/keegantingle/",
   },
   {
     name: "James Miscione",

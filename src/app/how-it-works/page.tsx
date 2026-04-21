@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Clock3, ClipboardList, Users } from "lucide-react";
 import { CTABanner } from "@/components/shared/CTABanner";
 import { PageHero } from "@/components/shared/PageHero";
 import type { AccordionEntry } from "@/components/ui/Accordion";
@@ -15,14 +16,17 @@ const blocks = [
   {
     q: "What exactly do you build for me?",
     a: "We build a complete LinkedIn outbound infrastructure, not a template campaign. That means defining your ICP down to company size, industry, job title, and buying triggers. Writing message sequences that speak to your specific buyer's exact pain. Configuring HeyReach automation that personalizes at scale. Deploying it under your LinkedIn presence so every conversation starts with your credibility, not ours.",
+    Icon: ClipboardList,
   },
   {
     q: "How long until we see results?",
     a: "Most clients receive their first qualified LinkedIn conversations within three to four weeks of campaign launch, once ICP definition and message sequencing are finalized (typically weeks one and two). Full pipeline velocity, where conversations are coming in consistently week over week, develops by weeks six to eight. We don't promise overnight results. We build systems that compound.",
+    Icon: Clock3,
   },
   {
     q: "What's required from our team?",
     a: "Two hours in week one for onboarding. We need to understand your business, your best clients, and what makes a conversation worth having. After that, we handle operations: campaign management, reply monitoring, weekly optimization, and performance reporting. Your job is to handle the conversations we book. That's the whole model.",
+    Icon: Users,
   },
 ] as const;
 
@@ -77,6 +81,7 @@ export default function HowItWorksPage() {
       <div className="section-y-continue mx-auto flex max-w-3xl flex-col gap-20 px-6">
         {blocks.map((b) => (
           <div key={b.q}>
+            <b.Icon className="mb-4 h-8 w-8 text-[#25dee3]" aria-hidden />
             <p className="mb-4 text-lg font-semibold text-brand-cyan">
               {b.q}
             </p>

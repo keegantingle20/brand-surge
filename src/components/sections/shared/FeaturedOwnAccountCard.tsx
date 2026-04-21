@@ -2,6 +2,7 @@
 
 import type { ReactNode } from "react";
 import { motion } from "framer-motion";
+import { CalendarCheck, MessageSquare, Reply, Users } from "lucide-react";
 import { MetricLineWithCountUp } from "@/components/sections/shared/MetricLineWithCountUp";
 import { Button } from "@/components/ui/Button";
 import { StatCountUp } from "@/components/ui/StatCountUp";
@@ -82,10 +83,10 @@ export function FeaturedOwnAccountCard({
         </div>
         <div className="grid grid-cols-2 gap-4">
           {[
-            { n: "23.3%", l: "Reply rate over 6 months" },
-            { n: "79", l: "Replies from a single 317-message campaign" },
-            { n: "14", l: "Demo meetings booked in one week" },
-            { n: "+4,733", l: "New LinkedIn followers in 12 months (201.9% growth)" },
+            { n: "23.3%", l: "Reply rate over 6 months", Icon: Reply },
+            { n: "79", l: "Replies from a single 317-message campaign", Icon: MessageSquare },
+            { n: "14", l: "Demo meetings booked in one week", Icon: CalendarCheck },
+            { n: "+4,733", l: "New LinkedIn followers in 12 months (201.9% growth)", Icon: Users },
           ].map((s, idx) => {
             const parsed = parseNumericToken(s.n);
             return (
@@ -96,6 +97,7 @@ export function FeaturedOwnAccountCard({
                   boxShadow: "0 0 20px rgba(37, 222, 227, 0.1)",
                 }}
               >
+                <s.Icon className="h-8 w-8 text-[#25dee3]" aria-hidden />
                 <p className="text-2xl font-bold tabular-nums text-brand-cyan md:text-3xl">
                   <StatCountUp
                     end={parsed.end}

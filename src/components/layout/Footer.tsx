@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { BriefcaseBusiness, Building2, MapPin, Rocket } from "lucide-react";
 import { BrandLogo } from "@/components/shared/BrandLogo";
 import { Button } from "@/components/ui/Button";
 import { CALENDLY_AUDIT_URL } from "@/lib/constants";
@@ -67,7 +68,8 @@ export function Footer() {
           </div>
 
           <div className="text-center md:text-left">
-            <p className="text-xs font-semibold tracking-widest text-[#7c8fa3]">
+            <p className="flex items-center justify-center gap-2 text-xs font-semibold tracking-widest text-[#7c8fa3] md:justify-start">
+              <Building2 className="h-6 w-6 text-[#25dee3]" aria-hidden />
               COMPANY
             </p>
             <ul className="mt-4 flex flex-col items-center gap-3 md:items-start">
@@ -99,7 +101,8 @@ export function Footer() {
           </div>
 
           <div className="text-center md:text-left">
-            <p className="text-xs font-semibold tracking-widest text-[#7c8fa3]">
+            <p className="flex items-center justify-center gap-2 text-xs font-semibold tracking-widest text-[#7c8fa3] md:justify-start">
+              <BriefcaseBusiness className="h-6 w-6 text-[#25dee3]" aria-hidden />
               SERVICES
             </p>
             <ul className="mt-4 flex flex-col items-center gap-3 md:items-start">
@@ -131,7 +134,8 @@ export function Footer() {
           </div>
 
           <div className="text-center md:text-left">
-            <p className="text-xs font-semibold tracking-widest text-[#7c8fa3]">
+            <p className="flex items-center justify-center gap-2 text-xs font-semibold tracking-widest text-[#7c8fa3] md:justify-start">
+              <Rocket className="h-6 w-6 text-[#25dee3]" aria-hidden />
               GET STARTED
             </p>
             <p className="mb-4 mt-4 text-sm text-[#b4c5d8]">
@@ -152,7 +156,10 @@ export function Footer() {
           <p className="text-xs text-[#7c8fa3]">
             © 2026 Brand Surge. All rights reserved.
           </p>
-          <p className="text-xs text-[#7c8fa3]">Louisville, KY</p>
+          <p className="flex items-center gap-1 text-xs text-[#7c8fa3]">
+            <MapPin className="h-6 w-6 text-[#25dee3]" aria-hidden />
+            Louisville, KY
+          </p>
         </div>
       </div>
     </footer>

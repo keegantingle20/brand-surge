@@ -2,20 +2,24 @@
 
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
+import { MessageSquare, Trophy, Workflow } from "lucide-react";
 import { SectionLabel } from "@/components/ui/SectionLabel";
 
 const cards = [
   {
     title: "A sales process that won't stay static",
-    body: "When stages, follow-ups, and who qualifies shift week to week—or live only in your head—you can't delegate, measure, or compound what works. Without a stable, written motion, growth caps at one person's calendar instead of a business you can scale.",
+    body: "When stages, follow-ups, and who qualifies shift week to week or live only in your head, you can't delegate, measure, or compound what works. Without a stable, written motion, growth caps at one person's calendar instead of a business you can scale.",
+    Icon: Workflow,
   },
   {
     title: "Genuine messaging",
     body: "Messaging that's genuine. We research the factors that put each prospect on the list and make sure they feel it.",
+    Icon: MessageSquare,
   },
   {
     title: "We want to see our clients win",
     body: "We want to see our clients win. When we work together, we're passionate about helping you meet your goals.",
+    Icon: Trophy,
   },
 ] as const;
 
@@ -66,7 +70,9 @@ export function ProblemSection() {
                 className="mb-6 flex h-10 w-10 items-center justify-center rounded-lg"
                 style={iconPlaceholderStyle}
                 aria-hidden
-              />
+              >
+                <card.Icon className="h-8 w-8 text-[#25dee3]" />
+              </div>
               <h3 className="mb-3 text-lg font-semibold text-white">
                 {card.title}
               </h3>

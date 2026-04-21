@@ -2,6 +2,7 @@
 
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
+import { Rocket, Search, TrendingUp, Wrench } from "lucide-react";
 import { SectionLabel } from "@/components/ui/SectionLabel";
 
 const steps = [
@@ -9,21 +10,25 @@ const steps = [
     n: "01",
     title: "Diagnose",
     body: "We map your ICP, audit your current outreach, and identify exactly where your pipeline is breaking down.",
+    Icon: Search,
   },
   {
     n: "02",
     title: "Build",
     body: "We construct your full outbound infrastructure: sequences, targeting lists, LinkedIn campaign architecture, and automation setup.",
+    Icon: Wrench,
   },
   {
     n: "03",
     title: "Launch & Optimize",
     body: "Campaigns go live. We monitor reply rates and meeting conversion weekly, adjusting until performance is consistent and above target.",
+    Icon: Rocket,
   },
   {
     n: "04",
     title: "Expand",
     body: "Once pipeline is predictable, we expand into full revenue consulting: conversion, retention, and systematizing every stage of your customer journey.",
+    Icon: TrendingUp,
   },
 ] as const;
 
@@ -83,6 +88,7 @@ export function ProcessSection() {
                 {step.n}
               </motion.div>
               <div className="min-w-0 flex-1 pr-1">
+                <step.Icon className="mb-2 h-8 w-8 text-[#25dee3]" aria-hidden />
                 <h3 className="mb-2 text-base font-semibold text-white">
                   {step.title}
                 </h3>
@@ -121,6 +127,7 @@ export function ProcessSection() {
                 >
                   {step.n}
                 </motion.div>
+                <step.Icon className="mt-4 h-8 w-8 text-[#25dee3]" aria-hidden />
                 <h3 className="mt-4 mb-2 text-base font-semibold text-white">
                   {step.title}
                 </h3>

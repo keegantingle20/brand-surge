@@ -1,6 +1,14 @@
 "use client";
 
 import { motion } from "framer-motion";
+import {
+  Dumbbell,
+  GraduationCap,
+  Hammer,
+  HardHat,
+  House,
+  ShieldCheck,
+} from "lucide-react";
 import { MetricLineWithCountUp } from "@/components/sections/shared/MetricLineWithCountUp";
 import type { ClientCaseStudy } from "@/lib/client-case-studies";
 
@@ -16,6 +24,19 @@ type Props = {
 };
 
 export function ClientCaseStudyCard({ study, index, inView }: Props) {
+  const Icon =
+    study.filterTags.includes("Education")
+      ? GraduationCap
+      : study.filterTags.includes("Real Estate")
+        ? House
+        : study.filterTags.includes("Insurance")
+          ? ShieldCheck
+          : study.filterTags.includes("Fitness")
+            ? Dumbbell
+            : study.filterTags.includes("Home Services")
+              ? Hammer
+              : HardHat;
+
   return (
     <motion.div
       className="gradient-border rounded-2xl p-6 md:p-8"
@@ -36,7 +57,9 @@ export function ClientCaseStudyCard({ study, index, inView }: Props) {
         className="mb-6 flex h-10 w-10 items-center justify-center rounded-lg"
         style={iconPlaceholderStyle}
         aria-hidden
-      />
+      >
+        <Icon className="h-8 w-8 text-[#25dee3]" />
+      </div>
       <h3 className="mb-1 text-lg font-semibold text-white">{study.name}</h3>
       {study.subtitle ? (
         <p className="mb-3 text-sm text-brand-cyan">{study.subtitle}</p>

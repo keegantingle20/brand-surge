@@ -2,6 +2,7 @@
 
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
+import { Send, Target, Trophy } from "lucide-react";
 import { SectionLabel } from "@/components/ui/SectionLabel";
 
 const columns = [
@@ -9,16 +10,19 @@ const columns = [
     n: "01",
     title: "Identify your ideal customer",
     body: "We help you identify and find your ideal customer. We build custom signals to identify exactly who to go after and from what angle.",
+    Icon: Target,
   },
   {
     n: "02",
     title: "Custom sequence on connect",
     body: "We build a custom sequence to trigger when an invitation to connect is accepted. It is different for everyone we work with.",
+    Icon: Send,
   },
   {
     n: "03",
     title: "We Want To See You Win",
     body: "We don't hand you a campaign and disappear. We analyze what's working, refine targeting, rewrite underperforming sequences, and consult on the deals coming in. Your process grows with your pipeline.",
+    Icon: Trophy,
   },
 ] as const;
 
@@ -56,6 +60,7 @@ export function DifferentiatorSection() {
               <p className="mb-4 font-mono text-sm gradient-text">
                 {col.n}
               </p>
+              <col.Icon className="mb-4 h-8 w-8 text-[#25dee3]" aria-hidden />
               <h3 className="mb-3 text-lg font-semibold text-white">
                 {col.title}
               </h3>

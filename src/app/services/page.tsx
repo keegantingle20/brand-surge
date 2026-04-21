@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { BriefcaseBusiness, Linkedin, Map, RefreshCcw } from "lucide-react";
 import { CTABanner } from "@/components/shared/CTABanner";
 import { PageHero } from "@/components/shared/PageHero";
 import { Button } from "@/components/ui/Button";
@@ -81,7 +82,8 @@ export default function ServicesPage() {
       <div className="section-y-bordered-continue mx-auto grid max-w-6xl grid-cols-1 gap-8 px-4 sm:px-6 md:grid-cols-2">
         <div className="rounded-2xl border border-[rgba(29,207,255,0.15)] bg-[#0a1628] p-6 md:p-8">
           <TierBadge>ENTRY</TierBadge>
-          <h3 className="mb-2 text-xl font-bold text-white">
+          <h3 className="mb-2 flex items-center gap-2 text-xl font-bold text-white">
+            <Linkedin className="h-8 w-8 text-[#25dee3]" aria-hidden />
             LinkedIn Outbound
           </h3>
           <p className="mb-6 text-sm text-[#b4c5d8]">
@@ -100,7 +102,8 @@ export default function ServicesPage() {
           <span className="mb-4 inline-block rounded-full bg-brand-cyan px-3 py-1 text-xs font-bold text-brand-navy md:absolute md:right-6 md:top-0 md:mb-0 md:-translate-y-1/2">
             MOST POPULAR
           </span>
-          <h3 className="mb-2 text-xl font-bold text-white">
+          <h3 className="mb-2 flex items-center gap-2 text-xl font-bold text-white">
+            <BriefcaseBusiness className="h-8 w-8 text-[#25dee3]" aria-hidden />
             Digital Marketing & Consulting
           </h3>
           <p className="mb-6 text-sm text-[#b4c5d8]">
@@ -130,6 +133,7 @@ export default function ServicesPage() {
               IF YOU&apos;RE...
             </p>
             <p className="mb-2 font-medium text-white">
+              <Map className="mb-2 h-8 w-8 text-[#25dee3]" aria-hidden />
               Starting from zero with no structured outbound process
             </p>
             <p className="text-sm text-[#b4c5d8]">
@@ -141,6 +145,7 @@ export default function ServicesPage() {
               IF YOU&apos;VE...
             </p>
             <p className="mb-2 font-medium text-white">
+              <RefreshCcw className="mb-2 h-8 w-8 text-[#25dee3]" aria-hidden />
               Tried outbound before but can&apos;t get consistent results
             </p>
             <p className="text-sm text-[#b4c5d8]">
