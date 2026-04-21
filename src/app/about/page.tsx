@@ -20,19 +20,19 @@ type TeamBio = {
 const bios: TeamBio[] = [
   {
     name: "Koby Batts",
-    role: "Co-Founder & Partner",
+    role: "Co-Founder & CEO",
     bio: "Koby holds an MS in Economics from the University of Louisville, where he also served as College of Business Student Body President. He co-founded Brand Surge in 2022 while still an undergraduate, starting with real estate photography and building it into a B2B outbound agency. Koby leads ICP strategy, outbound system design, and client engagements.",
-    linkedIn: "https://www.linkedin.com/in/koby-batts/",
+    linkedIn: "https://www.linkedin.com/in/koby-batts-50b068190/",
   },
   {
     name: "Keegan Tingle",
-    role: "Co-Founder & Partner",
+    role: "Co-Founder & COO",
     bio: "Keegan graduated from the University of Louisville's Innovation MBA program and served as Fraternity President during his undergrad years. He co-built Brand Surge from the ground up alongside Koby, leading growth operations, new market development, and strategic partnerships. He also runs Valent, a parallel venture focused on relationship-driven growth.",
-    linkedIn: "https://www.linkedin.com/in/keegantingle/",
+    linkedIn: "https://www.linkedin.com/in/keegan-tingle/",
   },
   {
     name: "James Miscione",
-    role: "Growth Consultant",
+    role: "GTM Strategist",
     bio: "James specializes in LinkedIn campaign architecture and ICP refinement across B2B service verticals. He works directly with clients to optimize message sequencing and improve connection-to-conversation rates.",
     linkedIn: "https://www.linkedin.com/in/james-miscione-ab77a124b/",
   },

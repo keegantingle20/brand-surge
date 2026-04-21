@@ -7,17 +7,17 @@ import { SectionLabel } from "@/components/ui/SectionLabel";
 const team = [
   {
     name: "Koby Batts",
-    role: "Co-Founder & Partner",
+    role: "Co-Founder & CEO",
     bio: "Co-founded Brand Surge as a University of Louisville undergrad in 2022. Holds an MS in Economics from UofL and served as College of Business Student Body President. Obsessed with outbound systems and ICP strategy.",
   },
   {
     name: "Keegan Tingle",
-    role: "Co-Founder & Partner",
+    role: "Co-Founder & COO",
     bio: "Co-founded Brand Surge at UofL in 2022, starting with a drone and a camera, now building B2B pipeline systems. Innovation MBA, University of Louisville. Former Fraternity President. Leads growth and expansion.",
   },
   {
     name: "James Miscione",
-    role: "Growth Consultant",
+    role: "GTM Strategist",
     bio: "Specializes in LinkedIn campaign optimization and ICP refinement across B2B service verticals.",
   },
   {

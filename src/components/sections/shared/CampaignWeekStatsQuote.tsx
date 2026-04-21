@@ -26,7 +26,7 @@ export function CampaignWeekStatsQuote() {
         &rdquo;
       </p>
       <p className="mt-2 not-italic text-[#b4c5d8]">
-        Koby Batts, Co-Founder
+        Koby Batts, Co-Founder & CEO
       </p>
     </blockquote>
   );
