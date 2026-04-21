@@ -3,7 +3,6 @@
 import { useInView } from "framer-motion";
 import { useRef, useState } from "react";
 import { ClientCaseStudyCard } from "@/components/sections/shared/ClientCaseStudyCard";
-import { FeaturedOwnAccountCard } from "@/components/sections/shared/FeaturedOwnAccountCard";
 import { Button } from "@/components/ui/Button";
 import {
   CASE_STUDY_FILTERS,
@@ -39,14 +38,6 @@ export function CaseStudiesClient() {
             {f}
           </button>
         ))}
-      </div>
-
-      <div className="mx-auto mt-8 max-w-6xl px-6">
-        <FeaturedOwnAccountCard
-          className="mt-0"
-          caseStudiesCta="anchor"
-          caseStudiesAnchorId="more-case-studies"
-        />
       </div>
 
       <div
