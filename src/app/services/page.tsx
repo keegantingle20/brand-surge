@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { BriefcaseBusiness, Linkedin, Map, RefreshCcw } from "lucide-react";
+import { BriefcaseBusiness, Map, RefreshCcw, Send } from "lucide-react";
 import { CTABanner } from "@/components/shared/CTABanner";
 import { PageHero } from "@/components/shared/PageHero";
 import { Button } from "@/components/ui/Button";
@@ -83,7 +83,7 @@ export default function ServicesPage() {
         <div className="rounded-2xl border border-[rgba(29,207,255,0.15)] bg-[#0a1628] p-6 md:p-8">
           <TierBadge>ENTRY</TierBadge>
           <h3 className="mb-2 flex items-center gap-2 text-xl font-bold text-white">
-            <Linkedin className="h-8 w-8 text-[#25dee3]" aria-hidden />
+            <Send className="h-8 w-8 text-[#25dee3]" aria-hidden />
             LinkedIn Outbound
           </h3>
           <p className="mb-6 text-sm text-[#b4c5d8]">
