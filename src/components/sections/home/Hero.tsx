@@ -1,7 +1,6 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { CalendarCheck, Clock3, Reply } from "lucide-react";
 import { Button } from "@/components/ui/Button";
 import { StatCountUp } from "@/components/ui/StatCountUp";
 import { CALENDLY_AUDIT_URL } from "@/lib/constants";
@@ -104,7 +103,6 @@ export function Hero() {
           />
           <div className="flex flex-col gap-8 pt-4 sm:flex-row sm:items-start sm:justify-between sm:gap-6 md:gap-8 md:pt-5">
             <div className="sm:min-w-0 sm:flex-1">
-              <CalendarCheck className="mx-auto h-8 w-8 text-[#25dee3] sm:mx-0" aria-hidden />
               <p className="text-3xl font-bold tabular-nums">
                 <StatCountUp
                   className="gradient-text"
@@ -119,7 +117,6 @@ export function Hero() {
               </p>
             </div>
             <div className="sm:min-w-0 sm:flex-1">
-              <Reply className="mx-auto h-8 w-8 text-[#25dee3] sm:mx-0" aria-hidden />
               <p className="text-3xl font-bold tabular-nums">
                 <StatCountUp
                   className="gradient-text"
@@ -135,7 +132,6 @@ export function Hero() {
               </p>
             </div>
             <div className="sm:min-w-0 sm:flex-1">
-              <Clock3 className="mx-auto h-8 w-8 text-[#25dee3] sm:mx-0" aria-hidden />
               <p className="text-3xl font-bold tabular-nums">
                 <StatCountUp
                   className="gradient-text"

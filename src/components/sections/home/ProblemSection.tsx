@@ -2,24 +2,24 @@
 
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
-import { MessageSquare, Trophy, Workflow } from "lucide-react";
+import { LineChart, Send, Workflow } from "lucide-react";
 import { SectionLabel } from "@/components/ui/SectionLabel";
 
 const cards = [
   {
     title: "A sales process that won't stay static",
-    body: "When stages, follow-ups, and who qualifies shift week to week or live only in your head, you can't delegate, measure, or compound what works. Without a stable, written motion, growth caps at one person's calendar instead of a business you can scale.",
+    body: "Without a stable, written motion, growth caps at one person's calendar instead of a business you can scale.",
     Icon: Workflow,
   },
   {
-    title: "Genuine messaging",
-    body: "Messaging that's genuine. We research the factors that put each prospect on the list and make sure they feel it.",
-    Icon: MessageSquare,
+    title: "Generic messaging that gets ignored",
+    body: "When every prospect receives the same message, response rates drop and conversations stall. Without tailored messaging tied to real buyer signals, outreach feels irrelevant and easy to dismiss.",
+    Icon: Send,
   },
   {
-    title: "We want to see our clients win",
-    body: "We want to see our clients win. When we work together, we're passionate about helping you meet your goals.",
-    Icon: Trophy,
+    title: "No clear feedback loop",
+    body: "If outreach runs without consistent review, weak messaging and poor-fit targeting keep draining time. Without a tight optimization loop, results stay unpredictable and hard to scale.",
+    Icon: LineChart,
   },
 ] as const;
 
