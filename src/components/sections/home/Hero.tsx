@@ -54,9 +54,9 @@ export function Hero() {
           className="text-4xl font-bold leading-tight tracking-tight text-white drop-shadow-sm md:text-5xl lg:text-6xl"
           {...mount(0.12)}
         >
-          Inconsistent pipeline?
+          The right prospects are out there.
           <br />
-          <span className="gradient-text">It&apos;s a systems problem.</span>
+          <span className="gradient-text">We build systems that get you in front of them.</span>
         </motion.h1>
 
         <motion.p

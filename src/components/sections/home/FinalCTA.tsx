@@ -36,9 +36,9 @@ export function FinalCTA() {
         transition={{ duration: 0.5, ease: "easeOut" }}
       >
         <h2 className="mb-8 text-3xl font-bold leading-tight text-white md:text-4xl lg:text-5xl">
-          If your pipeline is inconsistent, it&apos;s not a sales problem.
+          At some point, waiting isn't a strategy.
           <br />
-          <span className="gradient-text">It&apos;s a systems problem.</span>
+          <span className="gradient-text">Let&apos;s play offense.</span>
         </h2>
         <p className="mb-12 text-lg text-[#b4c5d8]">
           Let&apos;s find out exactly where yours is breaking, and what it
