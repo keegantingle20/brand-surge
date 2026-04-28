@@ -70,42 +70,74 @@ export default function AboutPage() {
 
       <div className="section-y-continue mx-auto flex max-w-3xl flex-col gap-16 px-6">
         <div>
-          <SectionLabel className="mb-4">Where we started</SectionLabel>
+          <SectionLabel className="mb-4">Our Roots in Media</SectionLabel>
           <p className="text-base leading-relaxed text-[#b4c5d8]">
-            Brand Surge started in 2022 with a camera, a drone, and one goal:
-            do great work and keep getting better. Koby Batts and Keegan Tingle,
-            two University of Louisville students, built the first version of
-            the company in real estate photography, showing up on-site,
-            sweating every detail, and building trust the old-school way: by
-            delivering. Keegan was running his fraternity at the time. Koby was
-            serving as the University&apos;s College of Business Student Body
-            President. Neither of them waited for the right moment. They started
-            anyway.
+            Koby and Keegan started Brand Surge at ages 20 and 21 while still
+            undergraduates at the University of Louisville. What began as a
+            scrappy digital marketing operation, running ads, building local
+            brand presence, and figuring things out in real time, was less
+            about having all the answers and more about refusing to wait until
+            they did. Most agencies are built by people who spent decades
+            working inside them first. We built ours while we were still in
+            class.
           </p>
         </div>
         <div>
-          <SectionLabel className="mb-4">What we discovered</SectionLabel>
+          <SectionLabel className="mb-4">
+            Transitioning Into an Agency
+          </SectionLabel>
           <p className="text-base leading-relaxed text-[#b4c5d8]">
-            Over time, they noticed something. Photos weren&apos;t the whole
-            game. Marketing was. Clients didn&apos;t just want their listings
-            to look good. They wanted demand. So Brand Surge expanded into
-            digital marketing, learning strategy, messaging, funnels, and what
-            actually drives revenue. The more they worked across industries
-            (construction, professional services, local business), the clearer it
-            became: the companies winning weren&apos;t relying on luck or
-            referrals alone. They had systems.
+            Early on, we worked primarily with local service businesses:
+            contractors, plumbers, roofers. We ran paid media and managed their
+            digital presence. It was hands-on, fast-paced work that taught us
+            how to drive real business outcomes with limited budgets and zero
+            margin for fluff. That foundation shaped how we think about every
+            client engagement: what gets results, what doesn&apos;t, and how to
+            tell the difference quickly.
           </p>
         </div>
         <div>
-          <SectionLabel className="mb-4">What we built</SectionLabel>
+          <SectionLabel className="mb-4">
+            The Client That Changed Everything
+          </SectionLabel>
           <p className="text-base leading-relaxed text-[#b4c5d8]">
-            That insight became Brand Surge&apos;s focus. Today, Surge
-            specializes in building outbound engines for B2B service companies
-            who are exceptional at delivery but don&apos;t have a repeatable way
-            to generate new pipeline. ICP-first. LinkedIn-native.
-            Automation-powered. Built to run consistently, not just when
-            referrals happen to come in. We built our own system first. Then we
-            built it for clients. The same methodology runs both.
+            Working with UofL Executive Education reoriented how we thought
+            about our business. Exec Ed programs operate in a uniquely
+            competitive space. They are selling professional development to
+            working adults and corporate teams who are skeptical,
+            time-constrained, and evaluating ROI before they ever fill out a
+            form. Generic marketing doesn&apos;t move them. We had to get
+            precise: the right message, the right channel, the right person.
+            That experience pushed us deep into B2B audience targeting and
+            high-intent outreach, and it became the foundation of our niche.
+          </p>
+        </div>
+        <div>
+          <SectionLabel className="mb-4">
+            The Transition to Outbound
+          </SectionLabel>
+          <p className="text-base leading-relaxed text-[#b4c5d8]">
+            From Thanksgiving 2024 through the end of the year, we made a
+            deliberate pivot. We stopped taking on general digital marketing
+            work and committed fully to LinkedIn outbound, building and running
+            pipeline systems for B2B clients. It wasn&apos;t a gradual shift. We
+            cleared the deck and rebuilt around what we had seen work:
+            systematic, personalized outreach that puts the right message in
+            front of decision-makers and starts real conversations. That focus
+            is what Brand Surge is today.
+          </p>
+        </div>
+        <div>
+          <SectionLabel className="mb-4">What We&apos;re Building</SectionLabel>
+          <p className="text-base leading-relaxed text-[#b4c5d8]">
+            We are building the go-to outbound partner for B2B companies that
+            are serious about pipeline. Not a full-service agency that does a
+            little of everything, but a specialized team that runs LinkedIn
+            outbound at a high level and keeps getting better at it. Our goal
+            is to be the first call when a founder, sales leader, or marketing
+            director decides they are done waiting on inbound and ready to go
+            take the meetings they need. We are early in that journey, but we
+            know exactly where we are going.
           </p>
         </div>
       </div>

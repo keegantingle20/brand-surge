@@ -8,7 +8,7 @@ import { CALENDLY_AUDIT_URL } from "@/lib/constants";
 export const metadata: Metadata = {
   title: "Services | Brand Surge",
   description:
-    "Done-for-you LinkedIn outbound systems for B2B service companies. LinkedIn outbound and digital marketing consulting.",
+    "Done for you outbound systems for B2B service companies. LinkedIn outbound and digital marketing consulting.",
 };
 
 function TierBadge({ children }: { children: React.ReactNode }) {
@@ -55,10 +55,10 @@ function FeatureList({ items }: { items: string[] }) {
 const linkedInOutboundFeatures = [
   "ICP definition and ideal buyer persona build",
   "LinkedIn profile optimization for outbound",
-  "HeyReach campaign architecture and setup",
+  "Custom campaign architecture and setup",
   "Custom 3-5 touch message sequence development",
   "Weekly campaign optimization and reporting",
-  "Target: 10-20 qualified B2B conversations per month",
+  "Target: 5+ qualified B2B conversations per month",
 ] as const;
 
 const digitalMarketingFeatures = [
@@ -80,7 +80,10 @@ export default function ServicesPage() {
       />
 
       <div className="section-y-bordered-continue mx-auto grid max-w-6xl grid-cols-1 gap-8 px-4 sm:px-6 md:grid-cols-2">
-        <div className="rounded-2xl border border-[rgba(29,207,255,0.15)] bg-[#0a1628] p-6 md:p-8">
+        <div className="relative rounded-2xl border border-[rgba(29,207,255,0.15)] bg-[#0a1628] p-6 md:p-8">
+          <span className="mb-4 inline-block rounded-full bg-brand-cyan px-3 py-1 text-xs font-bold text-brand-navy md:absolute md:right-6 md:top-0 md:mb-0 md:-translate-y-1/2">
+            MOST POPULAR
+          </span>
           <TierBadge>ENTRY</TierBadge>
           <h3 className="mb-2 flex items-center gap-2 text-xl font-bold text-white">
             <Send className="h-8 w-8 text-[#25dee3]" aria-hidden />
@@ -99,9 +102,6 @@ export default function ServicesPage() {
         </div>
 
         <div className="relative rounded-2xl border-2 border-brand-cyan bg-[#0a1628] p-6 md:p-8">
-          <span className="mb-4 inline-block rounded-full bg-brand-cyan px-3 py-1 text-xs font-bold text-brand-navy md:absolute md:right-6 md:top-0 md:mb-0 md:-translate-y-1/2">
-            MOST POPULAR
-          </span>
           <h3 className="mb-2 flex items-center gap-2 text-xl font-bold text-white">
             <BriefcaseBusiness className="h-8 w-8 text-[#25dee3]" aria-hidden />
             Digital Marketing & Consulting
