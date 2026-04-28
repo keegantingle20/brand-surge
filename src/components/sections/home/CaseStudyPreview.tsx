@@ -183,8 +183,18 @@ export function CaseStudyPreview() {
                   onHoverEnd={() => setHoveredPill(null)}
                   animate={
                     isHovered
-                      ? { scale: 1.08, x: 0, y: 0, boxShadow: "0 0 24px rgba(37,222,227,0.55)" }
-                      : { scale: 1, x: pill.driftX, y: pill.driftY, boxShadow: "0 0 0px rgba(37,222,227,0)" }
+                      ? {
+                          scale: 1.08,
+                          x: 0,
+                          y: 0,
+                          boxShadow: "0 0 0 0 rgba(37,222,227,0)",
+                        }
+                      : {
+                          scale: 1,
+                          x: pill.driftX,
+                          y: pill.driftY,
+                          boxShadow: "0 0 0 0 rgba(37,222,227,0)",
+                        }
                   }
                   transition={{
                     duration: isHovered ? 0.2 : pill.duration,
@@ -205,11 +215,20 @@ export function CaseStudyPreview() {
                         ? {
                             background: "#013273",
                             borderColor: "#1398b7",
+                            borderRadius: "9999px",
+                            boxShadow: isHovered
+                              ? "0 0 16px 4px rgba(19, 152, 183, 0.45)"
+                              : "none",
+                            transition: "box-shadow 0.25s ease",
                           }
                         : {
                             background: "linear-gradient(135deg, #0e6ea1 0%, #1398b7 100%)",
                             borderColor: "rgba(37,222,227,0.35)",
-                            boxShadow: "0 0 16px rgba(37,222,227,0.2)",
+                            borderRadius: "9999px",
+                            boxShadow: isHovered
+                              ? "0 0 16px 4px rgba(14, 110, 161, 0.45)"
+                              : "0 0 16px rgba(37,222,227,0.2)",
+                            transition: "box-shadow 0.25s ease",
                           }
                     }
                   >

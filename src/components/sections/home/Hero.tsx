@@ -19,7 +19,7 @@ export function Hero() {
   return (
     <section
       id="hero"
-      className="relative flex min-h-[100svh] flex-col items-center justify-start overflow-visible bg-[#010f1f] pb-10 pt-[calc(4.25rem+1.75rem)] text-center md:pb-14 md:pt-[calc(5.25rem+2rem)] lg:pt-[calc(5.25rem+2.25rem)]"
+      className="relative flex min-h-[100svh] flex-col items-center justify-start overflow-visible bg-[#010f1f] pb-10 pt-[calc(4.25rem+2.5rem)] text-center md:pb-14 md:pt-[calc(5.25rem+3rem)] lg:pt-[calc(5.25rem+3.25rem)]"
     >
       <div
         className="pointer-events-none absolute inset-0 overflow-clip"
@@ -49,27 +49,26 @@ export function Hero() {
         aria-hidden
       />
 
-      <div className="relative mx-auto max-w-4xl px-6 pb-2 pt-2 md:pb-4 md:pt-4">
+      <div className="relative mx-auto w-full max-w-6xl px-6 pb-2 pt-2 md:pb-4 md:pt-4">
         <motion.h1
-          className="text-4xl font-bold leading-tight tracking-tight text-white drop-shadow-sm md:text-5xl lg:text-6xl"
+          className="mx-auto max-w-4xl text-4xl font-bold leading-tight tracking-tight text-white drop-shadow-sm md:mx-0 md:max-w-[55%] md:text-[2.85rem] lg:text-[3.2rem]"
           {...mount(0.12)}
         >
           The right prospects are out there.
           <br />
-          <span className="gradient-text">We build systems that get you in front of them.</span>
+          <span className="gradient-text">We&apos;ll get you in front of them.</span>
         </motion.h1>
 
         <motion.p
-          className="mx-auto mt-8 max-w-2xl text-lg leading-relaxed text-[#b4c5d8] md:text-xl"
+          className="mx-auto mt-5 max-w-[520px] text-xl leading-relaxed text-[#b4c5d8] md:mx-0 md:text-[1.375rem]"
           {...mount(0.24)}
         >
-          Let&apos;s get you in front of prospects worth your time. We build
-          LinkedIn outbound systems with strategy, structure, and consistency to
-          set appointments and grow your influence.
+          Brand Surge builds done-for-you LinkedIn outbound systems - so you can
+          focus on closing, not prospecting.
         </motion.p>
 
         <motion.div
-          className="mt-8 flex flex-col justify-center gap-4 sm:flex-row"
+          className="mt-8 flex flex-col justify-center gap-4 sm:flex-row md:justify-start"
           {...mount(0.36)}
         >
           <Button
@@ -90,7 +89,7 @@ export function Hero() {
         </motion.div>
 
         <motion.div
-          className="mx-auto mt-10 w-full max-w-2xl md:mt-12"
+          className="mx-auto mt-10 w-full max-w-2xl md:mx-0 md:mt-12 md:max-w-[55%]"
           {...mount(0.48)}
         >
           <div
@@ -101,8 +100,8 @@ export function Hero() {
             }}
             aria-hidden
           />
-          <div className="flex flex-col gap-8 pt-4 sm:flex-row sm:items-start sm:justify-between sm:gap-6 md:gap-8 md:pt-5">
-            <div className="sm:min-w-0 sm:flex-1">
+          <div className="flex flex-col gap-8 pt-4 sm:flex-row sm:items-start sm:justify-between sm:gap-8 md:gap-10 md:pt-5">
+            <div className="sm:min-w-0 sm:flex-1 sm:pr-4">
               <p className="text-3xl font-bold tabular-nums">
                 <StatCountUp
                   className="gradient-text"
@@ -112,11 +111,11 @@ export function Hero() {
                   duration={2.2}
                 />
               </p>
-              <p className="mt-1 text-sm text-[#b4c5d8]">
+              <p className="mt-1 text-[0.95rem] leading-relaxed text-[#b4c5d8]">
                 Message-to-meeting conversion on our own campaigns
               </p>
             </div>
-            <div className="sm:min-w-0 sm:flex-1">
+            <div className="sm:min-w-0 sm:flex-1 sm:border-l sm:border-brand-border sm:px-4">
               <p className="text-3xl font-bold tabular-nums">
                 <StatCountUp
                   className="gradient-text"
@@ -127,11 +126,11 @@ export function Hero() {
                   delay={0.12}
                 />
               </p>
-              <p className="mt-1 text-sm text-[#b4c5d8]">
+              <p className="mt-1 text-[0.95rem] leading-relaxed text-[#b4c5d8]">
                 Average reply rate sustained over 6 months
               </p>
             </div>
-            <div className="sm:min-w-0 sm:flex-1">
+            <div className="sm:min-w-0 sm:flex-1 sm:border-l sm:border-brand-border sm:pl-4">
               <p className="text-3xl font-bold tabular-nums">
                 <StatCountUp
                   className="gradient-text"
@@ -141,7 +140,7 @@ export function Hero() {
                   delay={0.24}
                 />
               </p>
-              <p className="mt-1 text-sm text-[#b4c5d8]">
+              <p className="mt-1 text-[0.95rem] leading-relaxed text-[#b4c5d8]">
                 Building revenue systems for B2B service companies
               </p>
             </div>

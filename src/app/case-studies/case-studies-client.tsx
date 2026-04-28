@@ -23,7 +23,7 @@ export function CaseStudiesClient() {
 
   return (
     <>
-      <div className="mx-auto mb-12 flex max-w-6xl flex-wrap gap-3 px-6">
+      <div className="mx-auto -mt-4 mb-12 flex max-w-6xl flex-wrap gap-3 px-6 pt-6 pb-6">
         {CASE_STUDY_FILTERS.map((f) => (
           <button
             key={f}
