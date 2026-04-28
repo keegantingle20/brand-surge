@@ -5,9 +5,9 @@ import { PageHero } from "@/components/shared/PageHero";
 import { SectionLabel } from "@/components/ui/SectionLabel";
 
 export const metadata: Metadata = {
-  title: "About | Brand Surge",
+  title: "Our Story | Brand Surge",
   description:
-    "Brand Surge was built by two University of Louisville students who started with a camera and built a B2B outbound agency. Here's the real story.",
+    "Brand Surge was founded at the University of Louisville in 2022. Here's how we went from local digital marketing to B2B LinkedIn outbound systems.",
 };
 
 type TeamBio = {
@@ -27,7 +27,7 @@ const bios: TeamBio[] = [
   {
     name: "Keegan Tingle",
     role: "Co-Founder & COO",
-    bio: "Keegan graduated from the University of Louisville's Innovation MBA program and served as Fraternity President during his undergrad years. He co-built Brand Surge from the ground up alongside Koby, leading growth operations, new market development, and strategic partnerships. He also runs Valent, a parallel venture focused on relationship-driven growth.",
+    bio: "Keegan graduated from the University of Louisville's Innovation MBA program and served as Fraternity President during his undergrad years. He co-built Brand Surge from the ground up alongside Koby, leading growth operations, new market development, and strategic partnerships.",
     linkedIn: "https://www.linkedin.com/in/keegan-tingle/",
   },
   {

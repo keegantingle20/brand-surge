@@ -20,7 +20,7 @@ const columns = [
   },
   {
     n: "03",
-    title: "We Want To See You Win",
+    title: "We stay in it until it works",
     body: "We don't hand you a campaign and disappear. We analyze what's working, refine targeting, rewrite underperforming sequences, and consult on the deals coming in. Your process grows with your pipeline.",
     Icon: Trophy,
   },

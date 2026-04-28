@@ -6,9 +6,9 @@ import { Button } from "@/components/ui/Button";
 import { CALENDLY_AUDIT_URL } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: "Services | Brand Surge",
+  title: "LinkedIn Outbound Services | Brand Surge",
   description:
-    "Done for you outbound systems for B2B service companies. LinkedIn outbound and digital marketing consulting.",
+    "Done-for-you LinkedIn outbound systems. ICP definition, campaign architecture, message sequencing, and weekly optimization for B2B companies.",
 };
 
 function TierBadge({ children }: { children: React.ReactNode }) {
@@ -84,7 +84,7 @@ export default function ServicesPage() {
           <span className="mb-4 inline-block rounded-full bg-brand-cyan px-3 py-1 text-xs font-bold text-brand-navy md:absolute md:right-6 md:top-0 md:mb-0 md:-translate-y-1/2">
             MOST POPULAR
           </span>
-          <TierBadge>ENTRY</TierBadge>
+          <TierBadge>FOUNDATION</TierBadge>
           <h3 className="mb-2 flex items-center gap-2 text-xl font-bold text-white">
             <Send className="h-8 w-8 text-[#25dee3]" aria-hidden />
             LinkedIn Outbound

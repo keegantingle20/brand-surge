@@ -9,13 +9,13 @@ import { SectionLabel } from "@/components/ui/SectionLabel";
 export const metadata: Metadata = {
   title: "How It Works | Brand Surge",
   description:
-    "No black boxes. Here's exactly how Brand Surge builds your LinkedIn outbound system from ICP definition to booked meetings.",
+    "No black boxes. See exactly how Brand Surge builds your LinkedIn outbound system — from ICP definition to live campaigns in under two weeks.",
 };
 
 const blocks = [
   {
     q: "What exactly do you build for me?",
-    a: "We build a complete LinkedIn outbound infrastructure, not a template campaign. That means defining your ICP down to company size, industry, job title, and buying triggers. Writing message sequences that speak to your specific buyer's exact pain. Configuring HeyReach automation that personalizes at scale. Deploying it under your LinkedIn presence so every conversation starts with your credibility, not ours.",
+    a: "We build a complete LinkedIn outbound infrastructure, not a template campaign. That means defining your ICP down to company size, industry, job title, and buying triggers. Writing message sequences that speak to your specific buyer's exact pain. Configuring LinkedIn automation (via HeyReach) that personalizes at scale. Deploying it under your LinkedIn presence so every conversation starts with your credibility, not ours.",
     Icon: ClipboardList,
   },
   {
