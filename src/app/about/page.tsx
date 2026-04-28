@@ -21,7 +21,7 @@ const bios: TeamBio[] = [
   {
     name: "Koby Batts",
     role: "Co-Founder & CEO",
-    bio: "Koby holds an MS in Economics from the University of Louisville, where he also served as College of Business Student Body President. He co-founded Brand Surge in 2022 while still an undergraduate, starting with real estate photography and building it into a B2B outbound agency. Koby leads ICP strategy, outbound system design, and client engagements.",
+    bio: "Koby holds a BS in Economics and an MS in Business Analytics from the University of Louisville, where he also served as College of Business Student Body President. He co-founded Brand Surge in 2022 while still an undergraduate, evolving it into a B2B outbound agency over the years. Koby leads ICP strategy, outbound system design, and oversees client relationships and opportunities to ensure success is met. He also serves as Vice President of the Associate Board at Nativity Academy, and his biggest key to success is doing everything possible to see clients win.",
     linkedIn: "https://www.linkedin.com/in/koby-batts-50b068190/",
   },
   {
@@ -33,7 +33,7 @@ const bios: TeamBio[] = [
   {
     name: "James Miscione",
     role: "GTM Strategist",
-    bio: "James specializes in LinkedIn campaign architecture and ICP refinement across B2B service verticals. He works directly with clients to optimize message sequencing and improve connection-to-conversation rates.",
+    bio: "James specializes in LinkedIn campaign architecture and ICP refinement across B2B service verticals. He works directly with clients to optimize message sequencing and improve connection-to-conversation rates. Before joining Brand Surge, James built experience as a commercial realtor and assistant superintendent at several golf courses. A big outdoorsman at heart, he brings a hands-on, relationship-first approach and lives for helping clients succeed.",
     linkedIn: "https://www.linkedin.com/in/james-miscione-ab77a124b/",
   },
   {
