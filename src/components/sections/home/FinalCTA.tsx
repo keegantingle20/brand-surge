@@ -36,7 +36,7 @@ export function FinalCTA() {
         transition={{ duration: 0.5, ease: "easeOut" }}
       >
         <h2 className="mb-8 text-3xl font-bold leading-tight text-white md:text-4xl lg:text-5xl">
-          At some point, waiting isn't a strategy.
+          At some point, waiting isn&apos;t a strategy.
           <br />
           <span className="gradient-text">Let&apos;s play offense.</span>
         </h2>
