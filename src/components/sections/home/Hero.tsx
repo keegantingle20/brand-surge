@@ -54,9 +54,9 @@ export function Hero() {
           className="text-4xl font-bold leading-tight tracking-tight text-white drop-shadow-sm md:text-5xl lg:text-6xl"
           {...mount(0.12)}
         >
-          The right prospects are out there, and we know how to reach them.
+          You do great work.
           <br />
-          <span className="gradient-text">We&apos;ll get you in front of them with a system built to convert.</span>
+          <span className="gradient-text">Now let&apos;s make sure the right people know it.</span>
         </motion.h1>
 
         <motion.p
