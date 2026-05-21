@@ -1,7 +1,7 @@
 "use client";
 
 import { motion, useInView } from "framer-motion";
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { CampaignWeekStatsQuote } from "@/components/sections/shared/CampaignWeekStatsQuote";
 import { FeaturedOwnAccountCard } from "@/components/sections/shared/FeaturedOwnAccountCard";
 import { SectionLabel } from "@/components/ui/SectionLabel";
@@ -112,6 +112,14 @@ export function CaseStudyPreview() {
   const ref = useRef(null);
   const inView = useInView(ref, { once: true, margin: "-80px" });
   const [hoveredPill, setHoveredPill] = useState<string | null>(null);
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const check = () => setIsMobile(window.innerWidth < 768);
+    check();
+    window.addEventListener("resize", check);
+    return () => window.removeEventListener("resize", check);
+  }, []);
 
   return (
     <section ref={ref} className="section-y-bordered bg-[#010f1f]">
@@ -153,9 +161,9 @@ export function CaseStudyPreview() {
             targeting, and timing are everything.
           </p>
 
-          <div className="relative mt-10 h-[520px] overflow-hidden rounded-2xl border border-[rgba(29,207,255,0.14)] bg-[#0a1628] md:h-[560px]">
+          <div className="relative mt-10 flex flex-wrap items-center justify-center gap-3 overflow-hidden rounded-2xl border border-[rgba(29,207,255,0.14)] bg-[#0a1628] p-6 md:block md:h-[560px] md:p-0">
             <motion.div
-              className="pointer-events-none absolute inset-0 opacity-5"
+              className="pointer-events-none absolute inset-0 hidden opacity-5 md:block"
               style={{
                 backgroundImage:
                   "radial-gradient(circle at 1px 1px, #8deaff 1px, transparent 0)",
@@ -177,8 +185,8 @@ export function CaseStudyPreview() {
               return (
                 <motion.div
                   key={pill.id}
-                  className="absolute"
-                  style={{ left: pill.left, top: pill.top }}
+                  className="md:absolute"
+                  style={isMobile ? undefined : { left: pill.left, top: pill.top }}
                   onHoverStart={() => setHoveredPill(pill.id)}
                   onHoverEnd={() => setHoveredPill(null)}
                   animate={
@@ -189,19 +197,26 @@ export function CaseStudyPreview() {
                           y: 0,
                           boxShadow: "0 0 0 0 rgba(37,222,227,0)",
                         }
-                      : {
-                          scale: 1,
-                          x: pill.driftX,
-                          y: pill.driftY,
-                          boxShadow: "0 0 0 0 rgba(37,222,227,0)",
-                        }
+                      : isMobile
+                        ? {
+                            scale: 1,
+                            x: 0,
+                            y: 0,
+                            boxShadow: "0 0 0 0 rgba(37,222,227,0)",
+                          }
+                        : {
+                            scale: 1,
+                            x: pill.driftX,
+                            y: pill.driftY,
+                            boxShadow: "0 0 0 0 rgba(37,222,227,0)",
+                          }
                   }
                   transition={{
-                    duration: isHovered ? 0.2 : pill.duration,
+                    duration: isHovered ? 0.2 : isMobile ? 0 : pill.duration,
                     ease: "easeInOut",
-                    delay: isHovered ? 0 : index * 0.07,
-                    repeat: isHovered ? 0 : Infinity,
-                    repeatType: isHovered ? undefined : "mirror",
+                    delay: isHovered || isMobile ? 0 : index * 0.07,
+                    repeat: isHovered || isMobile ? 0 : Infinity,
+                    repeatType: isHovered || isMobile ? undefined : "mirror",
                   }}
                 >
                   <div

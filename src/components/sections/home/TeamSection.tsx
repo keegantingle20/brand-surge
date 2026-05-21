@@ -1,29 +1,41 @@
 "use client";
 
 import { motion, useInView } from "framer-motion";
+import Image from "next/image";
 import { useRef } from "react";
 import { SectionLabel } from "@/components/ui/SectionLabel";
 
-const team = [
+type TeamMember = {
+  name: string;
+  role: string;
+  bio: string;
+  image?: string;
+};
+
+const team: readonly TeamMember[] = [
   {
     name: "Koby Batts",
     role: "Co-Founder & CEO",
     bio: "Co-founded Brand Surge as a University of Louisville undergrad in 2022. Holds an MS in Economics from UofL and served as College of Business Student Body President. Obsessed with outbound systems and ICP strategy.",
+    image: "/team/koby.png",
   },
   {
     name: "Keegan Tingle",
     role: "Co-Founder & COO",
     bio: "Co-founded Brand Surge at UofL in 2022, starting with a drone and a camera, now building B2B pipeline systems. Innovation MBA, University of Louisville. Former Fraternity President. Leads growth and expansion.",
+    image: "/team/keegan.png",
   },
   {
     name: "James Miscione",
     role: "GTM Strategist",
     bio: "Specializes in LinkedIn campaign optimization and ICP refinement across B2B service verticals.",
+    image: "/team/james.png",
   },
   {
     name: "Kellen McHugh",
     role: "Business Development Manager",
     bio: "Leads new client acquisition and builds the partnerships that expand Brand Surge's reach into new markets.",
+    image: "/team/kellen.png",
   },
 ] as const;
 
@@ -50,11 +62,11 @@ export function TeamSection() {
           Built by founders who started in college and never stopped building.
         </h2>
 
-        <div className="mt-16 grid grid-cols-2 gap-8 md:mt-20 md:grid-cols-4">
+        <div className="mt-16 grid grid-cols-2 gap-6 sm:gap-8 md:mt-20 md:grid-cols-4">
           {team.map((member, index) => (
             <motion.article
               key={member.name}
-              className="gradient-border rounded-2xl p-4 text-center md:p-6"
+              className="gradient-border flex flex-col items-center justify-center rounded-2xl p-6 text-center sm:p-8 md:p-10"
               initial={{ opacity: 0, y: 20 }}
               animate={inView ? { opacity: 1, y: 0 } : undefined}
               transition={{
@@ -68,15 +80,28 @@ export function TeamSection() {
                 transition: { duration: 0.2 },
               }}
             >
-              <div
-                className="mx-auto mb-4 h-14 w-14 rounded-full"
-                style={photoPlaceholderStyle}
-                aria-hidden
-              />
-              <p className="text-sm font-semibold text-white">{member.name}</p>
-              <p className="mt-1 mb-3 text-xs text-brand-cyan">{member.role}</p>
-              <p className="text-xs leading-relaxed text-[#b4c5d8]">
-                {member.bio}
+              {member.image ? (
+                <div className="relative mx-auto mb-5 h-24 w-24 overflow-hidden rounded-full sm:h-28 sm:w-28 md:mb-6 md:h-32 md:w-32">
+                  <Image
+                    src={member.image}
+                    alt={member.name}
+                    fill
+                    sizes="(min-width: 768px) 128px, (min-width: 640px) 112px, 96px"
+                    className="object-cover"
+                  />
+                </div>
+              ) : (
+                <div
+                  className="mx-auto mb-5 h-24 w-24 rounded-full sm:h-28 sm:w-28 md:mb-6 md:h-32 md:w-32"
+                  style={photoPlaceholderStyle}
+                  aria-hidden
+                />
+              )}
+              <p className="text-base font-semibold text-white sm:text-lg">
+                {member.name}
+              </p>
+              <p className="mt-1.5 text-sm text-brand-cyan sm:text-base">
+                {member.role}
               </p>
             </motion.article>
           ))}

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { CTABanner } from "@/components/shared/CTABanner";
 import { PageHero } from "@/components/shared/PageHero";
@@ -15,6 +16,7 @@ type TeamBio = {
   role: string;
   bio: string;
   linkedIn?: string;
+  image?: string;
 };
 
 const bios: TeamBio[] = [
@@ -23,24 +25,28 @@ const bios: TeamBio[] = [
     role: "Co-Founder & CEO",
     bio: "Koby holds a BS in Economics and an MS in Business Analytics from the University of Louisville, where he also served as College of Business Student Body President. He co-founded Brand Surge in 2022 while still an undergraduate, evolving it into a B2B outbound agency over the years. Koby leads ICP strategy, outbound system design, and oversees client relationships and opportunities to ensure success is met. He also serves as Vice President of the Associate Board at Nativity Academy, and his biggest key to success is doing everything possible to see clients win.",
     linkedIn: "https://www.linkedin.com/in/koby-batts-50b068190/",
+    image: "/team/koby.png",
   },
   {
     name: "Keegan Tingle",
     role: "Co-Founder & COO",
     bio: "Keegan graduated from the University of Louisville's Innovation MBA program and served as Fraternity President during his undergrad years. He co-built Brand Surge from the ground up alongside Koby, leading growth operations, new market development, and strategic partnerships.",
     linkedIn: "https://www.linkedin.com/in/keegan-tingle/",
+    image: "/team/keegan.png",
   },
   {
     name: "James Miscione",
     role: "GTM Strategist",
     bio: "James specializes in LinkedIn campaign architecture and ICP refinement across B2B service verticals. He works directly with clients to optimize message sequencing and improve connection-to-conversation rates. Before joining Brand Surge, James built experience as a commercial realtor and assistant superintendent at several golf courses. A big outdoorsman at heart, he brings a hands-on, relationship-first approach and lives for helping clients succeed.",
     linkedIn: "https://www.linkedin.com/in/james-miscione-ab77a124b/",
+    image: "/team/james.png",
   },
   {
     name: "Kellen McHugh",
     role: "Business Development Manager",
     bio: "Kellen leads new client acquisition at Brand Surge, building the pipeline that fuels the agency's own growth. He's responsible for partnership development and expanding Brand Surge's presence in new verticals.",
     linkedIn: "https://www.linkedin.com/in/kellen-mchugh-47b917199/",
+    image: "/team/kellen.png",
   },
 ];
 
@@ -154,10 +160,22 @@ export default function AboutPage() {
               key={m.name}
               className="flex gap-6 rounded-2xl border border-brand-border bg-[#0a1628] p-8"
             >
-              <div
-                className="h-20 w-20 shrink-0 rounded-full border border-brand-cyan/20 bg-brand-blue/20"
-                aria-hidden
-              />
+              {m.image ? (
+                <div className="relative h-20 w-20 shrink-0 overflow-hidden rounded-full border border-brand-cyan/20">
+                  <Image
+                    src={m.image}
+                    alt={m.name}
+                    fill
+                    sizes="80px"
+                    className="object-cover"
+                  />
+                </div>
+              ) : (
+                <div
+                  className="h-20 w-20 shrink-0 rounded-full border border-brand-cyan/20 bg-brand-blue/20"
+                  aria-hidden
+                />
+              )}
               <div>
                 <p className="font-semibold text-white">{m.name}</p>
                 <p className="mt-0.5 text-sm text-brand-cyan">{m.role}</p>

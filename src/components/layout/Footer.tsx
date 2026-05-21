@@ -47,10 +47,10 @@ export function Footer() {
             >
               <BrandLogo
                 variant="lockup"
-                className="h-7 max-w-[11rem] md:h-8 md:max-w-[12rem]"
+                className="h-10 max-w-[15rem] sm:h-11 sm:max-w-[16rem] md:h-12 md:max-w-[17rem]"
               />
             </Link>
-            <p className="mx-auto mt-3 max-w-[200px] text-sm leading-relaxed text-[#b4c5d8] md:mx-0">
+            <p className="mx-auto mt-4 max-w-[220px] text-sm leading-relaxed text-[#b4c5d8] md:mx-0">
               Started in Louisville. Built for B2B companies tired of waiting
               for referrals.
             </p>

@@ -66,7 +66,7 @@ export function ProcessSection() {
 
         {/* Mobile vs desktop: mutually exclusive breakpoints (md = 768px) */}
         <div className="mt-20 md:mt-24">
-          <div className="flex flex-col border-l-2 border-brand-cyan/20 pl-5 sm:pl-8 md:!hidden">
+          <div className="ml-6 flex flex-col border-l-2 border-brand-cyan/20 pl-5 sm:ml-8 sm:pl-8 md:!hidden">
           {steps.map((step, index) => (
             <motion.div
               key={step.n}

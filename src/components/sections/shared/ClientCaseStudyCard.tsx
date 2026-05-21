@@ -7,6 +7,7 @@ import {
   Hammer,
   HardHat,
   House,
+  Landmark,
   ShieldCheck,
 } from "lucide-react";
 import { MetricLineWithCountUp } from "@/components/sections/shared/MetricLineWithCountUp";
@@ -35,7 +36,9 @@ export function ClientCaseStudyCard({ study, index, inView }: Props) {
             ? Dumbbell
             : study.filterTags.includes("Home Services")
               ? Hammer
-              : HardHat;
+              : study.filterTags.includes("Financial Services")
+                ? Landmark
+                : HardHat;
 
   return (
     <motion.div

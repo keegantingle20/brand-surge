@@ -5,7 +5,8 @@ export type CaseStudyFilter =
   | "Insurance"
   | "Fitness"
   | "Home Services"
-  | "Construction";
+  | "Construction"
+  | "Financial Services";
 
 export type ClientCaseStudy = {
   id: string;
@@ -23,6 +24,7 @@ export const CASE_STUDY_FILTERS: readonly CaseStudyFilter[] = [
   "Fitness",
   "Home Services",
   "Construction",
+  "Financial Services",
 ] as const;
 
 export const clientCaseStudies: readonly ClientCaseStudy[] = [
@@ -85,6 +87,17 @@ export const clientCaseStudies: readonly ClientCaseStudy[] = [
     subtitle: "Restoration and Construction",
     filterTags: ["Construction"],
     metrics: ["10% Acceptance Rate", "32% Positive Response Rate"],
+  },
+  {
+    id: "independent-mortgage-broker",
+    name: "Independent Mortgage Broker (Anonymized)",
+    subtitle: "Targeting Loan Officers",
+    filterTags: ["Financial Services"],
+    metrics: [
+      "23 Meetings Booked in First 2 Months",
+      "33% Average Response Rate",
+      "Pipeline No Longer Dependent on Referrals",
+    ],
   },
 ] as const;
 
