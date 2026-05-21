@@ -33,7 +33,7 @@ const team: readonly TeamMember[] = [
   },
   {
     name: "Kellen McHugh",
-    role: "Biz Development",
+    role: "Business Development\nManager",
     bio: "Leads new client acquisition and builds the partnerships that expand Brand Surge's reach into new markets.",
     image: "/team/kellen.png",
   },
@@ -100,7 +100,7 @@ export function TeamSection() {
               <p className="text-base font-semibold text-white sm:text-lg">
                 {member.name}
               </p>
-              <p className="mt-1.5 text-sm text-brand-cyan sm:text-base">
+              <p className="mt-1.5 whitespace-pre-line text-sm text-brand-cyan sm:text-base">
                 {member.role}
               </p>
             </motion.article>
