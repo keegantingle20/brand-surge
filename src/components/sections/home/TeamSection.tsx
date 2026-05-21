@@ -33,7 +33,7 @@ const team: readonly TeamMember[] = [
   },
   {
     name: "Kellen McHugh",
-    role: "Business Development Manager",
+    role: "Biz Development",
     bio: "Leads new client acquisition and builds the partnerships that expand Brand Surge's reach into new markets.",
     image: "/team/kellen.png",
   },
