@@ -41,8 +41,8 @@ export function FinalCTA() {
           <span className="gradient-text">Let&apos;s play offense.</span>
         </h2>
         <p className="mb-12 text-lg text-[#b4c5d8]">
-          Let&apos;s find out exactly where yours is breaking, and what it
-          would take to fix it.
+          The right people are out there. Let&apos;s make sure they hear from
+          you.
         </p>
         <motion.a
           href={CALENDLY_AUDIT_URL}
