@@ -90,9 +90,9 @@ export const clientCaseStudies: readonly ClientCaseStudy[] = [
   },
   {
     id: "independent-mortgage-broker",
-    name: "Independent Mortgage Broker (Anonymized)",
+    name: "Independent Mortgage Broker",
     subtitle: "Targeting Loan Officers",
-    filterTags: ["Financial Services"],
+    filterTags: ["Financial Services", "Real Estate"],
     metrics: [
       "23 Meetings Booked in First 2 Months",
       "33% Average Response Rate",

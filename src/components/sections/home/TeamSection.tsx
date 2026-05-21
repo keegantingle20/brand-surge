@@ -66,7 +66,7 @@ export function TeamSection() {
           {team.map((member, index) => (
             <motion.article
               key={member.name}
-              className="gradient-border flex flex-col items-center justify-center rounded-2xl p-6 text-center sm:p-8 md:p-10"
+              className="gradient-border flex flex-col items-center justify-start rounded-2xl p-6 text-center sm:p-8 md:p-10"
               initial={{ opacity: 0, y: 20 }}
               animate={inView ? { opacity: 1, y: 0 } : undefined}
               transition={{

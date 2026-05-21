@@ -28,16 +28,16 @@ export function ClientCaseStudyCard({ study, index, inView }: Props) {
   const Icon =
     study.filterTags.includes("Education")
       ? GraduationCap
-      : study.filterTags.includes("Real Estate")
-        ? House
-        : study.filterTags.includes("Insurance")
-          ? ShieldCheck
-          : study.filterTags.includes("Fitness")
-            ? Dumbbell
-            : study.filterTags.includes("Home Services")
-              ? Hammer
-              : study.filterTags.includes("Financial Services")
-                ? Landmark
+      : study.filterTags.includes("Financial Services")
+        ? Landmark
+        : study.filterTags.includes("Real Estate")
+          ? House
+          : study.filterTags.includes("Insurance")
+            ? ShieldCheck
+            : study.filterTags.includes("Fitness")
+              ? Dumbbell
+              : study.filterTags.includes("Home Services")
+                ? Hammer
                 : HardHat;
 
   return (
